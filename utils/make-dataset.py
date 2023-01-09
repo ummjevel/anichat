@@ -5,6 +5,7 @@ import json
 from tqdm import tqdm
 import glob
 
+SPEAKER_DICT = {"con": "0", "nam": "1"}
 
 if __name__ == "__main__":
     # arg parse
@@ -17,6 +18,9 @@ if __name__ == "__main__":
     parser.add_argument('--foutput', '-fo', type=str, help='txtfile output filepath', default='/Users/jeonminjeong/Documents/dev/anichat/tts/vits/filelists/conan_audio_text_train_filelist.txt')
     # output wav khz
     parser.add_argument('--khz', '-khz', type=str, help='wavfile output khz', default='22050')
+    # for multispeakers
+    parser.add_argument('--multi', '-m', type=str, help='for multispeakers', default='True')
+    
     
     args = parser.parse_args()
 
@@ -50,8 +54,12 @@ if __name__ == "__main__":
             with open(jsonfile) as f:
                 json_data = json.load(f)
             jsonfile_text = json_data['text']
+            if args.multi == True:
+                multi_speaker = "|" + SPEAKER_DICT[jsonfile.split('_')[1]]
+            else:
+                multi_speaker = ""
 
-            txtfile.write(f'{wavfile_name}|{jsonfile_text}\n')
+            txtfile.write(f'{wavfile_name}{multi_speaker}|{jsonfile_text}\n')
 
     print('DONE!')
 
