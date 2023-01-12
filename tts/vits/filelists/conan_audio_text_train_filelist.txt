@@ -1,118 +1,1295 @@
-DUMMY4/anichat_con_01_00221.wav|도일이 형한테 전해주고 올게요
-DUMMY4/anichat_con_01_00108.wav|꼬마야 자전거 좀 빌릴게
-DUMMY4/anichat_con_01_00036.wav|나참 극장에 갈 수 있을 것 같으면 파티에 대신 가 달라는 부탁을 왜 하겠냐구
-DUMMY4/anichat_con_01_00061.wav|모두 모모타로의 신화잖아요
-DUMMY4/anichat_con_01_00098.wav|1시 10분 전
-DUMMY4/anichat_con_01_00165.wav|그래 잘됐다
-DUMMY4/anichat_con_01_00016.wav|쳇 아빠 앞으로 온 것 뿐이잖아 뜯어보나마나 열에 아홉은 팬 레터겠지만
-DUMMY4/anichat_con_01_00153.wav|그런 거 아니야 폭탄이 있는 곳을 꼭 찾아낼거야
-DUMMY4/anichat_con_01_00104.wav|아잇 죄송합니다
-DUMMY4/anichat_con_01_00190.wav|이렇게 되면 죽이 되든 밥이 되든 부딪혀보는 수 밖에
-DUMMY4/anichat_con_01_00082.wav|박사님은 반장님께 연락좀 해주세요
-DUMMY4/anichat_con_01_00094.wav|오후 한 시 정각?
-DUMMY4/anichat_con_01_00217.wav|저 건물도 완벽한 좌우대칭이 아니었나?
-DUMMY4/anichat_con_01_00186.wav|어? 전에 왔을 때도 이런 게 있었던가? 내 환상의 뉴타운 남서울시 어 그러고 보니?
-DUMMY4/anichat_con_01_00168.wav|반장님 순환선 선로 위에 폭탄이 설치되어있던 장소는 어떤 곳이었어요?
-DUMMY4/anichat_con_01_00187.wav|그렇구나 이 도시계획을 세운 사람이 정형균 교수였어
-DUMMY4/anichat_con_01_00216.wav|혹시 베이커시티빌딩?
-DUMMY4/anichat_con_01_00095.wav|잠깐만요 아 그렇게 말하면 어린 제가 어떻게 알아들어요
-DUMMY4/anichat_con_01_00083.wav|마세요
-DUMMY4/anichat_con_01_00257.wav|행운의 색? 안돼!
-DUMMY4/anichat_con_01_00191.wav|이거 쓸만하겠는데?
-DUMMY4/anichat_con_01_00040.wav|아뇨 뭐 그냥 우연이죠 우연
-DUMMY4/anichat_con_01_00105.wav|큰일났다 1시 5분 전이야 젠장
-DUMMY4/anichat_con_01_00017.wav|네
-DUMMY4/anichat_con_01_00152.wav|응 걱정할 거 없어 별일 아니니깐
-DUMMY4/anichat_con_01_00125.wav|우와 특징이 잘 나타나있네
-DUMMY4/anichat_con_01_00060.wav|병신년 정유년 무술년 그러니까 원숭이 새 개
-DUMMY4/anichat_con_01_00172.wav|네
-DUMMY4/anichat_con_01_00109.wav|이런 움직인다
-DUMMY4/anichat_con_01_00220.wav|미란이 누나 괜찮아? 미란이
-DUMMY4/anichat_con_01_00051.wav|잇차 아 빨리빨리 누나
-DUMMY4/anichat_con_01_00010.wav|그 덕분에 아저씨는 전국적으로 유명한 명탐정이 되었다. 나로 말하자면 다시 초등학생으로 돌아가서 같은 반 친구인 아름이 뭉치 세모에게 딱 걸려 어린이 탐정단을 결성한 신세
-DUMMY4/anichat_con_01_00179.wav|벌써 다 나은걸요 빨리요 빨리
-DUMMY4/anichat_con_01_00084.wav|그 원격 조종기 어디서 났
-DUMMY4/anichat_con_01_00092.wav|오렌지색의 섬광 플라스틱 폭탄이다
-DUMMY4/anichat_con_01_00211.wav|수성펜으로 까맣게 칠했거든요
-DUMMY4/anichat_con_01_00118.wav|이번 사건의 범인은 항상 도일이 형아의 휴대 전화로 연락해오고 있어요 병원에서는 휴대전화를 쓰면 안되는 거죠?
-DUMMY4/anichat_con_01_00159.wav|알겠다 그거예요 박사님
-DUMMY4/anichat_con_01_00175.wav|조사해보면 재밌는 사실을 발견할지도 모르겠네요
-DUMMY4/anichat_con_01_00122.wav|그런데요 반장님 폭발물의 종류는 밝혀졌나요?
-DUMMY4/anichat_con_01_00088.wav|위험해
-DUMMY4/anichat_con_01_00067.wav|응 밤 열시까지 열시간 남았는데 어쩌면 좋지
-DUMMY4/anichat_con_01_00071.wav|어 저 집은 신원장님의  저택?
-DUMMY4/anichat_con_01_00070.wav|그러게요 옥토겐을 플라스틱으로 굳힌 것이 바로 플라스틱 폭탄이잖아요
-DUMMY4/anichat_con_01_00089.wav|안테나가 부러졌어
-DUMMY4/anichat_con_01_00174.wav|방화사건으로 피해를 입은 집들은 누가 설계한 작품일까요?
-DUMMY4/anichat_con_01_00158.wav|해 태양
-DUMMY4/anichat_con_01_00119.wav|다행이네요 그리구 빌린 자전거가 망가져버렸는데 아저씨가 나중에 물어주시는 거죠?
-DUMMY4/anichat_con_01_00181.wav|정교수님의 아버지도 아주 훌륭한 분이셨을 것 같아요
-DUMMY4/anichat_con_01_00210.wav|이거 제 안경이에요
-DUMMY4/anichat_con_01_00085.wav|폭격기?
-DUMMY4/anichat_con_01_00178.wav|아저씨 제가 어딘지 알아요 안내해드릴게요
-DUMMY4/anichat_con_01_00103.wav|할머니 잠깐만요 으아아
-DUMMY4/anichat_con_01_00011.wav|그럼 이쯤에서 박사님이 만들어주신 비밀 병기를 소개해볼까 첫번째로 시계형 마취총 뚜껑에 달린 조준기를 잘 맞춰 단추를 누르면 마취바늘이 날아가 상대방을 순식간에 잠재워버린다 다음으로 나비넥타이형 음성 변조기 뒤에 붙어있는 다이얼을 조정해서 어른부터 어린이까지 어떤 목소리든 낼 수 있다 그 중에서도 가장 쓸만한 건 초강력 킥 운동 화 전자파로 발의 지압점을 자극해 다리의 힘을 최대한으로 강하게 만든다
-DUMMY4/anichat_con_01_00154.wav|얘들아 멋대로 끊어버리면 어떡해 괜찮을지 걱정이네
-DUMMY4/anichat_con_01_00007.wav|어린 아이로 변해있었다. 남도일이 살아있다는 사실을 그 녀석들이 알고 또 위협해오면 주변 사람들까지 위험해진다. 브라운박사님의 조언을 받아들여
-DUMMY4/anichat_con_01_00115.wav|시계가 다시 가잖아
-DUMMY4/anichat_con_01_00213.wav|교수님 손에 있는 기폭장치엔 건전지가 없거든요
-DUMMY4/anichat_con_01_00090.wav|틀렸어 모두 도망쳐
-DUMMY4/anichat_con_01_00069.wav|박사님 남도일 로봇 같은 거 만들어 주시면
-DUMMY4/anichat_con_01_00012.wav|범인을 추적할 땐 터보엔진이 달린 스케이트보드
-DUMMY4/anichat_con_01_00116.wav|여기는?
-DUMMY4/anichat_con_01_00053.wav|이 아저씨도 알고보면 명탐정이에요
-DUMMY4/anichat_con_01_00024.wav|박사님! 정형균이라는 사람 아세요?
-DUMMY4/anichat_con_01_00248.wav|이런 대체 어느쪽을 잘라야 하냐구
-DUMMY4/anichat_con_01_00073.wav|아 참 그랬었죠 내 정신좀 봐 요즘엔 남도일 찾는 전화가 통 없어서 까맣게 잊고 있었거든요
-DUMMY4/anichat_con_01_00120.wav|죄송해요
-DUMMY4/anichat_con_01_00209.wav|변장할 때 쓴 도구를 사실은 금고 안에 감춰두셨군요?
-DUMMY4/anichat_con_01_00049.wav|정형균이란 아저씨 유명한 건축가라면서요? 천재 탐정과 천재 건축가의 역사 적인 만남이 되겠네요
-DUMMY4/anichat_con_01_00008.wav|정체를 숨기기로 한 나는 이름이 뭐냐는 미란이의 질문에 얼떨결에 코난 이라고 대답했고 검은 조직의 정보를 얻기 위해 아버지가 탐정사무소를 하시는 미란이 집에서 지내기로 했다. 그런데 이 아저씨 완전 돌팔이 탐정이잖아
-DUMMY4/anichat_con_01_00009.wav|보다 못한 나는 타고난 추리력으로 아저씨를 대신해서 어려운 사건들을 차례차례 해결했다
-DUMMY4/anichat_con_01_00048.wav|응 갈래갈래
-DUMMY4/anichat_con_01_00176.wav|혹시요 순환선에 설치한 폭탄도 실제로는 그 다리를 노린 게 아닐까요?
-DUMMY4/anichat_con_01_00072.wav|네? 제가 여기 있는 걸 어떻게 알구요?
-DUMMY4/anichat_con_01_00025.wav|그렇게 대단한 사람이 왜 절 만나고 싶어하죠?
-DUMMY4/anichat_con_01_00117.wav|네 아 반장님
-DUMMY4/anichat_con_01_00013.wav|단 태양열로 움직이도록 설계되있어서 낮동안에만 탈 수 있다는 게 옥의 티다 어 이런 깜빡 잊을 뻔 했네 어린이 탐정단 뱃지에는 초소형 무전기가 내장되 있고 발신기도 달려있어서 아주 쓸만한다
-DUMMY4/anichat_con_01_00068.wav|없었다구요 매일같이 신나서 달력 확인하는 미란이를 보니 입이 떨어져야 말이죠
-DUMMY4/anichat_con_01_00087.wav|폭탄이 장치돼 있단 말야
-DUMMY4/anichat_con_01_00091.wav|바보 그쪽으로 가면 어떡해
-DUMMY4/anichat_con_01_00212.wav|수염이랑 가발은 서재에 있는 투구의 장식용 털을 잘라서 테이프로 붙인 것 뿐이에요 도일이 형아가 그렇게 하라고 가르쳐주더라구요
-DUMMY4/anichat_con_01_00022.wav|그건 그렇고 내 팬레터가 한통도 없다는 건 나란 존재가 잊혀져 간다는 뜻? 어? 내 거다 정형균?
-DUMMY4/anichat_con_01_00188.wav|완벽한 대칭형을 이루는 뉴타운이야
-DUMMY4/anichat_con_01_00167.wav|타이머가 멈췄던 곳이라면 어린이 공원과 아파트
-DUMMY4/anichat_con_01_00219.wav|미란이 누나 당장 거기서 나와
-DUMMY4/anichat_con_01_00063.wav|어? 미란이 누나 이거 그 집 아니야?
-DUMMY4/anichat_con_01_00171.wav|정형균 교수님이 설계하지 않았
-DUMMY4/anichat_con_01_00258.wav|미란아 빨강은 함정 이야 파랑을 잘라 빨강을 자르면 안돼 뭐해 어서 대답해
-DUMMY4/anichat_con_01_00018.wav|그런데 지금은 스위스에 계세요 워낙 동에번쩍 서에번쩍 하시는 분이라 우편을 챙 겨서 보내드리는 것도 장난 아니라니까요
+DUMMY4/anichat_con_23_00089.wav|흉기는 쉐릴린 씨를 살해한 칼과 같은 거였어
+DUMMY4/anichat_con_14_00064.wav|버려도 왔을 거야
+DUMMY4/anichat_nam_01_00027.wav|어 난 지금 맡고 있는 사건조사 때문에 도저히 시간을 못 낼 것 같아
+DUMMY4/anichat_con_14_00060.wav|그랬구나
+DUMMY4/anichat_nam_01_00238.wav|조심해
+DUMMY4/anichat_con_23_00096.wav|밤부터 벨트를 운반하기 전 일 거야
+DUMMY4/anichat_con_03_00050.wav|인성아, 전망타워가 어느 쪽이지?
+DUMMY4/anichat_nam_03_00088.wav|네가 사로잡아 주면 경찰이 고마워할 거다
+DUMMY4/anichat_nam_23_00015.wav|란과 놀이공원에 놀러갔다가 검은 양복을 입은
+DUMMY4/anichat_nam_14_00021.wav|남도일: 아저씨한텐 술이 약이지
+DUMMY4/anichat_con_18_00011.wav|누구신데 아그럼 총을 쐇을때 거기에
 DUMMY4/anichat_con_01_00059.wav|세 사람이 태어난 해의 간지요
-DUMMY4/anichat_con_01_00096.wav|힌트라도 좀 주세요 여보세요?
-DUMMY4/anichat_con_01_00080.wav|어쨌든 가봐야겠어요
-DUMMY4/anichat_con_01_00254.wav|젠장 안들리나봐 아 그렇지 휴대전화 어 없잖아 이 이럴수가 아까 떨어뜨렸나
-DUMMY4/anichat_con_01_00192.wav|라이터?
-DUMMY4/anichat_con_01_00106.wav|1시 4분 전
-DUMMY4/anichat_con_01_00043.wav|그렇구나 아 5월 3일은 연휴 가 시작되는 날이야 그래서 뭐 어쩌라구 뭐? 생일?
-DUMMY4/anichat_con_01_00151.wav|너희 지금 어디
-DUMMY4/anichat_con_01_00014.wav|다른 것들도 많이 있지만 가장 믿음직스러운 무기는 바로 이 머리! 몸은 작아졌어도 두뇌는 그대로 미궁을 모르는 명탐정 진실은 언제나 하나
-DUMMY4/anichat_con_01_00147.wav|여보세요
-DUMMY4/anichat_con_01_00110.wav|1시 3분 전 그러고보니 이 길은 왼쪽으로 급하게 꺽이는 커브길이었지
-DUMMY4/anichat_con_01_00111.wav|그 케이스 주세요
-DUMMY4/anichat_con_01_00146.wav|고마워
-DUMMY4/anichat_con_01_00150.wav|내 말 들리니?
-DUMMY4/anichat_con_01_00015.wav|남관 작가님께 디어 미스터 남
-DUMMY4/anichat_con_01_00107.wav|좋아 길이 막혀서 차가 멈췄어 으앗 뭐야 해질 려면 아직 멀었는데 아 맞다 아까 바닥에 떨어질 때 어딘가 망가졌구나
-DUMMY4/anichat_con_01_00042.wav|황금연휴?
-DUMMY4/anichat_con_01_00039.wav|아 반장님! 또 사건이에요?
-DUMMY4/anichat_con_01_00255.wav|잠깐만요 저 안에 갖혀있는 사람들이 아직 많단 말이에요
-DUMMY4/anichat_con_01_00081.wav|변조기까지 쓴 거 보면 장난은 아닐 거예요
-DUMMY4/anichat_con_01_00097.wav|젠장
-DUMMY4/anichat_con_01_00214.wav|교수님은 원래 라이터를 안 쓰시잖아요 파이프 에 불을 붙일 때도 긴 성냥을 쓰시구요 아름이가 말했던 달콤한 냄새란 담배 파이프의 냄새였
+DUMMY4/anichat_con_03_00008.wav|남도일이 살아있다는 사실을 그 녀석들이 알고
+DUMMY4/anichat_con_01_00012.wav|범인을 추적할 땐 터보엔진이 달린 스케이트보드
+DUMMY4/anichat_con_12_00069.wav|지난번에 거기에 갔었는데 유파건씨가 피아노 파편하나를 소중하다는 듯 가져가는 걸 봤거든요.
+DUMMY4/anichat_con_23_00085.wav|수리맡겼던 걸 찾아오던 길이었다
+DUMMY4/anichat_nam_01_00149.wav|그렇다면 범인은 대체 무슨 목적으로 이럴까 왜 폭탄을 장치했지?
+DUMMY4/anichat_con_03_00010.wav|브라운 박사님의 조언을 받아들여
+DUMMY4/anichat_con_23_00027.wav|그런 내 라이벌중 한명이 바로 이남자
+DUMMY4/anichat_nam_01_00242.wav|이제부터 안쪽에 배선을 자를 거야 순서를 조금이라도 틀리면  모두 끝장이야 맨먼저 아래쪽의 노란색 코드야
+DUMMY4/anichat_con_23_00178.wav|레온씨가 범인을 잡았고
+DUMMY4/anichat_con_24_00039.wav|멤버들이 있다.
+DUMMY4/anichat_con_12_00231.wav|그리고 마지막 폭탄이 터진 순간 이 홀 전체가 무너지게 되는 거에요
+DUMMY4/anichat_nam_12_00198.wav|만약 그렇다면 왜 강레나 씨를?
+DUMMY4/anichat_con_12_00159.wav|그보다 진짜 문제는 수화기가 떨어지고 나서 시간이 조금 지나면 전화가 걸리지 않게 된다는 거에요
+DUMMY4/anichat_con_03_00035.wav|그래 맞아
+DUMMY4/anichat_con_12_00100.wav|음, 어쩐지 알 것 같아요
+DUMMY4/anichat_con_23_00126.wav|남긴 쉬라는 글자말이야
+DUMMY4/anichat_con_24_00048.wav|몸이 작아진 거라고 한다면...
+DUMMY4/anichat_con_24_00169.wav|세라 누나도 이미 다 눈치채고 있었던 것 같은데 신이치 형을
+DUMMY4/anichat_nam_12_00062.wav|아니면...
+DUMMY4/anichat_con_14_00054.wav|보라 삼촌께서 널 잡으려고 설치해둔 3가지비밀 보안장치야
+DUMMY4/anichat_con_18_00028.wav|앞으로 퀴즈는 장미한테 맡기자 폰을 잃어버려서 미안해 근데 무슨일이야 뭐 잠깐만
+DUMMY4/anichat_con_14_00072.wav|당신이 살인세균에 감염됐다고 모두가 믿도록 만들려고 말이죠
+DUMMY4/anichat_con_14_00080.wav|여승무원 손바닥에 발진이 생긴 건 우연이었어요
+DUMMY4/anichat_con_12_00170.wav|시작해요
+DUMMY4/anichat_con_18_00014.wav|다른 교통수단을 미리 준비해뒀을지도 몰라
+DUMMY4/anichat_con_24_00081.wav|십오년 전 사건이랑 똑같아요.
 DUMMY4/anichat_con_01_00058.wav|모모타로다
+DUMMY4/anichat_con_01_00109.wav|이런 움직인다
+DUMMY4/anichat_con_14_00056.wav|말하기 싫으신가 보네
+DUMMY4/anichat_con_12_00217.wav|리모컨을 가진 범인을요
+DUMMY4/anichat_con_03_00171.wav|됐네요 스콜피언 박사님께 부탁해서 특별 제작한 방탄 안경알을 바꿔 끼었거든요
+DUMMY4/anichat_nam_01_00197.wav|그리고 수만선의 다리설계로 그해 건축 협회에서 주는 신인상까지 수상하게 되었어요 그 이후로도
+DUMMY4/anichat_con_03_00034.wav|인성이형
+DUMMY4/anichat_con_12_00033.wav|아 글쎼...
+DUMMY4/anichat_con_03_00170.wav|그럼 쏴 봐요 정말 총알이 남아 있는지 확인하게요
+DUMMY4/anichat_con_01_00209.wav|변장할 때 쓴 도구를 사실은 금고 안에 감춰두셨군요?
+DUMMY4/anichat_con_12_00259.wav|큰 죄를 저질러놓고 속죄도 하지 않고 죽으려 하다니, 그런건 용납못해요
+DUMMY4/anichat_con_24_00047.wav|만약에 그 사람도 나와 같은 약을 먹고
+DUMMY4/anichat_con_18_00051.wav|시애틀 사건도 동일범의 범행 이유였다면
+DUMMY4/anichat_nam_01_00193.wav|콜롬보 반장님 다함께 들을 수 있게 스피커를
+DUMMY4/anichat_con_14_00015.wav|미란이 말이에요
+DUMMY4/anichat_con_01_00151.wav|너희 지금 어디
+DUMMY4/anichat_con_23_00114.wav|지금 키드가 찍은사진을 너한테 보냈는데
+DUMMY4/anichat_con_01_00009.wav|보다 못한 나는 타고난 추리력으로 아저씨를 대신해서 어려운 사건들을 차례차례 해결했다
+DUMMY4/anichat_con_12_00127.wav|다리 다친 건 괜찮으세요
+DUMMY4/anichat_con_24_00150.wav|남자인지 여자인지는요?
+DUMMY4/anichat_con_03_00148.wav|줘보세요
+DUMMY4/anichat_nam_14_00019.wav|남도일: 아까 누른 번호가
+DUMMY4/anichat_con_23_00008.wav|하이바라 진짜네
+DUMMY4/anichat_con_23_00049.wav|너 잘못하다가는 죽을지도
+DUMMY4/anichat_nam_18_00083.wav|여기다가 한 가운데에서 솟아 있는
+DUMMY4/anichat_con_23_00179.wav|제를린 씨가 변호를 맡아 죄를 인정하게 했다
+DUMMY4/anichat_con_12_00258.wav|싫어요
+DUMMY4/anichat_con_03_00037.wav|영어
+DUMMY4/anichat_nam_01_00194.wav|실은 제가 연쇄방화범과 폭탄 협박범의 정체를 알아냈습니다
+DUMMY4/anichat_nam_18_00078.wav|여기다 이위치에서 보면
+DUMMY4/anichat_con_18_00062.wav|그래서요 주사위는 뭐에요
+DUMMY4/anichat_nam_01_00076.wav|뭐야?
+DUMMY4/anichat_nam_23_00187.wav|바보야 계속 같이 있었거든
 DUMMY4/anichat_con_01_00019.wav|저도 안다구요 그런데요 박사님 지금 뭐 만들고 계세요? 저한테 주실 신무기예요?
-DUMMY4/anichat_con_01_00259.wav|아 그러고 보니 도일이 형아가 궁금해 하더라고 미란이라면 틀림없이 빨간코드를 선택할 줄 알았는데 왜 파란코드를 잘랐을가 이러든데?
+DUMMY4/anichat_con_01_00220.wav|미란이 누나 괜찮아? 미란이
+DUMMY4/anichat_con_12_00050.wav|빨리 병원에 데려가야해
+DUMMY4/anichat_con_24_00044.wav|란의 반으로 전학을 온 고등학생 탐정인데
+DUMMY4/anichat_con_24_00075.wav|테러에 무릎 꿇게 되었다는 사실을 받아들일 수 없었겠죠. 근데 그때 FBI
+DUMMY4/anichat_con_03_00033.wav|이제 좀 익숙해져라
+DUMMY4/anichat_con_24_00019.wav|혹시 그러면 그 미츠즈카 라는 사장님한테서도
+DUMMY4/anichat_con_12_00109.wav|누나 역시 경찰에 신고하는 게 좋지 않을까요?
+DUMMY4/anichat_con_12_00004.wav|난 어린 아이로 변해 있었다
+DUMMY4/anichat_con_03_00110.wav|맞아요 스콜피온 인 것 같아요 괴도키드를 노린 범인도요
+DUMMY4/anichat_con_01_00098.wav|한시 십분 전
+DUMMY4/anichat_con_23_00161.wav|어설픈 연기는 그만 하시죠
+DUMMY4/anichat_nam_18_00041.wav|아저씨의 추리가 맞든 틀리든 뭔가 정보가 더필요해
+DUMMY4/anichat_nam_14_00030.wav|남도일: 뭐야 저 사람 이런 상황에 저기서 대체 뭐하는 거지
+DUMMY4/anichat_nam_14_00042.wav|남도일: 그래서 부탁드릴게 있어서요
+DUMMY4/anichat_con_12_00070.wav|그래서 굉장히 특별한 피아노 인 줄 알았어요
+DUMMY4/anichat_con_12_00134.wav|너희들 왜 이렇게 일찍 왔어?
+DUMMY4/anichat_con_03_00038.wav|그리고 예고장 맨 마지막 문장인 세계말에 마술사도 신경 쓰여
+DUMMY4/anichat_con_01_00257.wav|행운의 색? 안돼!
+DUMMY4/anichat_nam_01_00163.wav|불과 몇 초 동안 태양빛이 닿지 않으면 자동으로 터지도록 장치되어있는 거예요 전철이 폭탄 위를 지나가면 차량 전체가 통과할  때까지 몇 초 동안은 빛이 비취지 않아요 한 차량의 길이가 20미터니까 열 량이면 200미터 시속 60킬로미터면 초속으로는 약   십육 점 칠 미터 다시말해 200미터를 달리는 데는 12초정도가 걸리죠
+DUMMY4/anichat_con_23_00080.wav|근데 쉐릴린 씨가 살해됐을 때
+DUMMY4/anichat_con_24_00142.wav|그 근처에요. 움직임도 없구요!
+DUMMY4/anichat_con_01_00067.wav|응 밤 열시까지 열시간 남았는데 어쩌면 좋지
+DUMMY4/anichat_con_23_00078.wav|신경 쓰이는 건 현장에 레온이 있었다는 거야
+DUMMY4/anichat_nam_12_00132.wav|강민아 씨도 하예솔 씨도 절대음감을 갖고 있어. 이건?
+DUMMY4/anichat_con_03_00187.wav|두 사람 사이에는 사랑이 싹터 아이가 태어났지 하지만 얼마 못 가 마리아는 세상을 떠났어
+DUMMY4/anichat_con_01_00174.wav|방화사건으로 피해를 입은 집들은 누가 설계한 작품일까요?
+DUMMY4/anichat_con_12_00041.wav|물론, 간단하거든 일단 먼저
+DUMMY4/anichat_nam_24_00086.wav|그럼 혹시 이 사람이 다음 번 목표물인가?
+DUMMY4/anichat_con_18_00058.wav|그래서요 월트씨가요 월트씨가 어디로 갔는지도 알 수 있을 거예요
+DUMMY4/anichat_con_12_00234.wav|절대음감이요. 당신은 절대음감은 갖고 있으면서도 총 연습 때 소리의 차이를 지적하지 않으셨잖아요 그래서 뭔가 생각했어요
+DUMMY4/anichat_nam_01_00045.wav|으 소녀틱하긴
+DUMMY4/anichat_con_03_00162.wav|탁자 위에 사진 역시 그대로 찍혀 버렸죠
+DUMMY4/anichat_con_01_00119.wav|다행이네요 그리구 빌린 자전거가 망가져버렸는데 아저씨가 나중에 물어주시는 거죠?
+DUMMY4/anichat_con_23_00051.wav|이건 누가 봐도 함정이 틀림없다고
+DUMMY4/anichat_con_14_00000.wav|그러게
+DUMMY4/anichat_con_12_00226.wav|실은 처음에 소리가 이상한 건 조율 때문이라고 생각했어요
+DUMMY4/anichat_con_12_00152.wav|잠깐만요
+DUMMY4/anichat_con_01_00165.wav|그래 잘됐다
+DUMMY4/anichat_con_24_00091.wav|오늘 행사에 참가한 WSG 도쿄의 스폰서 여러분
+그리고 각 국의...
+DUMMY4/anichat_con_01_00107.wav|좋아 길이 막혀서 차가 멈췄어 으앗 뭐야 해질 려면 아직 멀었는데 아 맞다 아까 바닥에 떨어질 때 어딘가 망가졌구나
+DUMMY4/anichat_nam_01_00232.wav|십팔분 남았어
+DUMMY4/anichat_nam_18_00033.wav|그때 피해자의 차는 지하 주차장에서 나오는 길이였어
+DUMMY4/anichat_con_01_00248.wav|이런 대체 어느쪽을 잘라야 하냐구
+DUMMY4/anichat_con_23_00149.wav|해적을 자기 뜻대로
+DUMMY4/anichat_con_23_00001.wav|그러니까 괜찮다고
+DUMMY4/anichat_nam_01_00102.wav|쥐구멍 쥐를 쫓는 건 고양이? 고양이!
+DUMMY4/anichat_nam_12_00028.wav|아이, 뭘 또 그렇게까지
+DUMMY4/anichat_con_03_00167.wav|그리고 우리 아저씨를 노린건 라스푸틴을 나쁘게 말했
+DUMMY4/anichat_con_12_00250.wav|제 이름은 코난 탐정이죠
+DUMMY4/anichat_con_24_00117.wav|네 근데 제가 전에 부탁한 건 다 알아보셨어요?
+DUMMY4/anichat_con_18_00067.wav|자살을 하면 경찰조사가 중단될 거고
+DUMMY4/anichat_nam_01_00141.wav|아니요
+DUMMY4/anichat_con_14_00045.wav|미안미안 완전 잊고 있었어
+DUMMY4/anichat_con_24_00073.wav|혼자 힘으로 탈출에 성공한 세 번째 피해자가
+DUMMY4/anichat_nam_03_00044.wav|설마 하하 아니겠지
+DUMMY4/anichat_con_12_00140.wav|안 계신가 본데요
+DUMMY4/anichat_con_23_00007.wav|진짜 가고싶은데
+DUMMY4/anichat_con_23_00106.wav|자말루딘 이 우승하는데
+DUMMY4/anichat_con_18_00088.wav|확인하러 가는 건데
+DUMMY4/anichat_con_14_00047.wav|빨리 용건만 말하고 끊어 나 지금 바쁘단 말이야
+DUMMY4/anichat_con_12_00154.wav|버튼식 전화기로 전화를 걸 때 삐뽀빠 라는 소리가 나잖아요
+DUMMY4/anichat_con_14_00014.wav|그냥 갑자기 어렸을 때 일이 생각이 나서요
+DUMMY4/anichat_con_24_00063.wav|십오년 전에요. 미국에도 이런 비슷한 사건이 있지 않았어요?
+DUMMY4/anichat_nam_12_00107.wav|왜지 왜 안 쏜거야
+DUMMY4/anichat_nam_01_00128.wav|이 담배 꽁초는 사고 현장의 피해자 바로 옆에 떨어져 있던 거예요
+DUMMY4/anichat_con_03_00000.wav|몰라서 물어 언젠가 꼭 잡아야지
+DUMMY4/anichat_nam_03_00001.wav|나는 고등학생 탐정 남도일
+DUMMY4/anichat_con_01_00081.wav|변조기까지 쓴 거 보면 장난은 아닐 거예요
+DUMMY4/anichat_nam_03_00147.wav|달걀의 유리는 렌즈 역할을 하는 장치야
+DUMMY4/anichat_con_01_00010.wav|그 덕분에 아저씨는 전국적으로 유명한 명탐정이 되었다. 나로 말하자면 다시 초등학생으로 돌아가서 같은 반 친구인 아름이 뭉치 세모에게 딱 걸려 어린이 탐정단을 결성한 신세
+DUMMY4/anichat_con_14_00089.wav|부하가 또 있다고
+DUMMY4/anichat_con_23_00095.wav|그러니까 범행시각은 그날
+DUMMY4/anichat_con_03_00150.wav|일단 보세요
+DUMMY4/anichat_con_18_00054.wav|이번 헌터의 저격은 완전히 다른 뜻 일수도 있어요
+DUMMY4/anichat_nam_18_00092.wav|세 번째 네 번째 저격 지점도 각 지점에 놓여있던 주사위에
+DUMMY4/anichat_con_24_00171.wav|그리고 남자고. 제 말이 맞죠?
+DUMMY4/anichat_con_03_00169.wav|조장일 아저씨 우리 아저씨 미란이한테 한 발씩 지금 여기서 5발을 쏘았으니 남은 총알은 하나도 없겠네요
+DUMMY4/anichat_con_14_00057.wav|끝까지 말씀을 안 해 주시면
+DUMMY4/anichat_con_01_00048.wav|응 갈래갈래
+DUMMY4/anichat_con_03_00121.wav|어쨌든 다행이네요 이사 아저씨 만약 한지홍 아저씨가 스콜피온 에게 당하지 않았다면 아저씨가 반지 도둑으로 몰려 있을걸
+DUMMY4/anichat_con_24_00005.wav|하이바라 잠깐 이 주스 좀 들고 있어봐
+DUMMY4/anichat_con_03_00197.wav|나는 또 온다고 하면서 가 버리기에
+DUMMY4/anichat_con_24_00125.wav|이시하라의 아내랑 딸이 그 대상이었는지 혹시 알 수 있어요?
+DUMMY4/anichat_con_01_00258.wav|미란아 빨강은 함정 이야 파랑을 잘라 빨강을 자르면 안돼 뭐해 어서 대답해
+DUMMY4/anichat_con_23_00091.wav|관리하니까 경비 시스템
+DUMMY4/anichat_nam_01_00226.wav|그래서 말인데 로비에 서류가방이나 여행용 트렁크 같은 이상한
+DUMMY4/anichat_con_23_00129.wav|출장시켜서 그 보석을 손에 넣으려고 했었구요
+DUMMY4/anichat_con_03_00058.wav|또 키드! 젠장 이럴 수가, 막다른 길이잖아!
+DUMMY4/anichat_nam_14_00018.wav|남도일: 근데 하필 다 보이는데다가 만들어놨냐
+DUMMY4/anichat_con_12_00187.wav|그래서 누나랑 모두를 구할거에요
+DUMMY4/anichat_con_24_00004.wav|젊다니 너도 그렇고 나도 아직 10대거든
+DUMMY4/anichat_con_03_00166.wav|조장일 아저씨를 없앤 건 들켰기 때문인 거나 뭐 그런 이유에서 였겠죠
+DUMMY4/anichat_nam_12_00076.wav|지금도 그닥 없어 보이지는 않는데...
+DUMMY4/anichat_nam_01_00129.wav|아드님의 타액이 검출됐습니다 형이 버린 거 맞죠
+DUMMY4/anichat_con_23_00081.wav|레온은 다른 엘리베이터를 타고 있었더라고
+DUMMY4/anichat_con_18_00008.wav|삼번가 쪽으로 가는 중이야
+DUMMY4/anichat_nam_12_00015.wav|도수일씨 말이야?
+DUMMY4/anichat_con_23_00065.wav|친구인 소노코 누나는 좀 괜찮으세요
+DUMMY4/anichat_nam_01_00234.wav|미란아 니가 그 폭탄을 해체하는거야
+DUMMY4/anichat_nam_18_00032.wav|바로 앞에 낮은 건물이 저격 지점일 것 같지만
+DUMMY4/anichat_nam_01_00164.wav|시속 60 킬로미터로 달려 통과해야만 아슬아슬하게 폭발하지 않는다는 뜻이에요 그러니까 순환선 열차를 다른 선로로 당장 이동시키십시오 순환선 선로에서 치우면 열차를 멈춰도 위험하지 않을 거예요
+DUMMY4/anichat_nam_14_00037.wav|남도일: 폭탄 인가
+DUMMY4/anichat_con_12_00164.wav|뭔가 폭발 했어요
+DUMMY4/anichat_con_24_00111.wav|알았어요
+DUMMY4/anichat_con_12_00247.wav|그러니까 기대하지 마세요
+DUMMY4/anichat_con_14_00008.wav|그 녀석 한테도 도전을 받아들이겠다고 답장이 왔다
+DUMMY4/anichat_con_12_00075.wav|가면사나이?
+DUMMY4/anichat_con_24_00131.wav|누가 지켜보고 있는 것 같아서
+DUMMY4/anichat_con_24_00153.wav|아아 전화 좀 받고 올게 잠깐만 기다려!
+DUMMY4/anichat_con_01_00190.wav|이렇게 되면 죽이 되든 밥이 되든 부딪혀보는 수 밖에
+DUMMY4/anichat_nam_23_00014.wav|친구이면서 같은 반
+DUMMY4/anichat_con_23_00037.wav|안쪽에서도 의외로 쉽게 캐리어를
+DUMMY4/anichat_nam_01_00236.wav|어 좋아 진동감지장치는 달려있지 않나봐 그래도 조심해야되
+DUMMY4/anichat_nam_01_00130.wav|알겠습니다 꽁초 길이로 봐서는
+DUMMY4/anichat_con_12_00270.wav|그렇구나
+DUMMY4/anichat_con_03_00188.wav|증조할아버지는 러시아혁명 군으로부터 마리아 유해를 지키기 위해 아내가 가지고 있던 보석을 팔아 성을 지었지
+DUMMY4/anichat_con_12_00139.wav|근데 조율사인 밀러 씨가 지금 어디 있는지 모르잖아요
+DUMMY4/anichat_con_12_00156.wav|그러니까 그 소리를 정확히 낼수만 있으면
+DUMMY4/anichat_nam_01_00204.wav|오랜시간 공들여 완성한 남서울시의 새로운 거리 만들기 계획 마저 시장이 체포되는 바람에 느닷없이 중지되고 말았어요
+DUMMY4/anichat_con_24_00149.wav|사장님 납치됐을 때 상황 혹시 기억나세요?
+DUMMY4/anichat_con_23_00125.wav|고마워
+DUMMY4/anichat_con_23_00165.wav|레온씨가 어디 있을지를 물어봤을 때
+DUMMY4/anichat_con_03_00117.wav|어제 한지홍 아저씨가 이 비서 아저씨를 보더니 깜짝 놀라 던데요
+DUMMY4/anichat_nam_03_00004.wav|거래장면을 살피는 데 정신이 팔린
+DUMMY4/anichat_nam_18_00095.wav|그리로 가고 있다고
+DUMMY4/anichat_nam_12_00018.wav|바흐가 실제로 연주했다는 오르간 말이지?
+DUMMY4/anichat_con_23_00026.wav|탐정 사무소를 하고 있는 란에 집으로 들어갔다
+DUMMY4/anichat_con_23_00120.wav|역시 하이바라야 든든하다니까
+DUMMY4/anichat_con_14_00040.wav|미안 또 전화할게
+DUMMY4/anichat_con_03_00137.wav|남이 누나가 기억하고 있는 그 말이요, 러시아어 일지도 몰라요
+DUMMY4/anichat_con_14_00016.wav|걔도 처음 하늘에 떠 있는 비행선을 봤을 때 유에프오
+DUMMY4/anichat_con_12_00115.wav|소명훈 씨라는 사람 여기에 점 있는 사람이에요?
+DUMMY4/anichat_nam_23_00018.wav|다른 한패가 등뒤에서 접근한걸 눈치채지 못한채
+DUMMY4/anichat_nam_01_00121.wav|허허 내가 남도일이라는 말은 절대 못하게 생겼네
+DUMMY4/anichat_con_12_00007.wav|아름이한테 간다
+DUMMY4/anichat_con_12_00013.wav|이렇게 해서 우리는 지금 같이 초등학교 일학년으로 생활하면서 녀석들의 정체를 쫓고 있다
+DUMMY4/anichat_con_01_00213.wav|교수님 손에 있는 기폭장치엔 건전지가 없거든요
+DUMMY4/anichat_con_12_00206.wav|그럼, 이제 남은 건 네 번인가
+DUMMY4/anichat_nam_18_00082.wav|이것들 까지 넣어서 아까 그 위치에서 보면 사다리꼴 잠깐만
+DUMMY4/anichat_nam_23_00186.wav|무사해서 다행이다
+DUMMY4/anichat_con_01_00087.wav|폭탄이 장치돼 있단 말야
+DUMMY4/anichat_nam_12_00026.wav|이번에 나는 패스할게. 하여간 쓸데없는 오지랖은
+DUMMY4/anichat_nam_01_00002.wav|하던 것처럼, 이시계 마취총으로 아저씨를 편안히 잠재워드려야겠다
+DUMMY4/anichat_nam_12_00060.wav|어디 있지
+DUMMY4/anichat_nam_12_00030.wav|치사하게 남의 약점을...
+DUMMY4/anichat_con_14_00002.wav|내가 궁금한 건
+DUMMY4/anichat_nam_12_00199.wav|이제야 알겠어 그렇게 된 거였군
+DUMMY4/anichat_nam_18_00057.wav|신중했던건가 아니면
+DUMMY4/anichat_con_24_00002.wav|보면 당첨된 줄 알겠다
+DUMMY4/anichat_con_01_00255.wav|잠깐만요 저 안에 갖혀있는 사람들이 아직 많단 말이에요
+DUMMY4/anichat_con_12_00051.wav|마지막으로 그 차를 마신 게 언제였죠
+DUMMY4/anichat_con_12_00042.wav|그러게 언뜻 봐도 너랑 비슷하더라
+DUMMY4/anichat_con_03_00152.wav|남이 누나 증조할아버지 아니
+DUMMY4/anichat_con_01_00040.wav|아뇨 뭐 그냥 우연이죠 우연
+DUMMY4/anichat_nam_03_00131.wav|증조할아버지 사진은 잔뜩 남아 있는데
+DUMMY4/anichat_con_01_00254.wav|젠장 안들리나봐 아 그렇지 휴대전화 어 없잖아 이 이럴수가 아까 떨어뜨렸나
+DUMMY4/anichat_con_24_00175.wav|돌아갈까?
+DUMMY4/anichat_con_14_00074.wav|유탐정 아저씨한테 같이 흡연실에 가자고 말한 것도
+DUMMY4/anichat_con_23_00054.wav|핵심이 보인다는 소리인가
+DUMMY4/anichat_nam_12_00175.wav|이 사람 때문인가?
+DUMMY4/anichat_con_03_00158.wav|저 혼자 뿐이에요 나비넥타이 음성 변조기 라는 건데 여러가지 목소리를 낼 수 있어요
+DUMMY4/anichat_nam_01_00099.wav|모르겠어 대체 어디야
+DUMMY4/anichat_con_12_00222.wav|마음을 따뜻하게 만드는 이 노래소리만은요
+DUMMY4/anichat_con_18_00072.wav|그리고 세 번째
+DUMMY4/anichat_con_12_00235.wav|당신을 자동차번호판이요. 7783 그거는 아드님 생일에서 따온 거 아닌가요
+DUMMY4/anichat_con_24_00174.wav|여보세요? 선생님 지금 범인이 있는 곳은요
+DUMMY4/anichat_con_23_00084.wav|안은 텅 비었더래 캐리어가 망가져서
+DUMMY4/anichat_con_03_00130.wav|사진은 없어요
+DUMMY4/anichat_nam_01_00054.wav|우와 유명 건축가의 파티는 역시 다르 구나 음악가에 패션모델 대기업 총수 평론가 허?
+DUMMY4/anichat_con_24_00015.wav|아니야 이거 봐 이 정도면
+DUMMY4/anichat_con_24_00102.wav|여기서 일어난 사건인데 관심이 꽤 많으시네요
+DUMMY4/anichat_con_12_00086.wav|부탁이 있어요 저 노래 좀 가르쳐주세요
+DUMMY4/anichat_con_14_00082.wav|그리고 사실 뭉치란 아이도 흡연실에 들어갔지만
+DUMMY4/anichat_con_23_00079.wav|그 사람은 자기 방이랑 쉐릴린씨의 방을 예약해 놨어
+DUMMY4/anichat_nam_01_00200.wav|뒤쪽의 사진을 봐 주십시오 신원장님 저택 김의원님 저택 이회장님 저택 박사장님 저택 그리고 다리를 잘 보세요
+DUMMY4/anichat_con_03_00045.wav|진짜?
+DUMMY4/anichat_con_03_00116.wav|아저씨랑 한지웅 아저씨 서로 아는 사이에요?
+DUMMY4/anichat_nam_01_00203.wav|건물주의 주문이나 건축기준법 등의 제약을 받아서 포기할 수 밖에 없 기 때문이겠죠 완벽주의자인 정형균 교수님 입장에서는 결코 용 납할 수 없는 일이었을 거예요 게다가 순풍의 돛 단듯 승승장구하던 건축가의 인생에 그림자가 드리워지는 사건이 있었죠
+DUMMY4/anichat_con_01_00095.wav|잠깐만요 아 그렇게 말하면 어린 제가 어떻게 알아들어요
+DUMMY4/anichat_con_23_00072.wav|근데 왜 하필이면 엘리베이터 였을까
+DUMMY4/anichat_con_03_00065.wav|경찰이랑 구급차를 불러 주시겠어요 아저씨? 갔다 올게! 기다리고 있어
+DUMMY4/anichat_con_18_00047.wav|그리고 머리 엑스레이도 찍어보세요
+DUMMY4/anichat_con_23_00116.wav|감청의 권을 손에 넣은 레온이 어떻게 움직일지
+DUMMY4/anichat_nam_03_00195.wav|하 그런 건 수수께끼도 뭣도 아니야
+DUMMY4/anichat_con_23_00022.wav|아가사박사 님의 조언으로 정체를 숨기기로 한
+DUMMY4/anichat_nam_12_00214.wav|찾았다 역시 저 사람이
+DUMMY4/anichat_con_24_00108.wav|내리막길에서 뛰는 게 너무 재밌어서 그만.. 헤헤
+DUMMY4/anichat_nam_01_00127.wav|어쩌면 내가 아는  인물일지도 몰라
+DUMMY4/anichat_con_14_00022.wav|네 박사님
+DUMMY4/anichat_con_18_00022.wav|오랜만에 하는 불꽃놀이
+DUMMY4/anichat_con_12_00176.wav|저기요
+DUMMY4/anichat_con_03_00068.wav|이건 키드의 단안경?
+DUMMY4/anichat_con_24_00072.wav|사건이 여러 주에서 일어났기 때문에 FBI가 수사를 담당했어요.
+DUMMY4/anichat_nam_01_00006.wav|그런데 그 남자가 먹인 약 때문에 정신을 잃어 눈을 떠보니
+DUMMY4/anichat_nam_14_00043.wav|남도일: 그 헬기 이쪽으로 좀 불러 주실 수 있으세요
+DUMMY4/anichat_con_23_00011.wav|여기에서 뭐 해
+DUMMY4/anichat_nam_01_00183.wav|삼십대에 설계한 작품은 여기부터야 신원장님 저택 김의원님 저택 이회장님 저택 박사장님 저택
+DUMMY4/anichat_nam_01_00231.wav|삼분이라니 뭐야 지금 장난해?
+DUMMY4/anichat_con_14_00084.wav|당신만 이유없이 얼굴이나 목까지 발진이 일어난 겁니다
+DUMMY4/anichat_con_18_00073.wav|저격은 표적이 누구든 흔들리지 않는 정신력
+DUMMY4/anichat_con_23_00006.wav|그러니까 하이바라 부탁좀 하자
+DUMMY4/anichat_nam_14_00050.wav|남도일: 그치만 재채기도 기침도 없었고
+DUMMY4/anichat_con_24_00029.wav|또 내 목숨을 노릴 거고 그럼 내
+DUMMY4/anichat_con_03_00052.wav|도대체 왜 왜 하필이면
+DUMMY4/anichat_con_24_00095.wav|그러니까 이번엔
+DUMMY4/anichat_con_03_00019.wav|그 외에도 터보 스케이트보드, 범인추적안경,  초강력키 운동화 등 특이한 병기들을 끊임없이 만들어 내신다
+DUMMY4/anichat_con_03_00182.wav|달걀을 훔치려고 하는 이유는 원래 주인인 남이 누나에게 돌려주기 위해서였어
+DUMMY4/anichat_con_23_00180.wav|우연치곤 너무 절묘하지 않아요
+DUMMY4/anichat_con_23_00101.wav|왜 이렇게 정리가 안 되냐
+DUMMY4/anichat_con_03_00049.wav|전망타워?
+DUMMY4/anichat_con_03_00092.wav|오른쪽 눈에 명중했어
+DUMMY4/anichat_nam_01_00208.wav|케이스의 뒤를 보십시오
+DUMMY4/anichat_con_03_00185.wav|남이 누나의 증조할머니가 니콜라이 황제의  셋째딸 마리아라는 걸 눈치챘는지 묻는 거야?
+DUMMY4/anichat_con_03_00014.wav|아버지가 탐정사무소를 하시는 미란이 집에서 지내기로 했다
+DUMMY4/anichat_con_12_00102.wav|먼저 가요
+DUMMY4/anichat_nam_12_00200.wav|소리의 차이와 폭발이 무슨 관계가 있는 거지?
+DUMMY4/anichat_con_03_00145.wav|세기말의 마술사 라는 이름에 어울리는 놀라운 장치
+DUMMY4/anichat_con_12_00081.wav|하지만 나쁜 녀석한테서 누나를 지켜줘야 하잖아
+DUMMY4/anichat_con_24_00061.wav|골프치다 사라진 미츠즈카 사장이랑
+DUMMY4/anichat_con_24_00161.wav|똑같은 캐리어가 두 개라면 내 기억에 존 사장님 옆에 있었던 캐리어는 지퍼식이었어.
+DUMMY4/anichat_con_23_00038.wav|그건 내가 할 소리야 괴도키드
+DUMMY4/anichat_con_23_00118.wav|아마도 아저씨 이거 좀 빌려 갈게요
+DUMMY4/anichat_con_03_00015.wav|잠자는 명탐정 이렇게 된 건 내가 시계형 마취총으로 아저씨를 잠재우고
+DUMMY4/anichat_con_01_00146.wav|고마워
+DUMMY4/anichat_nam_03_00085.wav|어쩌면 이 배에 타고 있을지도 몰라
+DUMMY4/anichat_con_18_00059.wav|그건 모르겠어요
+DUMMY4/anichat_con_03_00070.wav|아까 그 남자는 대체 누구지
+DUMMY4/anichat_con_18_00017.wav|다행이네요 빼 달라는 거 맞죠
+DUMMY4/anichat_con_03_00098.wav|스콜피온?
+DUMMY4/anichat_con_01_00181.wav|정교수님의 아버지도 아주 훌륭한 분이셨을 것 같아요
+DUMMY4/anichat_con_12_00188.wav|그리고 아까 범인의 얼굴을 봤어요
+DUMMY4/anichat_nam_01_00256.wav|이제야 알겠다 그 말은 내 생일을 3분 동안만 즐기라는 뜻이었구나 잠깐만 틀림없이 그 때
+DUMMY4/anichat_nam_12_00001.wav|소꿉친구이면서 같은 반인 미란이와 놀이공원에 놀러 갔다가 검은 양복을 입은 수상한 남자들의 거래 현장을 목격했다
+DUMMY4/anichat_nam_01_00038.wav|무슨 특별한 날이라도 되나? 그 다음날인 5월 4일은 홈즈 와 모리아티가 라이헨바흐 폭포에서 떨어진 날인데 그 다음날인 5월 5일은 어린이날이고
+DUMMY4/anichat_con_23_00141.wav|이대로 쭉 가면 목적지는 마리나 베이
+DUMMY4/anichat_con_01_00039.wav|아 반장님! 또 사건이에요?
+DUMMY4/anichat_nam_03_00157.wav|기회 라면
+DUMMY4/anichat_nam_01_00148.wav|말씀이 맞는 것 같아
+DUMMY4/anichat_con_12_00262.wav|아까 레나 누나의 노래를 들었더니 3년전 일이 생각났다고 했어
+DUMMY4/anichat_con_24_00036.wav|아빠가 탐정 사무소를 하고 있는 란의 집으로 들어갔다.
+DUMMY4/anichat_nam_01_00126.wav|어쨌든 짐작가는 사람은 없어 범인은 음성변조기로 목소리를 바꿨어
+DUMMY4/anichat_nam_01_00050.wav|그럼 그렇지 홀랑 넘어오시네
+DUMMY4/anichat_con_12_00082.wav|그런 생각은 안 해봤는데 솔직히 나도 잘은 모르겠지만 왠지 내가 꼭 지켜줘야 할 것 같아 느낌적으로 말이야
+DUMMY4/anichat_nam_14_00044.wav|남도일: 저 거기에 타야할 것 같습니다
+DUMMY4/anichat_con_03_00134.wav|아저씨 좀 줘 보세요
+DUMMY4/anichat_con_24_00032.wav|정체를 숨기기로 한 나는 이름이 뭐냐고 묻는
+DUMMY4/anichat_con_12_00078.wav|난 그냥 빠져도 되잖아
+DUMMY4/anichat_con_24_00100.wav|리니어 타고 싶다고!
+DUMMY4/anichat_nam_12_00025.wav|지금 사건 조사 중이라고 했잖아
+DUMMY4/anichat_con_12_00053.wav|누가 거기에 뭔가를 넣었다면 분명 그 때 였을거야
+DUMMY4/anichat_con_03_00041.wav|그런거 볼 여유가 어딨어
+DUMMY4/anichat_con_24_00158.wav|근데 혹시 무슨 냄새 안 나?
+DUMMY4/anichat_con_14_00032.wav|혹시 저자가 세균을 살포한 건가
+DUMMY4/anichat_con_23_00150.wav|움직이게 할 미끼가 필요했기 때문이죠
+DUMMY4/anichat_con_01_00117.wav|네 아 반장님
+DUMMY4/anichat_con_24_00163.wav|여보세요?
+DUMMY4/anichat_nam_12_00038.wav|아니, 스트라디바리우스 치고는 소리가 제대로 안 났어
+DUMMY4/anichat_con_24_00062.wav|행사 중에 납치된 스즈키 회장의 공통점이요
+DUMMY4/anichat_nam_01_00021.wav|어렷을 때부터 들었더니 이젠 귀에 딱지가 앉겠어요
+DUMMY4/anichat_con_24_00067.wav|십오년전 미국에서 더블유 에스 지 보스턴이 열리기 바로 직전
+DUMMY4/anichat_con_24_00069.wav|애틀란타에 있는 일본계 대부업체 대표
+DUMMY4/anichat_con_03_00026.wav|혼란과 의혹의 어둠 속에 한 줄기 빛을!
+DUMMY4/anichat_con_12_00251.wav|과연 그럴까요 그건 아직 모르거든요
+DUMMY4/anichat_con_23_00043.wav|일본 사람이라서 그래서
+DUMMY4/anichat_con_24_00165.wav|하나만 더 부탁하고 싶은 게 있어요.
+DUMMY4/anichat_con_03_00136.wav|비밀번호가 있을 거예요 아저씨 이리 와서 눌러 봐 주세요
+DUMMY4/anichat_con_24_00143.wav|세라 누나! 누나가 찾고 있는 사람 혹시 존 사장님이야?
+DUMMY4/anichat_nam_12_00003.wav|그 남자는 나에게 이상한 약을 먹였고 정신을 차려 보니
+DUMMY4/anichat_con_24_00037.wav|이런 나의 든든한 협력자이자 같은 조직을 쫒고 있는
+DUMMY4/anichat_con_12_00048.wav|뭉치야 왜 그래
+DUMMY4/anichat_con_01_00125.wav|우와 특징이 잘 나타나있네
+DUMMY4/anichat_con_03_00025.wav|검은 조직의 정체를 쫓으면서 크고 작은 사건들을 해결해 가는 내 옆에 지금 새로운 강적이 나타났다
+DUMMY4/anichat_con_18_00029.wav|나도 가 볼래 둘 중 어딜까
+DUMMY4/anichat_con_03_00194.wav|네 말이 맞아. 어쩌면 이 수수께끼는 수수께끼 인 채로 두는 편이 나을지도 몰라
+DUMMY4/anichat_con_03_00111.wav|키드가 가지고 있던 달걀을 가로채려고 한 것 같아요
+DUMMY4/anichat_con_23_00069.wav|목격자의 증언에 따르면
+DUMMY4/anichat_con_23_00123.wav|싱가포르 주변에 있는 배들만 해주면 돼
+DUMMY4/anichat_nam_12_00000.wav|난 고등학생탐정 남도일
+DUMMY4/anichat_con_03_00129.wav|할아버지 이 성에 지하실 있어요?
+DUMMY4/anichat_nam_01_00251.wav|겁먹을 거 없어 니가 코드를 자를 때 까지 난 여기서 계속 기다릴 테니까
+DUMMY4/anichat_nam_01_00086.wav|비행기 동체 밑에 뭔가 붙어있어 혹시 폭탄?
+DUMMY4/anichat_con_12_00181.wav|언젠간 안쪽도 아니 이미 폭발 있을지도 몰라요
+DUMMY4/anichat_con_01_00219.wav|미란이 누나 당장 거기서 나와
+DUMMY4/anichat_con_12_00096.wav|누나, 플루트 있는데 플루트도 해요?
+DUMMY4/anichat_nam_14_00055.wav|남도일: 대체 누구랑 그렇게 계속 통화를 한거야 해
+DUMMY4/anichat_con_12_00211.wav|그래요 앞으로 그 소리가 4번 나기 전에 연주를 막지 않으면 이홀안의 폭탄이 폭발할 거예요
+DUMMY4/anichat_nam_12_00019.wav|그러고 보니 도수일 홀을 만든 게 보라네 아버지 회사였지?
+DUMMY4/anichat_nam_14_00039.wav|남도일: 경찰 맞아
+DUMMY4/anichat_con_24_00099.wav|어 당연한 거 아니야?
+DUMMY4/anichat_con_03_00106.wav|범인은 깃털 베개를 찢어서 속을 뒤졌는데
+DUMMY4/anichat_con_23_00122.wav|나카토미 해운이 소유하고 있는 배에 대해 좀 알아 봐줘
+DUMMY4/anichat_nam_01_00173.wav|그러고 보니 얼마전 불이났던 신원장님의 저택도 정형균 교수가 설계했는데
+DUMMY4/anichat_con_18_00038.wav|삼 그럼 여기와서 이거좀 봐봐 경찰이 신원을 확인하는중 이긴한데
+DUMMY4/anichat_con_23_00160.wav|왜 안 받아
+DUMMY4/anichat_con_24_00173.wav|그래 맞아
+DUMMY4/anichat_con_24_00058.wav|그리고 변호사 의사 선교사를 다른 말로 바꾸면 법률가 의원 전도사라고도 부르잖아
+DUMMY4/anichat_con_18_00023.wav|그렇게 시무룩해 그렇기도하다 축구공 알았으니까
+DUMMY4/anichat_nam_01_00202.wav|좌우를 비교해보면 미묘하게 대칭이 아니죠 아마도
+DUMMY4/anichat_con_12_00165.wav|설마
+DUMMY4/anichat_con_23_00066.wav|정말 다행이네요
+DUMMY4/anichat_con_01_00106.wav|한시 사분 전
+DUMMY4/anichat_con_12_00205.wav|콘서트가 시작되고 나서 지금 저 소리가 몇 번이나 나왔는지 알아요?
+DUMMY4/anichat_con_12_00163.wav|폭발이에요
+DUMMY4/anichat_nam_01_00140.wav|어떻게 된 걸까요? 오경표씨
+DUMMY4/anichat_con_24_00084.wav|요즘엔 언론매체에도 자주 나오는 유명한 사람이야
+DUMMY4/anichat_con_23_00184.wav|한방에 역전할 수 있는 비장의 무기가
+DUMMY4/anichat_nam_03_00132.wav|게 라스푸틴?
+DUMMY4/anichat_nam_01_00030.wav|아니 저저저기 잠깐만 있어봐 아 다음주 토요일은 바빠서 안돼
+DUMMY4/anichat_con_03_00102.wav|혹시 깃털 알레르기 있으시죠?
+DUMMY4/anichat_nam_01_00246.wav|둘 중 하난 함정이야 자르는 순간 모두가 날아가!
+DUMMY4/anichat_con_12_00055.wav|만약 레나 누나가 마셨다면 출연할 수 없었을지 몰라
+DUMMY4/anichat_con_24_00138.wav|너 준비성 하난 끝내주잖아.
+DUMMY4/anichat_con_23_00071.wav|타워 쓰리의 엘리베이터 안이었다는 거야
+DUMMY4/anichat_con_24_00040.wav|제임스 블랙, 안드레 케멜, 조디 스털링 그리고 아카이 슈이치 그는 FBI에서 가장 뛰어난 명사수로
+DUMMY4/anichat_nam_18_00037.wav|이렇게 계산해서 나온 진짜 저격 장소는 딱 한 곳
+DUMMY4/anichat_nam_12_00135.wav|그 소리 역시 신경쓰여
+DUMMY4/anichat_con_12_00257.wav|저기요 왜 하필이면 여기에 폭탄을 설치한 거예요?
+DUMMY4/anichat_con_03_00067.wav|달걀은 무사해
+DUMMY4/anichat_con_12_00268.wav|안녕히가세요
+DUMMY4/anichat_con_03_00063.wav|괜찮아?
+DUMMY4/anichat_nam_01_00241.wav|잘했어
+DUMMY4/anichat_con_18_00040.wav|다시 연락할게
+DUMMY4/anichat_con_12_00232.wav|총 연습을 할 때 폭발하지 않았던 건 아직 그때까지는 기폭장치를 꺼두었기 때문이고요
+DUMMY4/anichat_con_03_00018.wav|겉으로 보기엔 저래도 꽤 기발한 분이라
+DUMMY4/anichat_con_23_00030.wav|언젠가 꼭 잡고말겠어 그런 키드의 라이벌이 바로
+DUMMY4/anichat_nam_03_00174.wav|미란아
+DUMMY4/anichat_con_24_00021.wav|마음에 걸리는 게
+DUMMY4/anichat_nam_23_00048.wav|네 입으로 그 말이 하고
+DUMMY4/anichat_nam_03_00142.wav|이건 뭐지?
+DUMMY4/anichat_con_01_00168.wav|반장님 순환선 선로 위에 폭탄이 설치되어있던 장소는 어떤 곳이었어요?
+DUMMY4/anichat_con_23_00041.wav|근데 보석만 나까지 여길 끌고올 필요는 없잖아
+DUMMY4/anichat_con_24_00057.wav|사양하도록 할게
+DUMMY4/anichat_con_12_00080.wav|레나 누나한테 가려고
+DUMMY4/anichat_con_18_00030.wav|나도 그건물이라 생각해
+DUMMY4/anichat_con_14_00095.wav|너 이자식
+DUMMY4/anichat_con_03_00181.wav|넌 처음부터 알고 있었지 배 안에서 사건이 벌어진 다는 걸 말이야
+DUMMY4/anichat_con_03_00107.wav|아저씨 베개 속만 깃털이 아니에요
+DUMMY4/anichat_con_12_00266.wav|싸움이라도 했어?
 DUMMY4/anichat_con_01_00170.wav|저기요 저 다리
-DUMMY4/anichat_con_01_00023.wav|건축가 교수 말인가? 갑자기 편지를 드려 실례가 됐다면 용서해주십시오. 저는 그동안 고등학생이면서 명탐정인 귀하의 활약상을 신문과 텔레비전을 통해 익히 봐 왔으며 언젠간 직접 만나 여러 가지 얘기를 나눠보고 싶다는 바람을 갖고 있었습니다 그런 이유로 다가오는 4월 29일 화요일 오후 3시 30분부터 저희 집 마당에서 열리는 애프터눈 티 가든 파티에 참석해 자리를 빛내주십사 이 초대장을 보내드리는 바입니다
-DUMMY4/anichat_con_01_00189.wav|어린이 공원의 가로등과 똑같잖아? 역시 다 이유가 있는 행동 이었어 범인은 틀림없이 그 사람이야 하지만 증거가 없어
+DUMMY4/anichat_con_03_00103.wav|그럼 이비서 아저씨는 범인이 아니에요
+DUMMY4/anichat_nam_14_00020.wav|남도일: 흥 그런 식으로 번호를 정해 놓은 거군
+DUMMY4/anichat_con_23_00138.wav|이건 탐정형이 아는 사람한테 부탁해서 받은 건데요
+DUMMY4/anichat_con_24_00145.wav|사장님 휴대폰에 전화해 볼게
+DUMMY4/anichat_con_12_00180.wav|하지만 지금처럼 바깥쪽만 폭발하지 않을 수도 있어요
+DUMMY4/anichat_con_24_00018.wav|찾았어
+DUMMY4/anichat_nam_03_00154.wav|누나랑 많이 닮았어
+DUMMY4/anichat_con_12_00149.wav|모르겠어요
+DUMMY4/anichat_con_23_00092.wav|쯤은 눈감고도 다 알겠지
+DUMMY4/anichat_con_01_00085.wav|폭격기?
+DUMMY4/anichat_con_14_00006.wav|장난칠래
+DUMMY4/anichat_con_01_00016.wav|쳇 아빠 앞으로 온 것 뿐이잖아 뜯어보나마나 열에 아홉은 팬 레터겠지만
+DUMMY4/anichat_con_03_00043.wav|여행, 비밀이 밝혀집니다 그만두시오. 이게 뭐야
+DUMMY4/anichat_con_24_00070.wav|두 번째는 시카고에 있는 대기업 대표
+DUMMY4/anichat_con_12_00186.wav|나도 안으로 들어갈 거에요
+DUMMY4/anichat_con_01_00015.wav|남관 작가님께 디어 미스터 남
+DUMMY4/anichat_con_03_00168.wav|그 총 발터 ppk에 나올 수 있는 총알의 수는 여덟
+DUMMY4/anichat_con_24_00130.wav|절대 안 돼요?
+DUMMY4/anichat_con_01_00051.wav|잇차 아 빨리빨리 누나
+DUMMY4/anichat_con_03_00009.wav|또 위협해 오면 주변 사람들까지도 위험해진다
+DUMMY4/anichat_nam_01_00224.wav|어 알고 있어 콘크리트 더미에  막혀서 못 들어가지만 비상구 바로 앞에 있어
+DUMMY4/anichat_con_24_00122.wav|명단에는 없어요.
+DUMMY4/anichat_nam_01_00195.wav|그동안 벌어진 사건들을 정교수님께 앙심을 품은 자의 범행이 아니예요 범인은 최근 불이 난 네 채의 저택 그리고 그 다리를 설계한 정형균 교수 바로 자신이에요!
+DUMMY4/anichat_con_23_00177.wav|오 년 전이었던 것 같은데요
+DUMMY4/anichat_con_14_00007.wav|그 재벌 양반께서 여전히 미련을 못 버리시고 또다시 키드한테 도전장을 보냈거든
+DUMMY4/anichat_con_24_00135.wav|아.. 괜찮아?
+DUMMY4/anichat_con_24_00148.wav|알았다 바로 저 위야!
+DUMMY4/anichat_nam_14_00049.wav|남도일: 만약 놈들이 노리는 게 그런 거라면
+DUMMY4/anichat_con_23_00075.wav|그리고 쓰러진
+DUMMY4/anichat_nam_01_00132.wav|어떤 라이터를 쓰셨나요?
+DUMMY4/anichat_nam_12_00022.wav|미안미안, 실은 내가 지금 사건 조사 중이라서 좀 바쁘거든
+DUMMY4/anichat_con_23_00005.wav|저한테도 같이 가자고 했는데 이 상태로는 출국을 할수 없잖아요
+DUMMY4/anichat_con_03_00172.wav|스콜피온 한테서 다시 빼앗았어
+DUMMY4/anichat_con_24_00133.wav|학교에서 배워서 그런가 조금은 알겠어.
+DUMMY4/anichat_con_01_00060.wav|병신년 정유년 무술년 그러니까 원숭이 새 개
+DUMMY4/anichat_con_24_00079.wav|알아보니 그 모방 사건도 이 앨런 회장이 FBI 장관으로 있을 때 일어났더라고요.
+DUMMY4/anichat_nam_03_00082.wav|모두 눈빛이 변했잖아? 두 번째 달걀 에도 눈독 들이시켰다
+DUMMY4/anichat_nam_01_00003.wav|허 또 아저씨 좋은 일만 시켰네
+DUMMY4/anichat_con_12_00147.wav|운하 앞쪽일 거게요
+DUMMY4/anichat_con_24_00064.wav|역시 그랬군요
+DUMMY4/anichat_nam_01_00123.wav|역시
+DUMMY4/anichat_con_12_00157.wav|긴급 전화 112에서 1은 697헤르츠와 1209헤르츠를, 그리고 2는 697헤르츠와 1336헤르츠의 주파수를 조합한 거에요
+DUMMY4/anichat_nam_18_00036.wav|넣어야 실제 총알이 날아오는 것을 찾을 수 있어
+DUMMY4/anichat_con_23_00090.wav|침입할 수 있는 사람은
+DUMMY4/anichat_con_24_00104.wav|그거 그래.
+DUMMY4/anichat_nam_12_00023.wav|나는 패스할게
+DUMMY4/anichat_nam_12_00195.wav|하예솔 씨는 차이를 알았어 왜냐면 절대음감이라
+DUMMY4/anichat_con_18_00071.wav|두 번째는 야간에 움직이는 목표물
+DUMMY4/anichat_con_18_00097.wav|빛에 약할거야
 DUMMY4/anichat_con_01_00166.wav|아니 도일이 형아가 어딘지 알려줬어 사실 정확하게 말하면 아직 찾아낸 건 아니야
+DUMMY4/anichat_con_03_00190.wav|이렇게 해서 마리아의 유해는 달걀과 함께 비밀지하실에 매장 냈어
+DUMMY4/anichat_con_14_00013.wav|비행선이 계속 떠 있다면요 그렇겠죠
+DUMMY4/anichat_con_12_00052.wav|어디서요?
+DUMMY4/anichat_nam_12_00029.wav|말 다했냐?
+DUMMY4/anichat_con_18_00075.wav|저격수로 키우려고 했어
+DUMMY4/anichat_con_18_00042.wav|거리가 가까워서
+DUMMY4/anichat_nam_01_00026.wav|천재 스타일 이요?
+DUMMY4/anichat_con_12_00117.wav|반장님 집에 데려다 주세요
+DUMMY4/anichat_nam_18_00006.wav|멀리 가지는 못했을거야
+DUMMY4/anichat_nam_01_00064.wav|와 다리까지 설계하셨구나
+DUMMY4/anichat_con_18_00048.wav|박사님댁에 스케이트보드 빌리러 가는 거야
+DUMMY4/anichat_con_01_00110.wav|한시 삼분 전 그러고보니 이 길은 왼쪽으로 급하게 꺽이는 커브길이었지
+DUMMY4/anichat_con_23_00003.wav|그래서 소노코가 이거보러 싱가포르에 간대요
+DUMMY4/anichat_con_01_00069.wav|박사님 남도일 로봇 같은 거 만들어 주시면
+DUMMY4/anichat_con_24_00107.wav|하이바라가 죽어도 가고 싶다고 하니까
+DUMMY4/anichat_nam_01_00142.wav|형은 이 라이터를 그날 들렀던 장소에 깜빡 잊고 왔어요 그리고 시장님은 담배를 피우지 않죠
+DUMMY4/anichat_con_23_00062.wav|여기 있는 거 전부 다 형네 아버지가 받으신
+DUMMY4/anichat_con_24_00120.wav|가족이 있었다구요?
+DUMMY4/anichat_con_03_00095.wav|이렇게 방안을 어지럽히고 베개까지 찢어서 뒤진 건 좀 이상해요
+DUMMY4/anichat_con_18_00039.wav|자세한 게 나오면
+DUMMY4/anichat_con_01_00022.wav|그건 그렇고 내 팬레터가 한통도 없다는 건 나란 존재가 잊혀져 간다는 뜻? 어? 내 거다 정형균?
+DUMMY4/anichat_con_24_00003.wav|어디 갔냐
+DUMMY4/anichat_con_14_00083.wav|냄새만 맡고 나와서 발진이 생기지 않았어요 그러니까 당신 한 사람 뿐이에요
+DUMMY4/anichat_con_14_00046.wav|비행선 안에 있어
+DUMMY4/anichat_con_03_00016.wav|나비 넥타이형 음성변조기를 써서 아저씨 목소리로 사건을 해결하기 때문이다
+DUMMY4/anichat_con_24_00126.wav|넵? 어 왜요?
+DUMMY4/anichat_con_24_00109.wav|와 우리나라 말 잘하시네.
+DUMMY4/anichat_con_18_00025.wav|나이가 들면서 점점 안 들리게 되거든
+DUMMY4/anichat_nam_01_00055.wav|게다가 연예인까지? 텔레비전에서 자주보는 유명인사들 뿐이잖아?
+DUMMY4/anichat_con_12_00224.wav|게다가 이 노랜 당신의 아들 소명훈 씨가 제일 좋아했던 노래 였고 더구나 노래하고 있는 사람은 아들이 사랑했던 사람이니까요
+DUMMY4/anichat_con_12_00228.wav|당신이 오르간의 파이프 중 하나에 공기의 흐름을 감지하는 작은 센서를 집어 넣었죠
+DUMMY4/anichat_con_01_00042.wav|황금연휴?
+DUMMY4/anichat_con_14_00034.wav|괴도 키드는 누구랑 같이 일하지 않아
+DUMMY4/anichat_con_23_00004.wav|란도 가고
+DUMMY4/anichat_con_24_00159.wav|앨런 회장님 볼펜이야
+DUMMY4/anichat_nam_03_00090.wav|아저씨 또 시작이시네
+DUMMY4/anichat_con_18_00045.wav|그렇다면
+DUMMY4/anichat_nam_01_00124.wav|푸른빛을 띄는 오렌지색 섬광은 플라스틱 폭탄의 특징이야!
+DUMMY4/anichat_con_18_00065.wav|고맙다는 인사를 아직 못 했네
+DUMMY4/anichat_con_01_00072.wav|네? 제가 여기 있는 걸 어떻게 알구요?
+DUMMY4/anichat_con_01_00154.wav|얘들아 멋대로 끊어버리면 어떡해 괜찮을지 걱정이네
+DUMMY4/anichat_con_23_00098.wav|동기인 것 같아
+DUMMY4/anichat_con_23_00140.wav|유조선 한 척이 예상항로를 크게 벗어났어요
+DUMMY4/anichat_con_12_00208.wav|그래서 아까 도수일씨가 인사할때는 폭발하지 않았던 거예요
+DUMMY4/anichat_con_12_00260.wav|도일이 형이라면 금방 갔어
+DUMMY4/anichat_con_12_00210.wav|다시 말해 기둥을 모두 폭파시키고 이 홀안을 폭파시키려면 전부 24번 폭발해야되요
+DUMMY4/anichat_con_14_00051.wav|고양이들은 지붕 아래로 떨어졌는데
+DUMMY4/anichat_nam_01_00001.wav|하 아저씨 추리력이 그렇지 뭐 어쩔 수 없네
+DUMMY4/anichat_con_03_00192.wav|언젠간 후손이 발견해 줄 것이라는 믿음으로
+DUMMY4/anichat_con_01_00115.wav|시계가 다시 가잖아
+DUMMY4/anichat_con_23_00058.wav|무서워서요 형네 집에서 잔다고 하면
+DUMMY4/anichat_con_24_00147.wav|아니 범인이 내가 생각하는 그런 녀석이라면
+DUMMY4/anichat_con_23_00183.wav|당연하지
+DUMMY4/anichat_con_24_00113.wav|하이바라 아 겐터야
+DUMMY4/anichat_nam_24_00027.wav|한패가 등 뒤에서 접근하는 걸 눈치 채지 못한 채 당하고 말았다 그 남자는 나에게 이상한 약을 먹였고 정신을 차려보니
+DUMMY4/anichat_con_12_00240.wav|절대음감으루 가지고 있는 사람을 두려워 하는 건 절대음감을 가지고 있는 사람 뿐
+DUMMY4/anichat_nam_18_00031.wav|차유리 구멍과 피해자의 총상을 일직선으로 연결하면
+DUMMY4/anichat_con_24_00124.wav|그 그 가족이 증인 보호 프로그램의 대상이 될 수 있어요?
+DUMMY4/anichat_con_01_00191.wav|이거 쓸만하겠는데?
+DUMMY4/anichat_con_23_00137.wav|레온씨의 함정에 보기 좋게 걸려들었던 거고요
+DUMMY4/anichat_con_12_00242.wav|그리고 또 한 사람 저기 강레나 씨도 절대음감을 갖고 있죠
+DUMMY4/anichat_con_03_00151.wav|그래서 추억의 달걀이 라는 이름이 붙었구나
+DUMMY4/anichat_nam_01_00062.wav|가끔은 아저씨 현실을 깨달으셔야죠
+DUMMY4/anichat_con_01_00082.wav|박사님은 반장님께 연락좀 해주세요
+DUMMY4/anichat_con_24_00093.wav|아저씨 제 친구들도 그날 같이 리니어를 탈 거에요.
+DUMMY4/anichat_nam_01_00155.wav|계속 저렇게 사실을 숨기고 쉬쉬할 순 없을텐데 어?
+DUMMY4/anichat_con_12_00167.wav|보트를 저어요
+DUMMY4/anichat_con_23_00148.wav|집착한 것도
+DUMMY4/anichat_con_03_00064.wav|인성아
+DUMMY4/anichat_nam_01_00233.wav|시간이 얼마 없어 이렇게 되면 미란아 너 혹시 가위가지고 있어?
+DUMMY4/anichat_nam_18_00020.wav|아니 넌 그러고도 남을 거다
+DUMMY4/anichat_con_12_00012.wav|그런데 유일한 혈육이었던 친언니를 그 녀석들 손에 잃게 되자 저항하기 시작했고 스스로 목숨을 끊으려고 그 약을 먹었지만 죽지 않고 어린 아이로 변했다
+DUMMY4/anichat_con_03_00066.wav|다쳤구나
+DUMMY4/anichat_nam_18_00099.wav|너희만 믿을게
+DUMMY4/anichat_con_03_00021.wav|그런데 내 정체를 아는 사람이 박사님 말고도 두 명 더 있다
+DUMMY4/anichat_con_12_00142.wav|귀가 좀 좋은 편이거든요
+DUMMY4/anichat_nam_01_00034.wav|빨강은 니가 좋아하는 색이잖냐
+DUMMY4/anichat_con_18_00093.wav|이상하다 저격당한건가 설마 저기서 지금 당장 전망대 지붕으로 가주세요 거기 전세 낸사람 보라에요
+DUMMY4/anichat_nam_01_00143.wav|그러니까 사실 은 형이 조수석에 앉아있다가 시가라이터를 사용한 거라구요
+DUMMY4/anichat_con_23_00100.wav|뭔가가 생각이 날 것도 같은데
+DUMMY4/anichat_con_12_00049.wav|누군가가 그 보험병 안에 뭔가 넣은 거예요 그렇지 않나요?
+DUMMY4/anichat_con_12_00178.wav|아니면 미란이 누나랑 아저씨가...
+DUMMY4/anichat_con_12_00110.wav|시간을 뺏기게 되고 그럼 내일 콘서트에 지장이 있을거다 그 말이죠?
+DUMMY4/anichat_con_12_00074.wav|너희들 어쩐일이야? 이렇게 아침 일찍
+DUMMY4/anichat_con_12_00014.wav|몸은 작아졌어도 두뇌는 그대로! 불가능을 모르는 명탐정. 진실은 언제나 하나!
+DUMMY4/anichat_con_12_00207.wav|그 이상한 소리랑 폭탄이 연동하고 있어요
+DUMMY4/anichat_con_24_00103.wav|저격이라면 설마 범인을 쏘겠다구요?
+DUMMY4/anichat_con_23_00135.wav|가능성이 없는 사람 으로 변장한 거예요
+DUMMY4/anichat_con_03_00193.wav|자 이 정도면 모든 수수께끼가 풀리겠지
+DUMMY4/anichat_con_12_00035.wav|나 카레 먹고 싶어
+DUMMY4/anichat_nam_18_00005.wav|정확히 맞췄어 그럼 혹시 그녀석들 짓인가 어떻게든 꼭확인해야해 어느 건물이였지
+DUMMY4/anichat_nam_01_00133.wav|그럼 실제로 운전석에 앉아 담배 불을 붙여봐주시겠어요?
+DUMMY4/anichat_con_14_00075.wav|미란이 누나 팔을 잡은 것도
+DUMMY4/anichat_nam_01_00077.wav|너 같은 녀석한테 그런 걸 왜 가르쳐 줘야 하지?
+DUMMY4/anichat_con_01_00171.wav|정형균 교수님이 설계하지 않았
+DUMMY4/anichat_con_01_00172.wav|네
+DUMMY4/anichat_con_14_00069.wav|당신을 승무원이 비행선이 이륙하자마자 흡연실 맞죠
+DUMMY4/anichat_nam_03_00099.wav|범인은 십중팔구 스콜피온이야
+DUMMY4/anichat_con_23_00172.wav|모든 건 오 년 전
+DUMMY4/anichat_con_23_00042.wav|너 란한테 허튼짓 했다가는 내가 가만 안둘거야
+DUMMY4/anichat_con_12_00054.wav|그래 공연까지 앞으로 사흘밖에 안 남았으니까
+DUMMY4/anichat_con_18_00021.wav|너희들 뭐야
+DUMMY4/anichat_con_14_00048.wav|보안이라고
+DUMMY4/anichat_con_12_00112.wav|네에
+DUMMY4/anichat_con_14_00067.wav|다른 신체 부분에 옻이 오른 건 이 방에 있을 때
+DUMMY4/anichat_con_24_00076.wav|장관이 누구였는지 찾아보니까 바로 이 사람이었더라고요.
+DUMMY4/anichat_con_12_00169.wav|두고 보면 알아요
+DUMMY4/anichat_con_01_00096.wav|힌트라도 좀 주세요 여보세요?
+DUMMY4/anichat_nam_24_00106.wav|어쨌든 넌 갈 생각하지도 마. 너희 아버진 내가 꼭 지켜 줄 테니까
+DUMMY4/anichat_con_12_00185.wav|이래선 구할 수가 없어요
+DUMMY4/anichat_nam_12_00150.wav|그리고 왜 일부러 기절시켜서 보트에 태운거지?
+DUMMY4/anichat_con_12_00151.wav|하지만 저기까지 헤엄쳐 가도 벽이 너무 높아서 올라갈 수 없어요
+DUMMY4/anichat_nam_12_00212.wav|역시 그 소리가 연동하고 있어
+DUMMY4/anichat_nam_01_00180.wav|어린이공원이구나
+DUMMY4/anichat_con_12_00106.wav|레나 누나 이쪽이에요
+DUMMY4/anichat_con_14_00077.wav|근데 유탐정 아저씨가 흡연실에 안가니까
+DUMMY4/anichat_nam_18_00019.wav|그거는 관련이 없는 것 같으니까
+DUMMY4/anichat_con_24_00068.wav|공식 후원사 대표들이 연이어 납치를 당했어요.
+DUMMY4/anichat_con_12_00177.wav|홀 안쪽에 연락해야 하잖아요
+DUMMY4/anichat_con_12_00248.wav|아까 여기 오기 전에 파이프에 설치해둔 센서를 떼버렸거든요
+DUMMY4/anichat_con_03_00153.wav|저 의자에 앉아 있는 두 사람의 찍은 사진이요
+DUMMY4/anichat_con_03_00189.wav|그런데 러시아식에 독일식으로 성을 지은 이유는 마리아의 어머니인 알렉산드라 황후가 독일인이 었기 때문이야
+DUMMY4/anichat_con_23_00147.wav|감청의 권에
+DUMMY4/anichat_con_01_00214.wav|교수님은 원래 라이터를 안 쓰시잖아요 파이프 에 불을 붙일 때도 긴 성냥을 쓰시구요 아름이가 말했던 달콤한 냄새란 담배 파이프의 냄새였
+DUMMY4/anichat_con_18_00066.wav|그렇구나 그래서 헌터는 자살이 아니라 대결을 선택한 거야
+DUMMY4/anichat_con_23_00134.wav|키드는 금고실에
+DUMMY4/anichat_con_23_00039.wav|존한첸 이라면 싱그포르의 재력가중 한명이잖아
+DUMMY4/anichat_nam_12_00027.wav|어? 아! 그게 아니고
+DUMMY4/anichat_con_24_00116.wav|여보세요
+DUMMY4/anichat_con_12_00118.wav|제가 아는 거 말해 드릴게요
+DUMMY4/anichat_con_24_00065.wav|안 그러면 FBI가 움직일 리 없죠.
+DUMMY4/anichat_con_18_00046.wav|한번 해 보는 게 좋을 것 같은데요
+DUMMY4/anichat_con_12_00129.wav|아무것도 아니에요
+DUMMY4/anichat_nam_03_00003.wav|검은 양복을 입은 남자들의 수상한 현장을 목격하기도 했다
+DUMMY4/anichat_nam_23_00034.wav|박사님이 만든 도구도 없잖아 맞다
+DUMMY4/anichat_con_24_00129.wav|본인이 원하는 이름으로 바꿀 수도 있어요?
+DUMMY4/anichat_con_12_00155.wav|그건 dtmf 신호라고 하는 건데 높은주파수 낮은주파수 신호를 하나씩 조합해서 다이얼 번호를 보내는 거예요
+DUMMY4/anichat_nam_12_00213.wav|범인은 분명 어디선가 보고 있을거야
+DUMMY4/anichat_con_23_00023.wav|나는 이름이 뭐냐고
+DUMMY4/anichat_con_18_00050.wav|지역 주변에서 벌어졌다는 것도 좀 신경 쓰여
+DUMMY4/anichat_con_01_00097.wav|젠장
+DUMMY4/anichat_con_01_00083.wav|마세요
+DUMMY4/anichat_nam_18_00080.wav|나머지 장소는 어떻지 네번째가
+DUMMY4/anichat_nam_18_00009.wav|내가 안보이나봐
+DUMMY4/anichat_con_12_00230.wav|그 파이프 안의 센서가 공기의 흐름을 감지하면 미리 설치해 놓은 폭탄에 순서대로 신호가 보내져서 폭발하게 되죠
+DUMMY4/anichat_con_12_00084.wav|레나 누나 안녕하세요. 실례할게요
+DUMMY4/anichat_con_23_00142.wav|레온씨는 해적을 이용해서 이 유조선으로
+DUMMY4/anichat_con_23_00182.wav|뭐지
+DUMMY4/anichat_con_24_00092.wav|존 사장님은 아저씨한테 뭘 부탁하러 여기 온 거고요. 그렇죠?
+DUMMY4/anichat_con_14_00062.wav|훔치지 않았던 거야
+DUMMY4/anichat_con_18_00026.wav|그래서 어른들은 못듣는거야
+DUMMY4/anichat_con_01_00084.wav|그 원격 조종기 어디서 났
+DUMMY4/anichat_con_03_00076.wav|실제로는 좀 더 큰 종이에 두 개의 알이 그려져 있었는데 가운데 부분이 몽땅 없어진 거예요
+DUMMY4/anichat_con_18_00000.wav|생색 내기는 먼저 같이 가달라 한주제에
+DUMMY4/anichat_nam_12_00103.wav|역시, 습격해왔군
+DUMMY4/anichat_con_14_00090.wav|뭐야
+DUMMY4/anichat_con_24_00049.wav|그런 그를 메리 어머니라고 부르는 사람이 있다. 바로
+DUMMY4/anichat_con_03_00105.wav|한지홍 아저씨 방은 깃털투성이였잖아요
+DUMMY4/anichat_con_01_00070.wav|그러게요 옥토겐을 플라스틱으로 굳힌 것이 바로 플라스틱 폭탄이잖아요
+DUMMY4/anichat_con_03_00144.wav|그래 어쩐지 저 달걀은 훨씬 더 기발한 장치가 되어 있을 것 같거든
+DUMMY4/anichat_con_24_00010.wav|이렇게 넓은 데서 대체 어떻게
+DUMMY4/anichat_con_12_00090.wav|일부러 쌀쌀맞게 구는 거죠? 저희 안전을 위해 멀리 하려고
+DUMMY4/anichat_con_12_00066.wav|쉽게 말하면 하예솔씨랑 강연아씨 둘 다한테 동기가 있는건 천나라씨고, 하예솔씨한테만 동기가 있는건 도수일씨와 민시현씨.
+DUMMY4/anichat_nam_03_00196.wav|네가 나를 도와준 이유는 이 녀석을 치료해 준 데에 대한 보답이잖아 안 그래?
+DUMMY4/anichat_con_01_00049.wav|정형균이란 아저씨 유명한 건축가라면서요? 천재 탐정과 천재 건축가의 역사 적인 만남이 되겠네요
+DUMMY4/anichat_con_24_00089.wav|WSG 도쿄 개회식 날이요.
+DUMMY4/anichat_con_23_00171.wav|그걸 당신이 모르고 있을 리가 없잖아요
+DUMMY4/anichat_con_18_00087.wav|다음 저격장소 일거 같은곳으로 가고있어요
+DUMMY4/anichat_con_12_00223.wav|그래서 당신도 망설인 거 아닌가요
+DUMMY4/anichat_con_24_00155.wav|아카이씨... 만의 하나의 상황이 곧 벌어질 것 같아요.
+DUMMY4/anichat_con_24_00172.wav|그게 무슨 소리야?
+DUMMY4/anichat_nam_03_00097.wav|십분이라 착각이었나
+DUMMY4/anichat_con_14_00026.wav|그러고 있을 때가 아니야
+DUMMY4/anichat_con_01_00186.wav|어? 전에 왔을 때도 이런 게 있었던가? 내 환상의 뉴타운 남서울시 어 그러고 보니?
+DUMMY4/anichat_con_23_00025.wav|그리고 녀석들에 정보를 모으기 위해 아빠가
+DUMMY4/anichat_nam_03_00112.wav|박사님 전화 통화 때 느꼈던 시선은 백형사님이었구나
+DUMMY4/anichat_con_01_00104.wav|아잇 죄송합니다
+DUMMY4/anichat_con_01_00212.wav|수염이랑 가발은 서재에 있는 투구의 장식용 털을 잘라서 테이프로 붙인 것 뿐이에요 도일이 형아가 그렇게 하라고 가르쳐주더라구요
+DUMMY4/anichat_con_03_00094.wav|반지를 훔치려고 했다면 목에서 빼기만 하면 될 텐데요
+DUMMY4/anichat_con_24_00115.wav|금방 따라갈 테니까 먼저 가 있어.
+DUMMY4/anichat_con_03_00138.wav|틀렸을지도 몰라요
+DUMMY4/anichat_con_23_00047.wav|안좋은 소문도 많은 사람이
+DUMMY4/anichat_con_23_00136.wav|그렇게 예상할
+DUMMY4/anichat_nam_01_00031.wav|뭐?
+DUMMY4/anichat_con_24_00001.wav|WSG라고 해 4년에 한 번 열리는 국제 스포츠 대회야
+DUMMY4/anichat_con_24_00054.wav|어떤 연관이 있을지... 몸은 작아졌어도
+DUMMY4/anichat_con_03_00109.wav|왕조에 보물만 전문으로 훔치고 언제나 상대의 오른쪽 눈은 명중시키는 나쁜 사람 이래요
+DUMMY4/anichat_con_03_00027.wav|몸은 작아졌어도 두뇌는 그대로! 미궁을 모르는 명탐정!
+DUMMY4/anichat_con_03_00054.wav|정전
+DUMMY4/anichat_con_12_00099.wav|걱정 붙들어 매세요
+DUMMY4/anichat_nam_23_00019.wav|당하고말았다
+DUMMY4/anichat_nam_03_00133.wav|한쪽 눈이 망가져?
+DUMMY4/anichat_con_23_00108.wav|예상대로 마코토형은 대회를 기권했어
+DUMMY4/anichat_con_03_00022.wav|남쪽의 고등학생 탐정 하인성과 전학생인 홍장미다
+DUMMY4/anichat_con_24_00134.wav|란! 아아 누나.
+DUMMY4/anichat_nam_18_00086.wav|여덟 시 전엔 결판을 낼 거야
+DUMMY4/anichat_con_12_00043.wav|내 말은 너처럼 한 미모한다는 뜻이야
+DUMMY4/anichat_con_23_00059.wav|우리 부모님도 걱정 안 하실 것 같아요
+DUMMY4/anichat_nam_03_00146.wav|잠깐만 그러고 보니 달걀 뚜껑 안쪽에 유리, 증조할아버지의 방, 빛의 장치 그리고 저 받침대 틀림없어
+DUMMY4/anichat_nam_18_00007.wav|여긴 차가 많이 멈추려면 뛰든지
+DUMMY4/anichat_con_23_00162.wav|산당신의 속셈은 다 알고 있으니까
+DUMMY4/anichat_con_24_00078.wav|맞아요. 그리고 지금은 WSG 협회 회장이고 곧 일본에도 오죠. 그야 당연히 15년 전에도 이거랑 똑같은 사건이 미국에서 일어났잖아요
+DUMMY4/anichat_con_14_00088.wav|아무도 안 보는곳에서 테러단 두목에게 지시를 내렸던 거죠
+DUMMY4/anichat_nam_01_00260.wav|어? 붉은 실이 없잖아? 코난의 모습으로는 역시 안되는 건가봐
+DUMMY4/anichat_nam_03_00126.wav|얼씨구 웬일로 고분하실까
+DUMMY4/anichat_nam_03_00113.wav|비밀이 밝혀 진다고 했는데
+DUMMY4/anichat_con_18_00015.wav|어쨌든 조심
+DUMMY4/anichat_con_12_00037.wav|그야 코난 으로선 얼마든지 솔직해질 수 있지
+DUMMY4/anichat_con_03_00104.wav|네. 생각해 보세요
+DUMMY4/anichat_nam_01_00156.wav|시속 60킬로미터 이하로 달릴 경우 폭발한다는 건 이론적으로 이해가 가 하지만 해가 질 때까지 해체하지 못할 경우에도 폭발한다는 건 대체 무슨 뜻일까?
+DUMMY4/anichat_nam_01_00229.wav|미란아 시간은?
+DUMMY4/anichat_con_24_00025.wav|과연 이게 우연이겠냐고
+DUMMY4/anichat_con_12_00011.wav|본명은 안시호. 어렸을 적에 돌아가신 부모님이 검은 조직에서 일하던 과학자였기 때문에 코드네임 셰리로 녀석들이 시키는 일을 하다가 문제의 독약아포톡신 4869를 개발했다
+DUMMY4/anichat_nam_03_00077.wav|그나저나 왜 메모리치지
+DUMMY4/anichat_con_12_00111.wav|그건 저도 알지만
+DUMMY4/anichat_con_18_00043.wav|무게가 가벼운 총알로 바꾼 건가요
+DUMMY4/anichat_con_12_00097.wav|네에
+DUMMY4/anichat_nam_24_00101.wav|사격 선수라고?
+DUMMY4/anichat_con_01_00007.wav|어린 아이로 변해있었다. 남도일이 살아있다는 사실을 그 녀석들이 알고 또 위협해오면 주변 사람들까지 위험해진다. 브라운박사님의 조언을 받아들여
+DUMMY4/anichat_con_01_00118.wav|이번 사건의 범인은 항상 도일이 형아의 휴대 전화로 연락해오고 있어요 병원에서는 휴대전화를 쓰면 안되는 거죠?
+DUMMY4/anichat_con_23_00153.wav|그게 바로 시작을 알리는 신호였죠
+DUMMY4/anichat_con_12_00113.wav|신 형사 아저씨
+DUMMY4/anichat_nam_01_00162.wav|선로의 틈이에요
+DUMMY4/anichat_nam_18_00004.wav|이런 아수라장이 됐어 저기에서 쐇군
+DUMMY4/anichat_con_23_00020.wav|내가 살아 있다는걸 그녀석들이 알면 또 내목숨을
+DUMMY4/anichat_con_03_00036.wav|L을 러시아어 알파벳으로 따진다면 알 것도 같은데
+DUMMY4/anichat_con_24_00096.wav|존 사장님이 그 리니어에서 납치 당할 지도 모른단 거죠?
+DUMMY4/anichat_nam_03_00086.wav|왜 저래
+DUMMY4/anichat_con_03_00029.wav|이거 열리는 거예요?
+DUMMY4/anichat_con_01_00105.wav|큰일났다 1시 5분 전이야 젠장
+DUMMY4/anichat_nam_12_00017.wav|아는 정도가 아니라 지금 거기에 있거든
+DUMMY4/anichat_con_24_00087.wav|누나, TV 보면서 밥 먹어도 돼?
+DUMMY4/anichat_con_23_00076.wav|지하주차장에 있던 쉐릴린 씨의 차가 폭발했고
+DUMMY4/anichat_nam_03_00071.wav|그날 밤 경찰에 철저한 수색에도 불구하고 괴도키드의 생사는 확인할 수 없었다
+DUMMY4/anichat_con_03_00062.wav|레이더가 잘 날려면 가벼운 맞바람에 가장 적당해
+DUMMY4/anichat_con_03_00087.wav|나도 가야 돼
+DUMMY4/anichat_con_01_00178.wav|아저씨 제가 어딘지 알아요 안내해드릴게요
+DUMMY4/anichat_con_23_00131.wav|키드도 이용당한 거라구요
+DUMMY4/anichat_nam_03_00084.wav|그 정도로 끝난다면 그게 아니지
+DUMMY4/anichat_con_24_00132.wav|어 그런 것 같아. 앨런 회장님 여기요.
+DUMMY4/anichat_nam_18_00034.wav|그러니까
+DUMMY4/anichat_con_14_00053.wav|아니 잠깐 키드 녀석이 날 도와 주려고 일부러 준건가
+DUMMY4/anichat_con_01_00089.wav|안테나가 부러졌어
+DUMMY4/anichat_con_18_00052.wav|아니 그럴 필요가 딱 하나 있긴해 만약
+DUMMY4/anichat_con_24_00118.wav|하지만 이시하라는 범행을 부인했다고 했잖아요.
+DUMMY4/anichat_con_23_00110.wav|챔피언 벨트를 따겠지
+DUMMY4/anichat_con_23_00174.wav|해양학자를 살해한 걸
+DUMMY4/anichat_con_03_00089.wav|우와 그럼 제 생일은 누나들이랑 하루씩 차이 나요
+DUMMY4/anichat_con_23_00170.wav|아마 가장 높은 곳으로 올라가 그 광경을 지켜볼 거에요
+DUMMY4/anichat_nam_03_00032.wav|여기 있거든
+DUMMY4/anichat_con_12_00243.wav|하지만 세상을 떠난 아들의 약혼자였던 사람한테 하예솔 씨한테 했던 것처럼 목숨을 잃을 수도 있는 폭탄을 사용할 순 없었어요
+DUMMY4/anichat_con_14_00065.wav|그러니까 처음에 누나
+DUMMY4/anichat_con_03_00080.wav|아 거울이 붙어 있었는데 떨어져버렸네요
+DUMMY4/anichat_con_18_00018.wav|세라 누나는 왜 피해자아저씨를 미행하고 있었
+DUMMY4/anichat_con_12_00123.wav|저기, 신형사 아저씨 하예솔 씨의 기억은 아직도 안 돌아왔어요?
+DUMMY4/anichat_con_12_00067.wav|단, 세명 모두 이미 살해된 네 명에 대한 동기는 못 찾았다. 반장님 이런거죠?
+DUMMY4/anichat_nam_01_00136.wav|담배는 이걸 써주세요 현장에 떨어져있던 담배꽁초와 똑같은 담배죠
+DUMMY4/anichat_con_12_00244.wav|그래서 잘 자극적인 약품에 넣거나 트럭이나 공기총으로 위협했죠
+DUMMY4/anichat_nam_01_00005.wav|검은 양복을 입은 남자들의 수상한 현장을 목격하게됐다. 거래 장면을 살피는 데 정신이 팔린 나는 다른 한 명이 등 뒤에서 접근하는 것을 알아차리지 못했다.
+DUMMY4/anichat_con_12_00130.wav|네
+DUMMY4/anichat_con_23_00056.wav|집에 가도 아무도 없거든요
+DUMMY4/anichat_con_24_00059.wav|박사님 댁에 휴대폰 놔두고 나왔나봐 찾는데 시간 걸릴 것 같으니까 너희들 먼저 갈래?
+DUMMY4/anichat_con_12_00191.wav|그럴게요
+DUMMY4/anichat_con_14_00025.wav|아니 아직 잠복기 일수도 있어
+DUMMY4/anichat_con_12_00241.wav|그 점에서 보더라도 다음에는 당신 할 수밖에 없어요
+DUMMY4/anichat_con_12_00148.wav|우리를 습격한 범인이 도수일 홀의 뒤쪽 연못에서 운하로 떠내려 보냈을 거예요
+DUMMY4/anichat_con_23_00151.wav|붉은색물을 뿜어낸 적이 있었죠
+DUMMY4/anichat_nam_01_00004.wav|나는 고등학생 탐정 남도일 소꿉친구이면서 같은 반인 미란이와 놀이공원에 놀러갔다가
+DUMMY4/anichat_nam_01_00079.wav|시민공
+DUMMY4/anichat_nam_23_00064.wav|오늘은 푹 주무세요
+DUMMY4/anichat_con_24_00164.wav|걱정하지마 이 전화 너머 있는 사람은 우리 편이니까
+DUMMY4/anichat_nam_12_00252.wav|어떡하지 마취총을 쏠 수 없다면 이제 남은 방법은...
+DUMMY4/anichat_con_23_00157.wav|그때 어디에 계실까요
+DUMMY4/anichat_con_24_00022.wav|맞아
+DUMMY4/anichat_con_24_00056.wav|진실은 언제나 하나!
+DUMMY4/anichat_con_01_00167.wav|타이머가 멈췄던 곳이라면 어린이 공원과 아파트
+DUMMY4/anichat_con_23_00127.wav|쉬는 배를 뜻하는 말이기도 해
+DUMMY4/anichat_nam_14_00091.wav|남도일: 젠장 이제 어떡하지
+DUMMY4/anichat_con_12_00184.wav|밖에서 들어갈 만한 곳은 다 막혀 버렸어요
+DUMMY4/anichat_con_03_00180.wav|설마 백형사 님으로 변장해서 배에 탈 줄은 꿈에도 몰랐거든
+DUMMY4/anichat_con_12_00087.wav|나가실 거죠?
+DUMMY4/anichat_nam_01_00222.wav|폭탄 처리반이 올 때까지 기다릴 시간 없다고
+DUMMY4/anichat_con_03_00159.wav|내 이름은 코난 탐정이죠
+DUMMY4/anichat_con_24_00167.wav|아 나는 모르지. 신이치 형, 형이 안다고 하더라고...
+DUMMY4/anichat_con_24_00154.wav|범인은 역시 남자란건가..?
+DUMMY4/anichat_con_01_00120.wav|죄송해요
+DUMMY4/anichat_con_12_00089.wav|저도 누나따라 같이 가려고 왔죠
+DUMMY4/anichat_nam_01_00044.wav|차차 5월 4일은 내 생일이었구나 까맣게 잊고 있
+DUMMY4/anichat_con_14_00097.wav|뭔데 그게 뭐길래 도일이 형은 안해 뭔지 말좀 해봐
+DUMMY4/anichat_nam_01_00218.wav|미란아
+DUMMY4/anichat_con_24_00051.wav|지금은 무려 장기 6관왕이다.
+DUMMY4/anichat_con_03_00061.wav|괴도 키드! 젠장
+DUMMY4/anichat_con_23_00113.wav|감청에 권에 집착하는 거지
+DUMMY4/anichat_nam_12_00016.wav|어. 지난주에 폭발사건이 있었던 음악아카데미 설립자잖아
+DUMMY4/anichat_con_18_00074.wav|헌터는 자신을 버리면서까지 범인을 완전무결한
+DUMMY4/anichat_nam_12_00193.wav|아마 스태프 중에 한 명이겠지
+DUMMY4/anichat_con_12_00179.wav|휴대폰으로 하면 되잖아요
+DUMMY4/anichat_con_14_00096.wav|미란이 누나 키드 저자식이 뭘 했냐고
+DUMMY4/anichat_con_18_00002.wav|됐어 그게 얼마나 귀찮은 일
+DUMMY4/anichat_con_14_00027.wav|지금 아직 큰일났단 말이야
+DUMMY4/anichat_con_14_00086.wav|세균에 감염된 사람인 척 했다는 걸요
+DUMMY4/anichat_con_23_00046.wav|나카토미 레이지로인데
+DUMMY4/anichat_con_03_00119.wav|그럼 한지홍 아저씨는 이 기사 아저씨를 미워하고
+DUMMY4/anichat_con_14_00028.wav|일단 선실쪽으로 나가자
+DUMMY4/anichat_con_03_00028.wav|진실은
+DUMMY4/anichat_con_18_00001.wav|저 다리들 말이야 저기 파란게 강변 제1교고 빨간색이 강변 제2교야 그리고 앞에 보이는절교는 벨트리 라인이고
+DUMMY4/anichat_con_24_00023.wav|이 회사도 그렇고 스즈키 회장님의 회사도 WSG 도쿄의 후원사들이야
+DUMMY4/anichat_nam_01_00041.wav|흐흐 말은 잘하시네
+DUMMY4/anichat_con_24_00105.wav|그 친구?
+DUMMY4/anichat_con_18_00070.wav|첫 번째 저격은 MK11을쓴 최장 저격거리
+DUMMY4/anichat_con_03_00141.wav|왕관 뒤에서 빛나는 건 태양인가? 태양 빛난다 백형사님! 손전등 불빛을 가늘게 해서 머리 둘 달린 독수리의 왕관에 비춰주세요
+DUMMY4/anichat_con_23_00104.wav|그걸 노린 거였어
+DUMMY4/anichat_nam_01_00145.wav|애기들한테 인기 많으면 뭐해요
+DUMMY4/anichat_nam_14_00012.wav|남도일: 오늘이 바로 그 일주일의 마지막 날인데
+DUMMY4/anichat_nam_01_00112.wav|젠장 이런 곳에서 폭탄이 터지면 아수라장이 되 어쩌지?
+DUMMY4/anichat_con_14_00052.wav|키드형 보안장치 꽤 쓸만한데
+DUMMY4/anichat_con_24_00152.wav|그게 앨런 회장님일지도
+DUMMY4/anichat_con_01_00068.wav|없었다구요 매일같이 신나서 달력 확인하는 미란이를 보니 입이 떨어져야 말이죠
+DUMMY4/anichat_nam_01_00160.wav|박사님 저 도일이에요
+DUMMY4/anichat_con_23_00185.wav|누나가 걱정이
+DUMMY4/anichat_nam_01_00184.wav|그리고 다리구나 잠깐만 그 다리 틀림없어
+DUMMY4/anichat_nam_01_00237.wav|어 아주 잘 들려
+DUMMY4/anichat_con_03_00125.wav|고마워요. 그런데 쟤네들은 왜 데리고 오셨어요
+DUMMY4/anichat_con_18_00024.wav|빨리 좀 하세요 그걸 들으셨어요
+DUMMY4/anichat_nam_01_00199.wav|그러니까 그 말을 실행에 옮긴 거
+DUMMY4/anichat_nam_12_00254.wav|라 라 라 파? 슛?
+DUMMY4/anichat_con_23_00000.wav|부탁드리겠습니다
+DUMMY4/anichat_nam_01_00228.wav|젠장 이럴수가 제일 큰 폭탄을 여기에 갖다놨잖아
+DUMMY4/anichat_con_24_00017.wav|알았어
+DUMMY4/anichat_con_01_00158.wav|해 태양
+DUMMY4/anichat_con_23_00073.wav|아무튼 쉐릴린씨는 피를 흘리면서
+DUMMY4/anichat_con_12_00006.wav|세모야 여기!
+DUMMY4/anichat_con_03_00108.wav|스콜피온이라고 아세요?
+DUMMY4/anichat_con_24_00071.wav|세 번째는 디트로이트에 있는 자동차 회사의 대표였죠.
+DUMMY4/anichat_con_03_00040.wav|무엇보다 고가의 보석만 골라서 누리는 궤도키드가 왜 달걀을 훔치려고 할까?
+DUMMY4/anichat_nam_01_00100.wav|쥐구멍이라니 그게 무슨뜻이지? 누군가 가져가버릴 거라고?
+DUMMY4/anichat_nam_23_00061.wav|이틀 연속으로 같은 방쓰고 싶지는 않거든
+DUMMY4/anichat_con_03_00060.wav|넌 여기서 기다리고 있어
+DUMMY4/anichat_nam_14_00041.wav|남도일: 납치당한거 알아요
+DUMMY4/anichat_nam_18_00091.wav|애들이 만든 모형처럼 거의 수평이야
+DUMMY4/anichat_con_24_00011.wav|누나 일단 직원분께 물어보자
+DUMMY4/anichat_con_24_00151.wav|아무도 안 태운다고?
+DUMMY4/anichat_con_24_00098.wav|공항이나 스타디움에서도 긴장해야겠어
+DUMMY4/anichat_con_24_00053.wav|이번 사건과 이 가족이 과연
+DUMMY4/anichat_nam_01_00205.wav|교수님은 저에게 도전장을 내 고등학생 명탐정에게 원한을 품은 자가 두뇌싸움 을 하려는 척 위장했지만 사실 진짜 목적은 신원장님 저택을 포함한 네 채의 집에 불을 지르고 순환선의 다리를 폭파하는 것이었어요
+DUMMY4/anichat_nam_12_00197.wav|설마 그 사람이?
+DUMMY4/anichat_con_12_00065.wav|저기, 만약 레나 누나가 무대에 서지 못하게 되면 대신 누가 나가게 되는데요?
+DUMMY4/anichat_nam_12_00020.wav|피아노 건반이잖아? 이런 데까지 날아왔나
+DUMMY4/anichat_con_12_00131.wav|그럼 멋진 공연 기대할게요
+DUMMY4/anichat_nam_01_00135.wav|하지만 안전벨트는 제대로 매 주세요
+DUMMY4/anichat_con_23_00112.wav|근데 말이야
+DUMMY4/anichat_con_24_00000.wav|그럼 당연하지 월드 스포츠 게임즈 이걸 줄여서
+DUMMY4/anichat_con_12_00088.wav|중요한 콘서트나 레코딩을 하기 전날엔 꼭 재충전을 위해 삼림욕하러 간다고 들었거든요
+DUMMY4/anichat_con_18_00055.wav|어쩌면 범인이 파놓은 함정일수도있어요 그렇다면 서강변역 근처야
+DUMMY4/anichat_nam_01_00240.wav|그래 먼저 바깥쪽의 커버부터 벗겨 위로 들어올리면 될 거야 살살해야돼
+DUMMY4/anichat_con_23_00128.wav|레온씨는
+DUMMY4/anichat_con_14_00070.wav|그 뒤에 당신은 흡연실에 들어가서
+DUMMY4/anichat_con_14_00035.wav|아마도 저 사람은 붉은 샴고향에
+DUMMY4/anichat_nam_01_00235.wav|침착하게 내가 시키는 대로만
+DUMMY4/anichat_con_23_00057.wav|오늘 안 좋은 일도 많았었고
+DUMMY4/anichat_nam_01_00201.wav|어느 것 할 것 없이 모두 영국 고전양식의 건축물인데 뭔가 이상하다는 거 못 느끼셨나요?
+DUMMY4/anichat_con_23_00009.wav|누나
+DUMMY4/anichat_con_12_00158.wav|그건 저만 믿으세요
+DUMMY4/anichat_con_23_00024.wav|묻는 란에게 순간적으로 에도가와 코난 이라고 대답했다
+DUMMY4/anichat_con_12_00079.wav|어쩔 수 없지
+DUMMY4/anichat_con_12_00161.wav|만약 실패하면 누가 발견해 줄 때까지 기다리는 수밖에 없어요
+DUMMY4/anichat_con_12_00098.wav|알아서 따라갈거니까 신경쓰지 마세요
+DUMMY4/anichat_con_23_00109.wav|그럼 자말루딘 이 우승할 거고
+DUMMY4/anichat_con_24_00156.wav|지금 당장 신 나고야 역으로 가주세요.
+DUMMY4/anichat_con_24_00083.wav|일본 코드의 대표이사 겸 CEO인데
+DUMMY4/anichat_nam_01_00177.wav|범인이 노린 건 모두 30대 초반의 작품이야
+DUMMY4/anichat_con_23_00074.wav|천천히 쇼핑몰까지 걸어갔어
+DUMMY4/anichat_nam_03_00123.wav|정말 스콜피온의 도망쳤을까?
+DUMMY4/anichat_con_12_00046.wav|아니에요
+DUMMY4/anichat_nam_03_00101.wav|메밀 베개?
+DUMMY4/anichat_nam_12_00145.wav|비닐시트잖아 뭐지?
+DUMMY4/anichat_con_01_00221.wav|도일이 형한테 전해주고 올게요
+DUMMY4/anichat_con_12_00153.wav|전화기에 손이 닿지 않아도 수화기만 떨어뜨리면 도움을 청할 수 있어요
+DUMMY4/anichat_con_03_00024.wav|내가 먹었던 약과 똑같은 약을 먹고 어린 아이로 변했다.
+DUMMY4/anichat_con_01_00211.wav|수성펜으로 까맣게 칠했거든요
+DUMMY4/anichat_nam_03_00178.wav|하하 미안 미안 사건이 워낙 많아서 오늘도 얼굴만 잠깐 보고 다시 돌아와야 돼
+DUMMY4/anichat_con_24_00110.wav|뭐? 우리끼리 가라고? 나 가는 길 몰라
+DUMMY4/anichat_con_23_00156.wav|계획했던 대로 유조선이 이도시를 덮친다면
+DUMMY4/anichat_nam_18_00079.wav|처음 저격 장소와 두 번째 저격 장소의 높이가 똑같아
+DUMMY4/anichat_con_12_00160.wav|즉, 오전에는 딱 한 번 뿐이에요
+DUMMY4/anichat_con_12_00264.wav|미란이 누나랑 그리고 자기 자신한테 들려 주기 위해서
+DUMMY4/anichat_con_12_00168.wav|이제 됐어요. 보트를 멈춰요
+DUMMY4/anichat_nam_01_00239.wav|왜그래 미란아 괜찮아?
+DUMMY4/anichat_nam_18_00081.wav|그리고 네 번째가 강변 제일교
+DUMMY4/anichat_con_03_00059.wav|게다가 달걀이 있는 곳은 외부사람의 의심을 피하기 위해서
+DUMMY4/anichat_con_01_00025.wav|그렇게 대단한 사람이 왜 절 만나고 싶어하죠?
+DUMMY4/anichat_con_03_00186.wav|마리아의 유해는 발견되지 않았어 그 이유는 총살 되기 전에 증조할아버지를 만나 이곳으로 도망쳤지 때문이야
+DUMMY4/anichat_con_23_00082.wav|어 맞아
+DUMMY4/anichat_nam_01_00230.wav|이분 남았구나 그렇다면 폭발은 밤 열두시 삼분 삼분?
+DUMMY4/anichat_con_24_00168.wav|그니까... 내가 아니라 신이치 형이 말이야...
+DUMMY4/anichat_con_01_00108.wav|꼬마야 자전거 좀 빌릴게
+DUMMY4/anichat_nam_14_00009.wav|남도일: 근데 그 아저씨 열좀 받았겠는걸
+DUMMY4/anichat_con_12_00064.wav|저희를 덮치려고 했던 트럭은요?
+DUMMY4/anichat_con_01_00176.wav|혹시요 순환선에 설치한 폭탄도 실제로는 그 다리를 노린 게 아닐까요?
+DUMMY4/anichat_con_23_00012.wav|누나
+DUMMY4/anichat_nam_03_00057.wav|그러니까 병원과 호텔을 빼고 불이 켜진 것이 바로 거기다
+DUMMY4/anichat_nam_14_00024.wav|남도일: 감염되지 않았나
+DUMMY4/anichat_nam_03_00114.wav|그게 혹시, 백형사님을 뜻하는 건가?
+DUMMY4/anichat_con_12_00126.wav|그건 됐구요
+DUMMY4/anichat_con_12_00225.wav|추리의 열쇠는 바로 소리의 차이였죠
+DUMMY4/anichat_con_01_00008.wav|정체를 숨기기로 한 나는 이름이 뭐냐는 미란이의 질문에 얼떨결에 코난 이라고 대답했고 검은 조직의 정보를 얻기 위해 아버지가 탐정사무소를 하시는 미란이 집에서 지내기로 했다. 그런데 이 아저씨 완전 돌팔이 탐정이잖아
+DUMMY4/anichat_con_23_00105.wav|소노코를 다치게 만들고 형을 정신적으로 흔들어 놓았던 거야
+DUMMY4/anichat_con_23_00111.wav|그리고 벨트는 고용주인 레온의 손에 들어갈 거고
+DUMMY4/anichat_con_14_00071.wav|일부러 옻이 올라 가지고 왔어요
+DUMMY4/anichat_con_14_00079.wav|그 뒤로 계속 주무시기만 말하더라고요
+DUMMY4/anichat_con_12_00083.wav|내가 언제 아무튼 뭉치는 너희 두 사람한테 맡길 게 부탁한다
+DUMMY4/anichat_con_23_00070.wav|쇼핑몰이 아니라
+DUMMY4/anichat_con_12_00141.wav|차라도 한잔 마시러 가신 게 아닐까요
+DUMMY4/anichat_con_12_00246.wav|폭발하진 않을 거예요
+DUMMY4/anichat_con_18_00060.wav|어쨌든 범인과 월트씨 사이에는 우리가 모르는 뭔가가 더 있는 게 분명해요
+DUMMY4/anichat_con_12_00162.wav|그렇게 정했으면 지금 당장 리허설을 시작해요
+DUMMY4/anichat_con_24_00034.wav|순간적으로 에도가와 코난이라고 대답했다 그리고
+DUMMY4/anichat_con_23_00159.wav|위험해 이대로 가면 유조선이 호텔에
+DUMMY4/anichat_con_12_00056.wav|골롬보 반장님께 연락해서 저 보온병의 내용물을 조사해달라고 하자
+DUMMY4/anichat_con_01_00217.wav|저 건물도 완벽한 좌우대칭이 아니었나?
+DUMMY4/anichat_con_12_00094.wav|네 그거면 돼요.
+DUMMY4/anichat_con_14_00092.wav|여기 야경 좀 보세요
+DUMMY4/anichat_con_01_00175.wav|조사해보면 재밌는 사실을 발견할지도 모르겠네요
+DUMMY4/anichat_nam_01_00114.wav|저쪽으로 좀 더 가면 공터가 나올거야
+DUMMY4/anichat_nam_01_00101.wav|어?
+DUMMY4/anichat_con_23_00099.wav|아저씨한테 뭔가를 말하려고 했었거든
+DUMMY4/anichat_con_18_00044.wav|근데도 한 발 잘못 쐇다
+DUMMY4/anichat_nam_12_00120.wav|또 시작이시네
+DUMMY4/anichat_nam_03_00124.wav|회색눈동자? 청란누나랑 같아
+DUMMY4/anichat_con_14_00036.wav|큰일났다
+DUMMY4/anichat_con_23_00167.wav|레온씨 같은
+DUMMY4/anichat_con_24_00055.wav|두뇌는 그대로, 불가능을 모르는 명탐정!
+DUMMY4/anichat_con_12_00031.wav|삐지긴...
+DUMMY4/anichat_con_24_00028.wav|난 어린 아이로 변해 있었다. 내가 살아 있다는 걸 그 녀석들이 알게 되면
+DUMMY4/anichat_con_23_00032.wav|란에 친구이자 스즈키 그룹의 따님이신 소노코 에게 흠뻑 빠져 있다고 한다
+DUMMY4/anichat_nam_12_00104.wav|큰일났다
+DUMMY4/anichat_con_24_00090.wav|근데 아저씨 혹시 말이에요. 존 사장님도 그 리니어에 타세요?
+DUMMY4/anichat_nam_01_00215.wav|아저씨의 경우엔 원숭이가 아니라 추리력이 떨어지는 거죠
+DUMMY4/anichat_con_23_00144.wav|뭐라고 말씀하실지 모르겠지만
+DUMMY4/anichat_con_03_00011.wav|정체를 숨기기로 한 나는 이름이 뭐냐는 미란이의 질문에
+DUMMY4/anichat_con_24_00141.wav|범인이 일부러 그렇게 했다는 거야?
+DUMMY4/anichat_con_23_00168.wav|자존감이 높은 사람이 계획에 성공하는 그 순간에
+DUMMY4/anichat_con_03_00020.wav|특히 스케이트보드는 낮에 충전해 놓으면 해가 진 다음에도 30 분 동안 탈 수 있도록 업그레이드 해 주셨다
+DUMMY4/anichat_con_03_00184.wav|그래서 예고장에 그런 문장을 넣은거고
+DUMMY4/anichat_nam_03_00100.wav|그렇다면 이비서 아저씨가 스콜피온 인가
+DUMMY4/anichat_con_18_00049.wav|그리고 모든 범행이 이 서강변
+DUMMY4/anichat_con_23_00119.wav|하이바라 그 남자 누군지 알아냈어
+DUMMY4/anichat_nam_01_00243.wav|하 잘했어 시간 안에 해결할 수 있겠다 이제 나머지 검정색 코드를 자르면 타이머가 멈출 거야
+DUMMY4/anichat_con_12_00229.wav|그것 때문에 파이프에서 나오는 소리가 미묘하게 틀렸던 거예요
+DUMMY4/anichat_nam_23_00013.wav|난 고등학생탐정 쿠도
+DUMMY4/anichat_con_12_00010.wav|멤버는 한 명 더 있는데 저 애 이름은 홍장미
+DUMMY4/anichat_con_03_00013.wav|검은 조직의 정보를 얻기 위해
+DUMMY4/anichat_con_12_00101.wav|레나누나 괜찮아요?
+DUMMY4/anichat_con_24_00146.wav|그렇지 뭐.
+DUMMY4/anichat_con_12_00119.wav|아저씨, 소명훈 씨한테는 그 네 사람한테 원하는 품을 만한 다른 가족은 없어요?
+DUMMY4/anichat_con_18_00094.wav|사정 얘길 하면 들여 보내 줄 거예요
+DUMMY4/anichat_nam_12_00201.wav|아니, 그게 아니야
+DUMMY4/anichat_con_03_00030.wav|그런데 회장님 어째서 책장을 넘기는 게 추억이에요?
+DUMMY4/anichat_nam_03_00120.wav|이 아저씨가
+DUMMY4/anichat_con_23_00029.wav|어떻게 알았는지 내정체를 알고 있는 위험한 녀석이다
+DUMMY4/anichat_con_24_00094.wav|위험한 일이 생길지도 모른다면
+DUMMY4/anichat_con_23_00097.wav|내 생각에는 그게 살해
+DUMMY4/anichat_con_24_00066.wav|인터넷으로 알아봤어요.
+DUMMY4/anichat_nam_01_00244.wav|뭐라고?
+DUMMY4/anichat_con_24_00119.wav|이시하라가 누명을 썼을 가능성은요?
+DUMMY4/anichat_con_01_00071.wav|어 저 집은 신원장님의  저택?
+DUMMY4/anichat_nam_24_00026.wav|탐정 쿠도 신이치 소꿉친구이면서 같은 반 친구인 란과 놀이공원에 놀러 갔다가 검은 양복을 입은 수상한 남자들의 거래 현장을 목격했다 그 장면에 정신을 빼앗긴 난 다른
+DUMMY4/anichat_nam_01_00033.wav|빨강 인가?
+DUMMY4/anichat_con_12_00216.wav|방금 찾았어요
+DUMMY4/anichat_nam_24_00162.wav|이 새콤달콤한 냄새는 설마?
+DUMMY4/anichat_con_23_00143.wav|도시를 덮치려는 거에요
+DUMMY4/anichat_con_24_00042.wav|쿠도 저택, 즉 우리 집에 몸을 숨기고 있다 그리고
+DUMMY4/anichat_con_01_00153.wav|그런 거 아니야 폭탄이 있는 곳을 꼭 찾아낼거야
+DUMMY4/anichat_con_12_00189.wav|폭파범인지는 잘 모르겠지만 우리를 기절시킨 범인을 봤어요,
+DUMMY4/anichat_nam_18_00010.wav|일방통행인데 설마 이런 미행하는걸 눈치챘어
+DUMMY4/anichat_con_12_00245.wav|강레나 씨를 무대에 설 수 없도록 하려면 목소리가 안 나오게 하든지 걸을 수 없게 다리를 부러뜨리면 되니까요
+DUMMY4/anichat_con_12_00059.wav|괜찮으세요?
+DUMMY4/anichat_con_03_00179.wav|잠깐만 괴도 키드 감쪽같이 속아 넘어 갔어
+DUMMY4/anichat_nam_01_00093.wav|뭐 꼬맹이? 어디선가 보고 있구나
+DUMMY4/anichat_con_23_00031.wav|기록을 가진 가라테 달인
+DUMMY4/anichat_con_14_00004.wav|아니
+DUMMY4/anichat_nam_01_00028.wav|초대장엔 동반자 환영이라고 쓰여있었어 너희 아빠랑 요즘 집에 와 있는 애하고 아아 걔
+DUMMY4/anichat_con_03_00149.wav|촛불을 전부 다 꺼 주세요
+DUMMY4/anichat_con_01_00259.wav|아 그러고 보니 도일이 형아가 궁금해 하더라고 미란이라면 틀림없이 빨간코드를 선택할 줄 알았는데 왜 파란코드를 잘랐을가 이러든데?
+DUMMY4/anichat_con_12_00138.wav|저 위쪽에서 들린 것 같아여
+DUMMY4/anichat_nam_01_00245.wav|정교수가 혹시 날 함정에 빠뜨리기 위해 설계도의 코드 두 개를 일부러 안 그린 걸까?
+DUMMY4/anichat_nam_03_00115.wav|큰일이네 백형사 님 앞에서 한 분씩 마취총을 쏠 수도 없고 말이야. 어쩔 수 없지
+DUMMY4/anichat_con_23_00163.wav|처음에 이상하게 생각했던 건
+DUMMY4/anichat_nam_01_00052.wav|그 정도면 거의 병이죠?
+DUMMY4/anichat_nam_18_00035.wav|오르막 각도까지 계산해
+DUMMY4/anichat_con_01_00023.wav|건축가 교수 말인가? 갑자기 편지를 드려 실례가 됐다면 용서해주십시오. 저는 그동안 고등학생이면서 명탐정인 귀하의 활약상을 신문과 텔레비전을 통해 익히 봐 왔으며 언젠간 직접 만나 여러 가지 얘기를 나눠보고 싶다는 바람을 갖고 있었습니다 그런 이유로 다가오는 4월 29일 화요일 오후 3시 30분부터 저희 집 마당에서 열리는 애프터눈 티 가든 파티에 참석해 자리를 빛내주십사 이 초대장을 보내드리는 바입니다
+DUMMY4/anichat_con_24_00127.wav|아.. 그런 거였구나.
+DUMMY4/anichat_nam_24_00085.wav|코드랑 같은 계열인데 타카라 자동차가 도산 위기에 쳐했을 때 인수했었지?
+DUMMY4/anichat_con_03_00165.wav|한지용 아저씨의 비디오 카메라의 사진을 찍혔을 거라고 생각한 누나는 결국 없애기로 했어요 제 말이 맞죠
+DUMMY4/anichat_con_01_00150.wav|내 말 들리니?
+DUMMY4/anichat_con_18_00068.wav|그럼 다른 사람들이 방심할게 뻔한데도
+DUMMY4/anichat_con_24_00012.wav|방금 또 라는 건 혹시
+DUMMY4/anichat_con_01_00061.wav|모두 모모타로의 신화잖아요
+DUMMY4/anichat_con_12_00137.wav|그 소리 뭔가 좀 이상하지 않나요?
+DUMMY4/anichat_nam_03_00127.wav|이 성을 지은 할아버지는 비밀 장치를 심하게 좋아 하셨네
+DUMMY4/anichat_con_23_00154.wav|하지만 지금은 그것보다
+DUMMY4/anichat_con_12_00143.wav|그럼 좋을 텐데
+DUMMY4/anichat_con_24_00008.wav|응?
+DUMMY4/anichat_con_03_00118.wav|아저씨는 전세계 여기저기 안 가본 곳이 없다면서요
+DUMMY4/anichat_con_23_00121.wav|나카토미 해운이나
+DUMMY4/anichat_nam_12_00194.wav|그런 뜻이 없군
+DUMMY4/anichat_con_14_00029.wav|야 엎드려
+DUMMY4/anichat_con_12_00045.wav|네
+DUMMY4/anichat_con_23_00053.wav|그러니까 시점을 살짝 만 바꾸면
+DUMMY4/anichat_con_23_00036.wav|이걸 썻지
+DUMMY4/anichat_nam_01_00139.wav|그런데 그 라이터에서는 형의 오른손 지문밖에 검출되지 않았거든요?
+DUMMY4/anichat_con_23_00139.wav|주변에 있는 나카토미 해운의 배항로를 분석한 거예요
+DUMMY4/anichat_nam_01_00225.wav|여기까진 그럭저럭 틈새를 비집고 들어왔는데 폭발의 충격으로 문이 휘어서 그런지 아무리 애를 써도 열 수가 없네
+DUMMY4/anichat_nam_01_00046.wav|그 느낌 믿지마라 같이 영화를 보러가자니 말이 되냐구요
+DUMMY4/anichat_nam_23_00017.wav|정신을 빼앗긴 난
+DUMMY4/anichat_con_12_00116.wav|레나 누나 집에 그 사람 사진이 놓여 있었거든요
+DUMMY4/anichat_con_12_00237.wav|도수일 씨 집에서 유파건씨 젊은 시절의 사진을 봤는데 아드님 이랑 똑같았어요
+DUMMY4/anichat_con_14_00011.wav|브라운 박사님의 조언으로
+DUMMY4/anichat_con_23_00028.wav|괴도키드 정체불명의 궤도로 변장의 달인이기도 하며
+DUMMY4/anichat_nam_01_00134.wav|흉내만 내주셔도 돼요
+DUMMY4/anichat_nam_03_00091.wav|목걸이를 언제부터 걸고 있었지?
+DUMMY4/anichat_con_12_00190.wav|그 사람이 있을지도 모르잖아요
+DUMMY4/anichat_con_12_00239.wav|처음에 연습실 폭발에 휘말리게 해서 하예솔 씨에게 중상을 입혔던 건 소리의 차이를 알아낼 위험성이 있는 절대음감을 가지고 있었기 떄문이구요
+DUMMY4/anichat_con_12_00249.wav|삼분 아니 이분 걸렸어요
+DUMMY4/anichat_con_14_00093.wav|어 난 괜찮아
+DUMMY4/anichat_con_18_00096.wav|적외선 안경을 썼어
+DUMMY4/anichat_nam_12_00105.wav|이제 끝인가
+DUMMY4/anichat_nam_01_00223.wav|미란아 조금만 참아 지금 구하러 갈게
+DUMMY4/anichat_con_23_00068.wav|집에서 수사자료를 살펴보긴 했는데
+DUMMY4/anichat_con_23_00117.wav|근데 그 전에 아저씨 부터
+DUMMY4/anichat_nam_12_00021.wav|저 사람은 뭐지?
+DUMMY4/anichat_con_12_00220.wav|어떻게 하려고
+DUMMY4/anichat_con_23_00045.wav|정말이요
+DUMMY4/anichat_con_14_00059.wav|살인세균에 감염된 사람은 아무도 없으니까
+DUMMY4/anichat_nam_12_00174.wav|근데 왜 우리만 살해하지 않고 홀에서 멀리 떨어뜨린거지?
+DUMMY4/anichat_nam_03_00139.wav|우연? 정말로 우연일 뿐일까?
+DUMMY4/anichat_con_14_00061.wav|그러니까 범인들은 처음부터
+DUMMY4/anichat_con_12_00146.wav|레나누나 레나누나
+DUMMY4/anichat_con_24_00112.wav|만에 하나 그런 상황이 벌어진다면 한번 해보죠
+DUMMY4/anichat_con_01_00088.wav|위험해
+DUMMY4/anichat_nam_12_00124.wav|공조 시스템 소리에 음정이 있다고? 혹시?
+DUMMY4/anichat_nam_01_00253.wav|미란아 미란아 괜찮아?
+DUMMY4/anichat_con_24_00045.wav|수수께끼의 아이와 함께 호텔에서 살고 있다.
+DUMMY4/anichat_con_03_00012.wav|어떨결에 코난이라고 대답했고
+DUMMY4/anichat_con_18_00089.wav|시간이 없어요
+DUMMY4/anichat_nam_01_00000.wav|허? 오늘은 웬일이시래?
+DUMMY4/anichat_nam_18_00085.wav|돌아가는 열차를 타야하니까
+DUMMY4/anichat_con_03_00176.wav|저 미란아 사실은 너한테 할 말이 있어
+DUMMY4/anichat_nam_01_00252.wav|마지막 순간은 함께있자
+DUMMY4/anichat_con_24_00144.wav|존 사장님이 어디 있는지 알고
+DUMMY4/anichat_con_23_00083.wav|안 그래도 경찰도 캐리어를 살펴봤는데
+DUMMY4/anichat_con_14_00010.wav|어 그래 알았어 그때보자
+DUMMY4/anichat_con_18_00016.wav|어디 다친 데는 없
+DUMMY4/anichat_con_12_00068.wav|맞다 맨 처음 폭발했던 연습실에 있던 피아노 말인데요. 혹시, 뭔가 특별한 의미가 있던 거였나요?
+DUMMY4/anichat_con_12_00085.wav|집이 참 좋은데요 주변도 조용한 것 같고
+DUMMY4/anichat_con_24_00016.wav|사람도 탈 수 있어
+DUMMY4/anichat_con_12_00073.wav|다녀오겠습니다
+DUMMY4/anichat_con_23_00093.wav|그리고 벨트가 경기장에 도착한 건 어제 오전 이었어
+DUMMY4/anichat_con_23_00166.wav|당신에 대한 의심은 더 깊어졌어요
+DUMMY4/anichat_con_23_00176.wav|제 기억엔 나카토미씨가 싱가포르에 온 것도
+DUMMY4/anichat_con_12_00253.wav|어림없어
+DUMMY4/anichat_con_23_00133.wav|이왕이면 몇 시에 어디 있을건지 아는 사람이면 좋겠죠
+DUMMY4/anichat_con_12_00256.wav|종류를 알리는 휘슬이에요
+DUMMY4/anichat_con_23_00132.wav|레온씨의 계획에 말이죠
+DUMMY4/anichat_nam_18_00063.wav|어제일은 물어봐야겠다
+DUMMY4/anichat_con_24_00082.wav|존 보이드라고
+DUMMY4/anichat_con_24_00046.wav|아무래도 아카이 씨의 어머니인 메리와 같은 인물로 보이는데
+DUMMY4/anichat_nam_12_00192.wav|범인은 이 홀의 구조를 훤히 꿰뚫고 있고 폭탄을 설치할 수 있는 사람이야
+DUMMY4/anichat_con_24_00060.wav|그거 말곤 딱히 없어요.
+DUMMY4/anichat_con_24_00050.wav|세라의 또 한 명의 오빠 하네다 슈키
+DUMMY4/anichat_con_12_00172.wav|시한장치 나 리모컨으로 조정했을 테고요
+DUMMY4/anichat_nam_14_00023.wav|남도일: 발진은 없어
+DUMMY4/anichat_con_23_00033.wav|몸은 작아졌어도 두뇌는 그대로 불가능을 모르는 명탐정
+DUMMY4/anichat_nam_12_00024.wav|안 된다니까
+DUMMY4/anichat_con_01_00018.wav|그런데 지금은 스위스에 계세요 워낙 동에번쩍 서에번쩍 하시는 분이라 우편을 챙 겨서 보내드리는 것도 장난 아니라니까요
+DUMMY4/anichat_con_23_00088.wav|살해용의도 너한테 덮어씌우려고 하고
+DUMMY4/anichat_nam_03_00175.wav|더는 안 되겠어
+DUMMY4/anichat_con_03_00073.wav|저기요 혹시 달걀이 두 개 그려져 있지 않았을까요
+DUMMY4/anichat_con_14_00068.wav|뉴스 내 정치를 잘도 알아 냈구나
+DUMMY4/anichat_nam_01_00029.wav|그래 셋이 가도록 해 파티 초대장은 내가 벌써 너희 집 우편함에 넣어놨거든?
+DUMMY4/anichat_con_01_00103.wav|할머니 잠깐만요 으아아
+DUMMY4/anichat_con_24_00033.wav|란에게
+DUMMY4/anichat_con_03_00069.wav|총을 맞고 바다에 빠졌나
+DUMMY4/anichat_con_24_00009.wav|사라지기엔 짧은 시간이야 게다가
+DUMMY4/anichat_con_12_00034.wav|아니야 괜찮아
+DUMMY4/anichat_con_14_00058.wav|걱정하지 마 미란이 누나
+DUMMY4/anichat_nam_12_00202.wav|연주 중에만 폭발하게 만든 거야
+DUMMY4/anichat_con_03_00053.wav|여기서 괴도 키드를 기다리자! 있죠?
+DUMMY4/anichat_con_14_00066.wav|팔에 오치 오르게 된 건 이 방에서 잡아서 그런 거고
+DUMMY4/anichat_nam_01_00138.wav|운전석에 앉아서 시가 라이터를 잡으려면 왼팔을 쭉 뻗을 수 밖에 없어요
+DUMMY4/anichat_con_01_00116.wav|여기는?
+DUMMY4/anichat_nam_12_00196.wav|그럼 그 사람은 왜?
+DUMMY4/anichat_con_14_00033.wav|아니야
+DUMMY4/anichat_nam_12_00122.wav|저 자신감은 대체 어디서 오는 걸까
+DUMMY4/anichat_con_03_00007.wav|어린 아이로 변해 있었다
+DUMMY4/anichat_nam_12_00203.wav|그래, 그래서 소리가 이상했던 거야
+DUMMY4/anichat_con_01_00036.wav|나참 극장에 갈 수 있을 것 같으면 파티에 대신 가 달라는 부탁을 왜 하겠냐구
+DUMMY4/anichat_con_01_00063.wav|어? 미란이 누나 이거 그 집 아니야?
+DUMMY4/anichat_con_24_00024.wav|그런 회사 대표 두 명이 연달아 납치를 당했어
+DUMMY4/anichat_con_24_00137.wav|지금 빨리 존 사장님 위치 좀 확인해줘.
+DUMMY4/anichat_con_01_00014.wav|다른 것들도 많이 있지만 가장 믿음직스러운 무기는 바로 이 머리! 몸은 작아졌어도 두뇌는 그대로 미궁을 모르는 명탐정 진실은 언제나 하나
+DUMMY4/anichat_con_14_00031.wav|적인 물인데
+DUMMY4/anichat_nam_01_00056.wav|응? 잠깐만 이 세 사람 일 년 간격으로 태어났잖아?
+DUMMY4/anichat_nam_01_00078.wav|알았다 가르쳐주지
+DUMMY4/anichat_con_12_00263.wav|그래서 대기실에 있더니 바이올린으로 방금 그 곡을 연주했다고 하던데
+DUMMY4/anichat_con_14_00087.wav|공포의 빠진 사람들로 하여금 자신을 격리 시키게 만들고
+DUMMY4/anichat_con_12_00233.wav|그렇지 않나요 현재 도수일 홀의 관장, 전 피아노 조율사인 유파건씨?
+DUMMY4/anichat_con_03_00079.wav|어떻게 아이 떨어졌다
+DUMMY4/anichat_con_01_00216.wav|혹시 베이커시티빌딩?
+DUMMY4/anichat_con_23_00002.wav|이거에요 이대회에 그형이 출전 한대요 400전 무패
+DUMMY4/anichat_con_24_00114.wav|야이바 쇼가 무지 재밌대.
+DUMMY4/anichat_nam_18_00077.wav|입체적으로 봐야 알 수 있는 거 였어
+DUMMY4/anichat_con_03_00191.wav|그리고 또 하나의 달걀에는 성에 대한 단서를 남겼지
+DUMMY4/anichat_con_23_00164.wav|현장에 남아있던 키드의 예고장이었어요
+DUMMY4/anichat_nam_03_00055.wav|그 녀석의 속셈을 알겠어!
+DUMMY4/anichat_con_03_00135.wav|밑에서 바람이 이 아래에 비밀지하실이 있나 봐요 그렇다면 비밀 장치를 좋아하는 성주인 할아버지가 어딘가에 스위치를 만들어 놨을 거예요
+DUMMY4/anichat_con_03_00163.wav|그건 연인이 아니라 그리고 사진이에요 그리고리의 영어 첫글자는 G 이지만, 러시아어로는 게 잖아요
+DUMMY4/anichat_con_12_00209.wav|홀 바깥쪽 기둥은 전부 다 해서 23개
+DUMMY4/anichat_con_03_00048.wav|민속박물관
+DUMMY4/anichat_con_12_00077.wav|볼일이 있어서
+DUMMY4/anichat_con_23_00115.wav|좀 지켜보려고
+DUMMY4/anichat_con_01_00043.wav|그렇구나 아 5월 3일은 연휴 가 시작되는 날이야 그래서 뭐 어쩌라구 뭐? 생일?
+DUMMY4/anichat_nam_01_00206.wav|그리고 그 때 애완동물 케이스의 폭탄 타이머를 잠시 멈춘 이유는 어린이공원에 있는 가스등 때문이었어요 그건 뉴타운 남서울 시의 상징으로 생각해두었던 거니까요
+DUMMY4/anichat_nam_03_00128.wav|그렇다면
+DUMMY4/anichat_nam_01_00065.wav|이런 생일날 어떻게 할지 생각해뒀어야 하는 건데
+DUMMY4/anichat_con_03_00075.wav|이걸 하나의 달걀로 보기엔 가장자리 부분이 묘하게 맞지 않아요
+DUMMY4/anichat_con_12_00093.wav|아 참, 나가기 전에 주스 좀 주세요. 목이 너무 말라 요
+DUMMY4/anichat_con_23_00107.wav|가장 방해되는 사람이 바로 마코토형이니까
+DUMMY4/anichat_con_12_00036.wav|알았어
+DUMMY4/anichat_con_24_00140.wav|그러면 안되냐?
+DUMMY4/anichat_con_12_00091.wav|범인의 목적이 자신이란 사실을 확실히 알았으니까요
+DUMMY4/anichat_con_24_00128.wav|아 근데요 증인 보호 프로그램으로 이름을 바꿀 때
+DUMMY4/anichat_nam_01_00161.wav|박사님께 대충 얘기는 들었어요 범인이 폭탄을 설치한 장소는 순환선의 좌석 밑도 아니고 선반 위도 아니고 차체의 밑도 아닙니다
+DUMMY4/anichat_con_14_00078.wav|맥주에 수면제를 넣어서 마시게 한 거고요
+DUMMY4/anichat_con_24_00166.wav|여리고 들어갔나봐
+DUMMY4/anichat_nam_01_00020.wav|그 꿈이 언제나 이루어질까요
+DUMMY4/anichat_con_23_00103.wav|그런 것 같아
+DUMMY4/anichat_con_24_00013.wav|여기요 카트가 하나 없는 것 같은데요
+DUMMY4/anichat_con_03_00051.wav|민속박물관에서 폭죽을 쏘와서 전망타워에서 눈을 돌리게 하려는 거야
+DUMMY4/anichat_con_12_00128.wav|누나 지금 병원에 있는 하예솔 씨도 절대음감을 갖고 있죠?
+DUMMY4/anichat_nam_12_00002.wav|그 장면에 정신을 빼앗긴 나는 다른 한패가 등 뒤에서 접근하는 걸 눈치채지 못한 채 당하고 말았다
+DUMMY4/anichat_con_03_00140.wav|무슨 소리가 들렸어
+DUMMY4/anichat_con_03_00096.wav|브라운 박사님 전데요 급히 조사해주셨으면 하는 게 있어요
+DUMMY4/anichat_con_24_00139.wav|그러니까 그 퀜칭이라는 게 대체 뭐냐고
+DUMMY4/anichat_nam_03_00093.wav|괴도 키드도 오른쪽눈을
+DUMMY4/anichat_con_23_00124.wav|바로 그거야 그 유조선에 대한 정보 좀 보내줘
+DUMMY4/anichat_nam_03_00056.wav|그게 어디인지 알아내기 위해서 도시 전체를 정전시키고 자가발전으로 바꾸게 만든 거야
+DUMMY4/anichat_con_01_00147.wav|여보세요
+DUMMY4/anichat_con_12_00204.wav|저 소리 몇 번이나 나왔어요
+DUMMY4/anichat_con_23_00035.wav|역시 네 녀석이었군
+DUMMY4/anichat_con_01_00187.wav|그렇구나 이 도시계획을 세운 사람이 정형균 교수였어
+DUMMY4/anichat_con_12_00072.wav|아, 네
+DUMMY4/anichat_nam_03_00072.wav|다음날 황제의 부활 달걀 전시 일정은 취소됐고 손상 여부를 확인하기 위해 달걀은 보라네 전용 배에 실려 서울로 옮겨지게 됐다
+DUMMY4/anichat_con_12_00166.wav|빨리해요 다음은 2에요
+DUMMY4/anichat_nam_01_00047.wav|하하하 거꾸로 어려졌으니까 걱정마
+DUMMY4/anichat_nam_03_00078.wav|여기 거울이 있네
+DUMMY4/anichat_nam_01_00032.wav|빨강이랑 파랑? 갑자기 그건 왜?
+DUMMY4/anichat_con_24_00020.wav|WSG 도쿄의 후원사에요?
+DUMMY4/anichat_con_24_00006.wav|이쯤에서 번쩍했었는데
+DUMMY4/anichat_con_01_00188.wav|완벽한 대칭형을 이루는 뉴타운이야
+DUMMY4/anichat_con_01_00122.wav|그런데요 반장님 폭발물의 종류는 밝혀졌나요?
+DUMMY4/anichat_nam_03_00198.wav|그냥 코난인 채로 있으렵니다
+DUMMY4/anichat_con_24_00052.wav|그러니까 이 네 명이 가족이라는 건데
+DUMMY4/anichat_nam_12_00255.wav|저격!
+DUMMY4/anichat_con_14_00085.wav|그리고 두목이 어떤 한 사람과 계속해서 통화를 했더군요
+DUMMY4/anichat_con_24_00088.wav|앗싸~
+DUMMY4/anichat_nam_01_00131.wav|불붙인지 얼마 안 되서 버린 것 같은데요?
+DUMMY4/anichat_con_01_00094.wav|오후 한 시 정각?
+DUMMY4/anichat_con_01_00111.wav|그 케이스 주세요
+DUMMY4/anichat_con_03_00023.wav|홍장미는 검은 양복의 사나이들과 한패 였는데 조직에서 빠져나오기 위해
+DUMMY4/anichat_nam_01_00247.wav|젠장, 어느거지? 빨강이야 파랑이야? 어느 걸 잘라야 하지? 어?
+DUMMY4/anichat_con_01_00192.wav|라이터?
+DUMMY4/anichat_con_23_00044.wav|근데 괜찮아요 익숙해졌거든요
+DUMMY4/anichat_nam_01_00227.wav|조심해 그거 폭탄이야
+DUMMY4/anichat_con_01_00011.wav|그럼 이쯤에서 박사님이 만들어주신 비밀 병기를 소개해볼까 첫번째로 시계형 마취총 뚜껑에 달린 조준기를 잘 맞춰 단추를 누르면 마취바늘이 날아가 상대방을 순식간에 잠재워버린다 다음으로 나비넥타이형 음성 변조기 뒤에 붙어있는 다이얼을 조정해서 어른부터 어린이까지 어떤 목소리든 낼 수 있다 그 중에서도 가장 쓸만한 건 초강력 킥 운동 화 전자파로 발의 지압점을 자극해 다리의 힘을 최대한으로 강하게 만든다
+DUMMY4/anichat_con_12_00005.wav|내가 살아있다는 걸 그 녀석들이 알면 또 내 목숨을 노릴 거고 내 주변 사람들까지 위험해져 브라운 박사님의 조언으로 정체를 숨기기로 한 나는 이름이 뭐냐고 묻는 미란이에게 순간적으로 코난이라고 대답했다 그리고 녀석들의 정보를 모으기 위해 아빠가 탐정사무소를 하고 있는 미란의 집으로 들어갔다
+DUMMY4/anichat_con_12_00183.wav|하지만 기뻐하기는 아직 일러요
+DUMMY4/anichat_nam_01_00250.wav|니 마음대로 잘라 틀려도 상관없어 어차피 시간이 되면 다 끝날텐데 뭐 그럴바엔 니가 좋아하는 색으로
+DUMMY4/anichat_con_12_00265.wav|근데 도일이 형이 그러더라 누나한테 뭐 잘못한 게 있다고
+DUMMY4/anichat_con_03_00160.wav|한지웅 아저씨를 해친 이유는 자신의 정체가 드러날까 겁이 나서 였어요
+DUMMY4/anichat_nam_12_00108.wav|녀석의 목적은 뭐지?
+DUMMY4/anichat_nam_01_00066.wav|어쩌란 말이냐구요
+DUMMY4/anichat_con_23_00050.wav|야 그거 보다
+DUMMY4/anichat_nam_01_00182.wav|이 냄새는? 혹시
+DUMMY4/anichat_nam_12_00047.wav|그런 것 같더니만 이 사람
+DUMMY4/anichat_con_12_00061.wav|택시가 오는 바람에 그냥 포기한 건가
+DUMMY4/anichat_con_03_00161.wav|그 아저씨는 방문할때마다 비디오카메라로 촬영을 하거든요
+DUMMY4/anichat_nam_01_00249.wav|미란아
+DUMMY4/anichat_con_14_00073.wav|그리고 당신이
+DUMMY4/anichat_nam_12_00095.wav|플루트다 그리고 저 남자는?
+DUMMY4/anichat_con_01_00080.wav|어쨌든 가봐야겠어요
+DUMMY4/anichat_con_23_00152.wav|전세계에 보도가 됐으니까 해적들귀 에도 들어갔을 거예요
+DUMMY4/anichat_con_12_00057.wav|안돼요 뛰어!
+DUMMY4/anichat_con_12_00238.wav|네명의 음악가를 차례대로 살해했던건 사고로 세상을 떠난 아들에 대한 복수, 플루트 일부를 현장에 놔둔건 연쇄살인이 세 건으로 끝난다고 위장하기 위해서였죠.1
+DUMMY4/anichat_con_24_00080.wav|이번에도 첫 번째 납치 사건의 피해자는 국내 제과 업체의 대표였고, 그리고 두 번째 피해자역시 대기업의 대표였으니까
+DUMMY4/anichat_nam_01_00037.wav|그나저나 왜 5월 3일이 아니면 안된다는 거지?
+DUMMY4/anichat_con_14_00076.wav|방해가 될만한 사람들을 감염자로 만들어서 방에 미리 가둬두려고 한 거죠
+DUMMY4/anichat_nam_12_00039.wav|누가 기다려요
+DUMMY4/anichat_con_24_00031.wav|아가사 박사님의 조언으로
+DUMMY4/anichat_con_12_00171.wav|누가 폭발물을 설치했을 거에요
+DUMMY4/anichat_con_24_00038.wav|연방수사국 FBI
+DUMMY4/anichat_con_14_00017.wav|뭔소리야 저기 박사님 아까 한 유에프오 얘긴 미란이한테는 비밀이에요
+DUMMY4/anichat_con_03_00047.wav|인성아! 궤도키드가 예고한 시간은 새벽 3시가 아니라 오후 7시 20 분이야
+DUMMY4/anichat_con_12_00040.wav|거기에 소박한 프랑스 할아버지를 연결시켜
+DUMMY4/anichat_nam_12_00121.wav|뭐래
+DUMMY4/anichat_con_18_00013.wav|걱정마 어디로 갔는지는 금방 알수 있어
+DUMMY4/anichat_nam_03_00143.wav|그렇다면 저 관 안에 들어 있는 것
+DUMMY4/anichat_con_23_00094.wav|또 레이철 씨는 그저께밤까진 살아 있었다는 게 확인됐고
+DUMMY4/anichat_con_23_00102.wav|그런거 였군
+DUMMY4/anichat_nam_01_00169.wav|잠깐만 정형균 교수님 댁 화랑에서 본 사진에도
+DUMMY4/anichat_con_03_00156.wav|그러게 증조할아버지 방에 있었는데
+DUMMY4/anichat_con_14_00081.wav|아마 흡연실에서 뭔가를 만졌겠죠
+DUMMY4/anichat_nam_01_00157.wav|어째서 해가 지면 폭발하는 거지? 혹시 헤드라이트와 상관있을까?
+DUMMY4/anichat_nam_01_00137.wav|보세요!
+DUMMY4/anichat_con_18_00084.wav|먼저 갈게 미안해 너희끼리가
+DUMMY4/anichat_nam_03_00005.wav|나는 다른 한 명이 등 뒤에서 접근하는 것을 알아차리지 못했다
+DUMMY4/anichat_con_23_00145.wav|도시 하나를 새로 만들려면
+DUMMY4/anichat_con_18_00056.wav|큰일 났어요 이건 제 피 아니에요 골롬보 반장님
+DUMMY4/anichat_con_12_00236.wav|사람들에게 당당하게 밝힐 수 없는 사랑하는 아들과 자신을 연결하는 증표로써요
+DUMMY4/anichat_nam_01_00074.wav|여보세요?
+DUMMY4/anichat_con_23_00067.wav|소노코 누나랑 가라테형은 어떡해요
+DUMMY4/anichat_con_24_00041.wav|지금은 오키야 스바루라는 대학원생으로 변장해
+DUMMY4/anichat_con_24_00123.wav|이시하라는 범인이었잖아요.
+DUMMY4/anichat_con_12_00114.wav|저기 반장님
+DUMMY4/anichat_con_01_00210.wav|이거 제 안경이에요
+DUMMY4/anichat_nam_03_00006.wav|그런데 그 남자가 먹인 약 때문에 정신을 잃었다가 눈을 떠보니
+DUMMY4/anichat_con_24_00014.wav|원래 여기에도 음식이 있던 거 아니에요?
+DUMMY4/anichat_con_18_00003.wav|아니 아무것도 총이에요 모두 엎드려요
+DUMMY4/anichat_con_12_00009.wav|저 애들은 지금 나랑 같은반 친구인 고뭉치, 한아름, 박세모. 어린이 탐정단을 만들어 자기들 마음대로 날 멤버로 집어넣었다
+DUMMY4/anichat_con_23_00130.wav|금고실에 왔던 레이철 씨는 키드가 변장했던 거였어요
+DUMMY4/anichat_con_24_00170.wav|그러니까 공범은 바로 리니어 관계자야
+DUMMY4/anichat_con_24_00121.wav|알았어요 참석자 명단을 찾아볼게요. 아마 아저씨가 갖고 계실 거에요.
+DUMMY4/anichat_con_12_00261.wav|또 사건이 났대
+DUMMY4/anichat_nam_03_00046.wav|황혼의 사자로부터 새벽에 처녀에게. 문장 끝에 시옷은 오타가 아니었어
+DUMMY4/anichat_nam_12_00271.wav|이상한 버릇? 내가 그 뭐지
+DUMMY4/anichat_con_12_00008.wav|나한테 맡겨!
+DUMMY4/anichat_con_03_00042.wav|자세히 좀 읽어볼까, 어?
+DUMMY4/anichat_con_24_00077.wav|스바루 씨는 누군지 알죠?
+DUMMY4/anichat_nam_01_00057.wav|알겠다
+DUMMY4/anichat_con_14_00094.wav|미란이 누나는
+DUMMY4/anichat_con_03_00173.wav|이거 남이 누나한테 전해 주래요
+DUMMY4/anichat_con_03_00074.wav|보세요
+DUMMY4/anichat_nam_01_00207.wav|아마도 망가뜨리고 싶지 않았었나 보죠 자신이 사랑하는 런던 거리의 가로등과 꼭 닮은 그 가스등을요 아닌가요?
+DUMMY4/anichat_nam_24_00097.wav|근데 그렇게 좋아했는데 어떻게 말하냐 무슨 방법이
+DUMMY4/anichat_con_12_00221.wav|없애지 못해요
+DUMMY4/anichat_con_01_00189.wav|어린이 공원의 가로등과 똑같잖아? 역시 다 이유가 있는 행동 이었어 범인은 틀림없이 그 사람이야 하지만 증거가 없어
+DUMMY4/anichat_nam_01_00035.wav|아 잠깐! 끊지마!
+DUMMY4/anichat_nam_03_00081.wav|그래서 괴도키드가 노리는구나
+DUMMY4/anichat_con_18_00012.wav|아니야 더이상 건드리지 않는게 좋겠어
+DUMMY4/anichat_con_18_00053.wav|그게 사실이면 앞선 두 번에 저격
+DUMMY4/anichat_con_24_00030.wav|주변 사람들까지 위험해져
+DUMMY4/anichat_nam_18_00090.wav|저기서라면 보일거야 그래
+DUMMY4/anichat_con_18_00064.wav|아니
+DUMMY4/anichat_con_24_00043.wav|그의 동생, 세라 마스미
+DUMMY4/anichat_con_23_00155.wav|형 하나만 물어볼게요
+DUMMY4/anichat_nam_01_00113.wav|멈췄잖아 좋았어
+DUMMY4/anichat_con_14_00005.wav|그냥 십 년 전쯤에 재벌을 적으로 테러를 벌였던 조직이라는 것 정도밖에는 몰라
+DUMMY4/anichat_con_23_00040.wav|돈이 얼마나 많으면 그러냐
+DUMMY4/anichat_con_12_00092.wav|지난번에 뭉치네 집에 가려고 했던 것도 실은 부모님한테 따지려는 게 아니라 뭉치를 무사히 데려다 주려고 그랬던 거잖아요
+DUMMY4/anichat_con_14_00038.wav|나머지 하나는 내가 찾을테니까 너희들은여기 있어
+DUMMY4/anichat_con_01_00092.wav|오렌지색의 섬광 플라스틱 폭탄이다
+DUMMY4/anichat_nam_23_00060.wav|그 코골이 녀석이랑
+DUMMY4/anichat_con_12_00136.wav|미란이 누나, 갑자기 볼일이 생각 나서 그러는데 공연이 시작되기 전까지는 꼭 다 대로 갈게
+DUMMY4/anichat_con_12_00125.wav|미란아 미안
+DUMMY4/anichat_con_01_00159.wav|알겠다 그거예요 박사님
+DUMMY4/anichat_con_12_00063.wav|플루트에 나머지 부분인 윗관이 발견됐다 그 말씀이죠
+DUMMY4/anichat_con_23_00021.wav|주변 사람들까지 위험해져
+DUMMY4/anichat_nam_23_00016.wav|거래 현장을 목격했다
+DUMMY4/anichat_nam_01_00198.wav|새로운 형식의 수많은 건물들을 탄생시킨 교수님은 어느날 문득 아니 오래전부터 생각해왔던 대로 젊었을 때 만든 작품의 일부를 없 애고 싶어졌죠 지난번 가든파티 때 교수님이 하셨던 말에서도 그런 기미를 느낄 수 있었어요
+DUMMY4/anichat_con_01_00024.wav|박사님! 정형균이라는 사람 아세요?
+DUMMY4/anichat_con_24_00035.wav|녀석들의 정보를 모으기 위해
+DUMMY4/anichat_con_23_00087.wav|그러니까 저렇게 피까지 묻혀서말이야 그리고
+DUMMY4/anichat_con_24_00157.wav|빨리 가야 해! 신 나고야 역으로
+DUMMY4/anichat_con_12_00032.wav|여보세요?
+DUMMY4/anichat_con_12_00071.wav|죄송해요
+DUMMY4/anichat_con_23_00086.wav|나 호텔 근처에 있는 가게에 접수된 것도 확인했고
+DUMMY4/anichat_nam_12_00058.wav|지금 이 자 얼굴이 안 보여
+DUMMY4/anichat_con_01_00073.wav|아 참 그랬었죠 내 정신좀 봐 요즘엔 남도일 찾는 전화가 통 없어서 까맣게 잊고 있었거든요
+DUMMY4/anichat_nam_12_00182.wav|미란아
+DUMMY4/anichat_con_14_00001.wav|근데 말이야
+DUMMY4/anichat_con_01_00017.wav|네
+DUMMY4/anichat_con_23_00173.wav|아버지의 사고 때문에 이런 일들을 계획했던 거죠
+DUMMY4/anichat_con_23_00077.wav|그 영향으로 호텔 전체가 정전이 됐지
+DUMMY4/anichat_con_12_00044.wav|그러게 역시 음악가의 귀는 달라
+DUMMY4/anichat_con_12_00144.wav|여기 말고 또 가실만한 데는 없어요?
+DUMMY4/anichat_nam_01_00196.wav|어렸을 때부터 아버지의 건축가적 재능을 물려받은 정형균 교수님은 30대 초반이라는 젊은 나이로 건축계에 데뷔했
+DUMMY4/anichat_con_01_00013.wav|단 태양열로 움직이도록 설계되있어서 낮동안에만 탈 수 있다는 게 옥의 티다 어 이런 깜빡 잊을 뻔 했네 어린이 탐정단 뱃지에는 초소형 무전기가 내장되 있고 발신기도 달려있어서 아주 쓸만한다
+DUMMY4/anichat_con_01_00152.wav|응 걱정할 거 없어 별일 아니니깐
+DUMMY4/anichat_con_23_00181.wav|당신이 눈치를 챘던 거고요
+DUMMY4/anichat_con_03_00031.wav|황제가 황후에게 선물한 물건인데두요? 어쩐지 이상하지
+DUMMY4/anichat_nam_03_00155.wav|그러고보니 조장해 아저씨가 안 보이네
+DUMMY4/anichat_con_12_00133.wav|스트라디바리우스를 완벽하게 자기 걸로 만들었더라고
+DUMMY4/anichat_con_01_00091.wav|바보 그쪽으로 가면 어떡해
+DUMMY4/anichat_con_01_00090.wav|틀렸어 모두 도망쳐
+DUMMY4/anichat_con_03_00164.wav|그래서 증조할아버지 방에 있던 게 라스푸틴의 사인을 봐도 금방 연결이 안 되더라고요
+DUMMY4/anichat_con_23_00146.wav|아마 상상을 초월하는 엄청난 돈이 움직일 거에요
+DUMMY4/anichat_con_24_00136.wav|란 누나! 하이바라 좀 부탁해!
+DUMMY4/anichat_con_23_00175.wav|부인하던 용의자가 갑자기 죄를 인정했다
+DUMMY4/anichat_con_23_00010.wav|난 또 누구라고
+DUMMY4/anichat_con_03_00122.wav|대단해요 아저씨
+DUMMY4/anichat_nam_12_00219.wav|폭파를 망설이게 만들 방법이 없냐고
+DUMMY4/anichat_con_23_00158.wav|알았어요 고마워요
+DUMMY4/anichat_con_01_00053.wav|이 아저씨도 알고보면 명탐정이에요
+DUMMY4/anichat_con_12_00173.wav|범인은, 그 네명을 살해한 사람과 같은 사람일 거에요
+DUMMY4/anichat_con_03_00083.wav|정말 잘 됐다
+DUMMY4/anichat_con_23_00169.wav|해외로 도망칠 리가 없죠
+DUMMY4/anichat_nam_01_00075.wav|네
+DUMMY4/anichat_con_03_00017.wav|이 두 가지 비밀병기는 브라운 박사님의 발명품이다
+DUMMY4/anichat_con_23_00055.wav|오늘 하룻밤만 재워주면 안 돼요
+DUMMY4/anichat_con_18_00061.wav|특별한 인연 같은 게 있을 수도 있잖아요
+DUMMY4/anichat_nam_18_00076.wav|뭔가가 있는 것 같은데
+DUMMY4/anichat_con_23_00063.wav|리시형 이지도에 있는 빨간색 가위표 는 뭐예요
+DUMMY4/anichat_con_24_00074.wav|역에서 총에 맞아 숨졌죠.
+DUMMY4/anichat_nam_03_00002.wav|소꿉친구이면서 같은 반인 미란이와 놀이공원에 놀러 갔다가
+DUMMY4/anichat_nam_01_00144.wav|운전석엔 아버지인 시장님이 타고 있었죠
+DUMMY4/anichat_nam_03_00177.wav|넌 무슨 인사가 그러냐 네가 사건에 말려들었다는 소식을 듣고 걱정이 돼서 한 걸음에 달려와 봤더니
+DUMMY4/anichat_con_14_00003.wav|실험실을 폭파할 필요까지는 없잖아
+DUMMY4/anichat_con_12_00215.wav|잠깐만요 섣불리 막았다간 리모컨을 이용해 폭파시킬 거예요
+DUMMY4/anichat_con_12_00269.wav|그건 그렇고 미란이 누나, 그날 밤 도일이형이 바이올린 연주한다는거 어떻게 알았어?
+DUMMY4/anichat_con_24_00160.wav|아까 공항에서 본 범인 말이야 카트에 캐리어를 몇 개 실었었어?
+DUMMY4/anichat_con_14_00063.wav|신체의 일부분이 잘 자는 곳에 다
+DUMMY4/anichat_con_12_00227.wav|하지만 그렇지 않았어요
+DUMMY4/anichat_con_23_00052.wav|전부 다 함정이었다고 너한테 죄를 덮어씌우려고 말이지
+DUMMY4/anichat_con_12_00267.wav|그 노래가 바로 어메이징그레이스였던거죠?
+DUMMY4/anichat_con_24_00007.wav|란...누나..아
+DUMMY4/anichat_con_18_00027.wav|쓸 데가 있을지 모르잖아
+DUMMY4/anichat_con_03_00183.wav|너는 그 달걀을 만든 남이 누나의 증조할아버지가 세기말의 마술사로 통했던 장인이라는 사실을 알고 있었어
+DUMMY4/anichat_nam_12_00218.wav|자연스럽게 연주를 막을 수 있는 방법이 없을까
+DUMMY4/anichat_con_18_00069.wav|근데도 그렇게 안 했어
+DUMMY4/anichat_con_01_00179.wav|벌써 다 나은걸요 빨리요 빨리
+DUMMY4/anichat_con_03_00039.wav|지금까지는 그런 식으로 이름을 밝힌 적이 없어.
+DUMMY4/anichat_con_18_00098.wav|가까이 갈거야 잘들어
+DUMMY4/anichat_nam_01_00185.wav|설마 이런 일이 있을수가 있나 하지만 그 냄새는?

@@ -59,6 +59,9 @@ def rand_slice_segments(x, x_lengths=None, segment_size=4):
   if x_lengths is None:
     x_lengths = t
   ids_str_max = x_lengths - segment_size + 1
+  for i in range(ids_str_max.size(dim=0)):
+    if ids_str_max[i] < 0:
+      ids_str_max[i] = 0
   ids_str = (torch.rand([b]).to(device=x.device) * ids_str_max).to(dtype=torch.long)
   ret = slice_segments(x, ids_str, segment_size)
   return ret, ids_str

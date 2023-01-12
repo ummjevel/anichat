@@ -123,7 +123,7 @@ def collapse_whitespace(text):
 
 
 def replace_without_hangul(text):
-  return re.sub(re.compile(r'[!?.,;:]+'), '', text)
+  return re.sub(re.compile(r'[!?.,;:~]+'), '', text)
 
 
 def convert_to_ascii(text):
@@ -278,7 +278,10 @@ def korean_cleaners(text):
   text = number_to_hangul(text)
   text = replace_without_hangul(text)
   text = collapse_whitespace(text)
-  phonemes = romanise(text, "ipa")
+  phonemes = romanise(text.strip(), "ipa")
+  if '~' in phonemes:
+    phonemes = phonemes[:phonemes.index(']')]
+  phonemes = collapse_whitespace(phonemes)
   return phonemes
 
 def korean_cleaners2(text):
