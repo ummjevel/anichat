@@ -14,3 +14,16 @@ flex: 1;
 height: 1px;
 background: #eee;
 }
+
+.Blink {
+    animation: blinker 0.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+}
+
+@keyframes blinker {  
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.red {
+    color: red;
+}
