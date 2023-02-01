@@ -5,7 +5,8 @@ import json
 from tqdm import tqdm
 import glob
 
-SPEAKER_DICT = {"con": "0", "nam": "1"}
+# SPEAKER_DICT = {"con": "0", "nam": "1"}
+SPEAKER_DICT = {"con": "0", "you": "1" , "nam": "2"}
 
 if __name__ == "__main__":
     # arg parse
@@ -15,11 +16,11 @@ if __name__ == "__main__":
     # output wavfile path
     parser.add_argument('--woutput', '-wo', type=str, help='wavfile output folder', default='/home/ubuntu/alpaco/anichat/tts/vits/DUMMY4')
     # output txtfile path
-    parser.add_argument('--foutput', '-fo', type=str, help='txtfile output filepath', default='/home/ubuntu/alpaco/anichat/tts/vits/filelists/conan_audio_text_train_filelist_ms.txt')
+    parser.add_argument('--foutput', '-fo', type=str, help='txtfile output filepath', default='/home/ubuntu/alpaco/anichat/tts/vits/filelists/conan_audio_text_train_filelist.txt')
     # output wav khz
     parser.add_argument('--khz', '-khz', type=str, help='wavfile output khz', default='22050')
     # for multispeakers
-    parser.add_argument('--multi', '-m', type=str, help='for multispeakers', default='True')
+    parser.add_argument('--multi', '-m', type=str, help='for multispeakers', default='False')
     
     
     args = parser.parse_args()
@@ -35,21 +36,21 @@ if __name__ == "__main__":
     if not os.path.exists(args.woutput):
         os.makedirs(args.woutput)
 
-    print("Converting mp3 to wav...")
+    # print("Converting mp3 to wav...")
 
-    # save wav files to wavfile output folder path
-    for mp3file in tqdm(glob.glob(args.input + '/*.mp3')):
-        wavfile = args.woutput + '/' + mp3file.split('/')[-1].split('.')[0] + '.wav'
-        command = f"ffmpeg -y -i {mp3file} {khz} {wavfile}"
-        os.system(command)
+    # # save wav files to wavfile output folder path
+    # for mp3file in tqdm(glob.glob(args.input + '/*.mp3')):
+    #     wavfile = args.woutput + '/' + mp3file.split('/')[-1].split('.')[0] + '.wav'
+    #     command = f"ffmpeg -y -i {mp3file} {khz} {wavfile}"
+    #     os.system(command)
 
-    print('Save txt file...')
+    # print('Save txt file...')
 
     # write txt file
     with open(args.foutput, 'w') as txtfile:
 
         # load json files
-        for jsonfile in tqdm(glob.glob(args.input + '/*.json')):
+        for jsonfile in tqdm(glob.glob(args.input + '/anichat_con_*.json')):
             wavfile_name = args.woutput.split('/')[-1] + '/' + jsonfile.split('/')[-1].split('.')[0] + '.wav'
             with open(jsonfile) as f:
                 json_data = json.load(f)

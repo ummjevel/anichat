@@ -1,0 +1,285 @@
+[INFO] {'train': {'log_interval': 1000, 'eval_interval': 1000, 'seed': 1234, 'epochs': 20000, 'learning_rate': 0.0002, 'betas': [0.8, 0.99], 'eps': 1e-09, 'batch_size': 16, 'fp16_run': True, 'lr_decay': 0.999875, 'segment_size': 8192, 'init_lr_ratio': 1, 'warmup_epochs': 0, 'c_mel': 45, 'c_kl': 1.0}, 'data': {'training_files': '/home/ubuntu/alpaco/anichat/tts/vits/filelists/conan_audio_text_train_filelist_ms.txt.cleaned', 'validation_files': '/home/ubuntu/alpaco/anichat/tts/vits/filelists/conan_audio_text_val_filelist_ms.txt.cleaned', 'text_cleaners': ['korean_cleaners'], 'max_wav_value': 32768.0, 'sampling_rate': 22050, 'filter_length': 1024, 'hop_length': 256, 'win_length': 1024, 'n_mel_channels': 80, 'mel_fmin': 0.0, 'mel_fmax': None, 'add_blank': True, 'n_speakers': 3, 'cleaned_text': True}, 'model': {'inter_channels': 192, 'hidden_channels': 192, 'filter_channels': 768, 'n_heads': 2, 'n_layers': 6, 'kernel_size': 3, 'p_dropout': 0.1, 'resblock': '1', 'resblock_kernel_sizes': [3, 7, 11], 'resblock_dilation_sizes': [[1, 3, 5], [1, 3, 5], [1, 3, 5]], 'upsample_rates': [8, 8, 2, 2], 'upsample_initial_channel': 512, 'upsample_kernel_sizes': [16, 16, 4, 4], 'n_layers_q': 3, 'use_spectral_norm': False, 'gin_channels': 256}, 'model_dir': './logs/conan_ms'}
+[WARNING] /home/ubuntu/alpaco/anichat/tts/vits is not a git repository, therefore hash value comparison will be ignored.
+[INFO] Loaded checkpoint './logs/conan_ms/G_97000.pth' (iteration 684)
+[INFO] Loaded checkpoint './logs/conan_ms/D_97000.pth' (iteration 684)
+./logs/conan_ms/G_97000.pth
+./logs/conan_ms/D_97000.pth
+/home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/functional.py:606: UserWarning: stft will soon require the return_complex parameter be given for real inputs, and will further require that return_complex=True in a future PyTorch release. (Triggered internally at  /opt/conda/conda-bld/pytorch_1659484683044/work/aten/src/ATen/native/SpectralOps.cpp:800.)
+  return _VF.stft(input, n_fft, hop_length, win_length, window,  # type: ignore[attr-defined]
+/home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/functional.py:606: UserWarning: ComplexHalf support is experimental and many operators don't support it yet. (Triggered internally at  /opt/conda/conda-bld/pytorch_1659484683044/work/aten/src/ATen/EmptyTensor.cpp:31.)
+  return _VF.stft(input, n_fft, hop_length, win_length, window,  # type: ignore[attr-defined]
+/home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/autograd/__init__.py:173: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [1, 9, 96], strides() = [21600, 96, 1]
+bucket_view.sizes() = [1, 9, 96], strides() = [864, 96, 1] (Triggered internally at  /opt/conda/conda-bld/pytorch_1659484683044/work/torch/csrc/distributed/c10d/reducer.cpp:312.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[INFO] Train Epoch: 684 [10%]
+[INFO] [1.8080601692199707, 3.4498953819274902, 10.184259414672852, 24.45779037475586, 1.2327203750610352, 1.0287227630615234, 97000, 0.00018344904915530398]
+[INFO] Saving model and optimizer state at iteration 684 to ./logs/conan_ms/G_97000.pth
+[INFO] Saving model and optimizer state at iteration 684 to ./logs/conan_ms/D_97000.pth
+[INFO] ====> Epoch: 684
+[INFO] ====> Epoch: 685
+[INFO] ====> Epoch: 686
+[INFO] ====> Epoch: 687
+[INFO] ====> Epoch: 688
+[INFO] ====> Epoch: 689
+[INFO] ====> Epoch: 690
+[INFO] Train Epoch: 691 [14%]
+[INFO] [2.133786201477051, 2.592634439468384, 8.727241516113281, 24.285383224487305, 1.1512681245803833, 1.7199958562850952, 98000, 0.00018328859141897335]
+[INFO] Saving model and optimizer state at iteration 691 to ./logs/conan_ms/G_98000.pth
+[INFO] Saving model and optimizer state at iteration 691 to ./logs/conan_ms/D_98000.pth
+[INFO] ====> Epoch: 691
+[INFO] ====> Epoch: 692
+[INFO] ====> Epoch: 693
+[INFO] ====> Epoch: 694
+[INFO] ====> Epoch: 695
+[INFO] ====> Epoch: 696
+[INFO] ====> Epoch: 697
+[INFO] Train Epoch: 698 [18%]
+[INFO] [1.94891357421875, 2.8560385704040527, 9.313535690307617, 26.741256713867188, 1.041658639907837, 1.4828516244888306, 99000, 0.00018312827403052281]
+[INFO] Saving model and optimizer state at iteration 698 to ./logs/conan_ms/G_99000.pth
+[INFO] Saving model and optimizer state at iteration 698 to ./logs/conan_ms/D_99000.pth
+[INFO] ====> Epoch: 698
+[INFO] ====> Epoch: 699
+[INFO] ====> Epoch: 700
+[INFO] ====> Epoch: 701
+[INFO] ====> Epoch: 702
+[INFO] ====> Epoch: 703
+[INFO] ====> Epoch: 704
+[INFO] Train Epoch: 705 [23%]
+[INFO] [2.097027540206909, 2.9215056896209717, 9.32420539855957, 27.292327880859375, 1.0746244192123413, 1.6540151834487915, 100000, 0.000182968096867194]
+[INFO] Saving model and optimizer state at iteration 705 to ./logs/conan_ms/G_100000.pth
+[INFO] Saving model and optimizer state at iteration 705 to ./logs/conan_ms/D_100000.pth
+[INFO] ====> Epoch: 705
+[INFO] ====> Epoch: 706
+[INFO] ====> Epoch: 707
+[INFO] ====> Epoch: 708
+[INFO] ====> Epoch: 709
+[INFO] ====> Epoch: 710
+[INFO] ====> Epoch: 711
+[INFO] Train Epoch: 712 [27%]
+[INFO] [2.18496036529541, 2.66361665725708, 8.084161758422852, 25.01901626586914, 1.178368091583252, 1.5830707550048828, 101000, 0.0001828080598063359]
+[INFO] Saving model and optimizer state at iteration 712 to ./logs/conan_ms/G_101000.pth
+[INFO] Saving model and optimizer state at iteration 712 to ./logs/conan_ms/D_101000.pth
+[INFO] ====> Epoch: 712
+[INFO] ====> Epoch: 713
+[INFO] ====> Epoch: 714
+[INFO] ====> Epoch: 715
+[INFO] ====> Epoch: 716
+[INFO] ====> Epoch: 717
+[INFO] ====> Epoch: 718
+[INFO] Train Epoch: 719 [31%]
+[INFO] [2.3596577644348145, 2.5995659828186035, 7.398137092590332, 24.77140998840332, 1.088256597518921, 1.5729724168777466, 102000, 0.00018264816272540486]
+[INFO] Saving model and optimizer state at iteration 719 to ./logs/conan_ms/G_102000.pth
+[INFO] Saving model and optimizer state at iteration 719 to ./logs/conan_ms/D_102000.pth
+[INFO] ====> Epoch: 719
+[INFO] ====> Epoch: 720
+[INFO] ====> Epoch: 721
+[INFO] ====> Epoch: 722
+[INFO] ====> Epoch: 723
+[INFO] ====> Epoch: 724
+[INFO] ====> Epoch: 725
+[INFO] Train Epoch: 726 [35%]
+[INFO] [2.181368827819824, 2.706515073776245, 8.471260070800781, 26.15192413330078, 0.9600945711135864, 1.9032763242721558, 103000, 0.00018248840550196433]
+[INFO] Saving model and optimizer state at iteration 726 to ./logs/conan_ms/G_103000.pth
+[INFO] Saving model and optimizer state at iteration 726 to ./logs/conan_ms/D_103000.pth
+[INFO] ====> Epoch: 726
+[INFO] ====> Epoch: 727
+[INFO] ====> Epoch: 728
+[INFO] ====> Epoch: 729
+[INFO] ====> Epoch: 730
+[INFO] ====> Epoch: 731
+[INFO] ====> Epoch: 732
+[INFO] Train Epoch: 733 [39%]
+[INFO] [2.301837682723999, 2.7426867485046387, 9.06153392791748, 24.68097686767578, 1.0339630842208862, 1.70243239402771, 104000, 0.00018232878801368487]
+[INFO] Saving model and optimizer state at iteration 733 to ./logs/conan_ms/G_104000.pth
+[INFO] Saving model and optimizer state at iteration 733 to ./logs/conan_ms/D_104000.pth
+[INFO] ====> Epoch: 733
+[INFO] ====> Epoch: 734
+[INFO] ====> Epoch: 735
+[INFO] ====> Epoch: 736
+[INFO] ====> Epoch: 737
+[INFO] ====> Epoch: 738
+[INFO] ====> Epoch: 739
+[INFO] Train Epoch: 740 [44%]
+[INFO] [2.125244617462158, 2.6758103370666504, 8.677277565002441, 25.645584106445312, 1.1186740398406982, 1.375421404838562, 105000, 0.00018216931013834408]
+[INFO] Saving model and optimizer state at iteration 740 to ./logs/conan_ms/G_105000.pth
+[INFO] Saving model and optimizer state at iteration 740 to ./logs/conan_ms/D_105000.pth
+[INFO] ====> Epoch: 740
+[INFO] ====> Epoch: 741
+[INFO] ====> Epoch: 742
+[INFO] ====> Epoch: 743
+[INFO] ====> Epoch: 744
+[INFO] ====> Epoch: 745
+[INFO] ====> Epoch: 746
+[INFO] Train Epoch: 747 [48%]
+[INFO] [2.1747097969055176, 2.8568778038024902, 9.183882713317871, 25.47309684753418, 1.140821933746338, 1.784865140914917, 106000, 0.00018200997175382645]
+[INFO] Saving model and optimizer state at iteration 747 to ./logs/conan_ms/G_106000.pth
+[INFO] Saving model and optimizer state at iteration 747 to ./logs/conan_ms/D_106000.pth
+[INFO] ====> Epoch: 747
+[INFO] ====> Epoch: 748
+[INFO] ====> Epoch: 749
+[INFO] ====> Epoch: 750
+[INFO] ====> Epoch: 751
+[INFO] ====> Epoch: 752
+[INFO] ====> Epoch: 753
+[INFO] Train Epoch: 754 [52%]
+[INFO] [2.1199729442596436, 2.754323720932007, 8.950661659240723, 24.6033992767334, 1.0912123918533325, 1.7082780599594116, 107000, 0.00018185077273812325]
+[INFO] Saving model and optimizer state at iteration 754 to ./logs/conan_ms/G_107000.pth
+[INFO] Saving model and optimizer state at iteration 754 to ./logs/conan_ms/D_107000.pth
+[INFO] ====> Epoch: 754
+[INFO] ====> Epoch: 755
+[INFO] ====> Epoch: 756
+[INFO] ====> Epoch: 757
+[INFO] ====> Epoch: 758
+[INFO] ====> Epoch: 759
+[INFO] ====> Epoch: 760
+[INFO] Train Epoch: 761 [56%]
+[INFO] [2.0652568340301514, 2.775988817214966, 8.705888748168945, 26.145343780517578, 1.0539963245391846, 1.6024901866912842, 108000, 0.00018169171296933244]
+[INFO] Saving model and optimizer state at iteration 761 to ./logs/conan_ms/G_108000.pth
+[INFO] Saving model and optimizer state at iteration 761 to ./logs/conan_ms/D_108000.pth
+[INFO] ====> Epoch: 761
+[INFO] ====> Epoch: 762
+[INFO] ====> Epoch: 763
+[INFO] ====> Epoch: 764
+[INFO] ====> Epoch: 765
+[INFO] ====> Epoch: 766
+[INFO] ====> Epoch: 767
+[INFO] Train Epoch: 768 [61%]
+[INFO] [2.247178792953491, 2.533956289291382, 8.625641822814941, 23.948196411132812, 1.0271960496902466, 1.7252572774887085, 109000, 0.00018153279232565873]
+[INFO] Saving model and optimizer state at iteration 768 to ./logs/conan_ms/G_109000.pth
+[INFO] Saving model and optimizer state at iteration 768 to ./logs/conan_ms/D_109000.pth
+[INFO] ====> Epoch: 768
+[INFO] ====> Epoch: 769
+[INFO] ====> Epoch: 770
+[INFO] ====> Epoch: 771
+[INFO] ====> Epoch: 772
+[INFO] ====> Epoch: 773
+[INFO] ====> Epoch: 774
+[INFO] Train Epoch: 775 [65%]
+[INFO] [2.2005271911621094, 2.937673330307007, 8.274836540222168, 24.79280662536621, 1.1170424222946167, 1.485701084136963, 110000, 0.0001813740106854133]
+[INFO] Saving model and optimizer state at iteration 775 to ./logs/conan_ms/G_110000.pth
+[INFO] Saving model and optimizer state at iteration 775 to ./logs/conan_ms/D_110000.pth
+[INFO] ====> Epoch: 775
+[INFO] ====> Epoch: 776
+[INFO] ====> Epoch: 777
+[INFO] ====> Epoch: 778
+[INFO] ====> Epoch: 779
+[INFO] ====> Epoch: 780
+[INFO] ====> Epoch: 781
+[INFO] Train Epoch: 782 [69%]
+[INFO] [2.0338549613952637, 2.985961437225342, 10.819062232971191, 26.54887580871582, 1.0754674673080444, 1.805797815322876, 111000, 0.00018121536792701373]
+[INFO] Saving model and optimizer state at iteration 782 to ./logs/conan_ms/G_111000.pth
+[INFO] Saving model and optimizer state at iteration 782 to ./logs/conan_ms/D_111000.pth
+[INFO] ====> Epoch: 782
+[INFO] ====> Epoch: 783
+[INFO] ====> Epoch: 784
+[INFO] ====> Epoch: 785
+[INFO] ====> Epoch: 786
+[INFO] ====> Epoch: 787
+[INFO] ====> Epoch: 788
+[INFO] Train Epoch: 789 [73%]
+[INFO] [2.26043963432312, 2.5937020778656006, 9.004691123962402, 23.9539794921875, 1.1021127700805664, 1.8649245500564575, 112000, 0.00018105686392898393]
+[INFO] Saving model and optimizer state at iteration 789 to ./logs/conan_ms/G_112000.pth
+[INFO] Saving model and optimizer state at iteration 789 to ./logs/conan_ms/D_112000.pth
+[INFO] ====> Epoch: 789
+[INFO] ====> Epoch: 790
+[INFO] ====> Epoch: 791
+[INFO] ====> Epoch: 792
+[INFO] ====> Epoch: 793
+[INFO] ====> Epoch: 794
+[INFO] ====> Epoch: 795
+[INFO] Train Epoch: 796 [77%]
+[INFO] [2.3130970001220703, 2.5589699745178223, 9.165570259094238, 24.909225463867188, 1.0886116027832031, 1.8648487329483032, 113000, 0.0001808984985699541]
+[INFO] Saving model and optimizer state at iteration 796 to ./logs/conan_ms/G_113000.pth
+[INFO] Saving model and optimizer state at iteration 796 to ./logs/conan_ms/D_113000.pth
+[INFO] ====> Epoch: 796
+[INFO] ====> Epoch: 797
+[INFO] ====> Epoch: 798
+[INFO] ====> Epoch: 799
+[INFO] ====> Epoch: 800
+[INFO] ====> Epoch: 801
+[INFO] ====> Epoch: 802
+[INFO] Train Epoch: 803 [82%]
+[INFO] [2.0852956771850586, 2.9382760524749756, 8.282538414001465, 23.88348388671875, 1.0600711107254028, 1.6428780555725098, 114000, 0.0001807402717286606]
+[INFO] Saving model and optimizer state at iteration 803 to ./logs/conan_ms/G_114000.pth
+[INFO] Saving model and optimizer state at iteration 803 to ./logs/conan_ms/D_114000.pth
+[INFO] ====> Epoch: 803
+[INFO] ====> Epoch: 804
+[INFO] ====> Epoch: 805
+[INFO] ====> Epoch: 806
+[INFO] ====> Epoch: 807
+[INFO] ====> Epoch: 808
+[INFO] ====> Epoch: 809
+[INFO] Train Epoch: 810 [86%]
+[INFO] [2.1601579189300537, 2.7741167545318604, 9.237871170043945, 24.69467544555664, 0.9681361317634583, 1.3106558322906494, 115000, 0.00018058218328394587]
+[INFO] Saving model and optimizer state at iteration 810 to ./logs/conan_ms/G_115000.pth
+[INFO] Saving model and optimizer state at iteration 810 to ./logs/conan_ms/D_115000.pth
+[INFO] ====> Epoch: 810
+[INFO] ====> Epoch: 811
+[INFO] ====> Epoch: 812
+[INFO] ====> Epoch: 813
+[INFO] ====> Epoch: 814
+[INFO] ====> Epoch: 815
+[INFO] ====> Epoch: 816
+[INFO] Train Epoch: 817 [90%]
+[INFO] [1.8824094533920288, 3.0863304138183594, 9.803877830505371, 26.29608154296875, 1.0194510221481323, 1.9363287687301636, 116000, 0.00018042423311475828]
+[INFO] Saving model and optimizer state at iteration 817 to ./logs/conan_ms/G_116000.pth
+[INFO] Saving model and optimizer state at iteration 817 to ./logs/conan_ms/D_116000.pth
+[INFO] ====> Epoch: 817
+terminate called after throwing an instance of 'c10::CUDAError'
+  what():  CUDA error: an illegal memory access was encountered
+Exception raised from record at /opt/conda/conda-bld/pytorch_1659484683044/work/aten/src/ATen/cuda/CUDAEvent.h:115 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f954f8aa497 in /home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0xd1b28 (0x7f95896f9b28 in /home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/lib/libtorch_cuda_cpp.so)
+frame #2: <unknown function> + 0xd509e (0x7f95896fd09e in /home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/lib/libtorch_cuda_cpp.so)
+frame #3: <unknown function> + 0x458278 (0x7f958f6d2278 in /home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #4: c10::TensorImpl::release_resources() + 0x175 (0x7f954f88dd95 in /home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #5: <unknown function> + 0x34d075 (0x7f958f5c7075 in /home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #6: <unknown function> + 0x6817b8 (0x7f958f8fb7b8 in /home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #7: THPVariable_subclass_dealloc(_object*) + 0x2d5 (0x7f958f8fbad5 in /home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/lib/libtorch_python.so)
+frame #8: <unknown function> + 0x10cd4b (0x55ce143cbd4b in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #9: <unknown function> + 0x12a31a (0x55ce143e931a in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #10: <unknown function> + 0x19725f (0x55ce1445625f in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #11: _PyEval_EvalFrameDefault + 0x5813 (0x55ce143e0e23 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #12: _PyFunction_Vectorcall + 0xf6 (0x55ce143ec1d6 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #13: _PyEval_EvalFrameDefault + 0x38b (0x55ce143db99b in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #14: _PyFunction_Vectorcall + 0xf6 (0x55ce143ec1d6 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #15: PyObject_Call + 0x2d2 (0x55ce143fe0a2 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #16: _PyEval_EvalFrameDefault + 0x200f (0x55ce143dd61f in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #17: _PyFunction_Vectorcall + 0xf6 (0x55ce143ec1d6 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #18: PyObject_Call + 0x2d2 (0x55ce143fe0a2 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #19: _PyEval_EvalFrameDefault + 0x200f (0x55ce143dd61f in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #20: _PyFunction_Vectorcall + 0xf6 (0x55ce143ec1d6 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #21: _PyEval_EvalFrameDefault + 0x675 (0x55ce143dbc85 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #22: _PyEval_EvalCodeWithName + 0x2e1 (0x55ce143da351 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #23: _PyFunction_Vectorcall + 0x18c (0x55ce143ec26c in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #24: _PyEval_EvalFrameDefault + 0x675 (0x55ce143dbc85 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #25: _PyFunction_Vectorcall + 0xf6 (0x55ce143ec1d6 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #26: _PyEval_EvalFrameDefault + 0x38b (0x55ce143db99b in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #27: _PyEval_EvalCodeWithName + 0x2e1 (0x55ce143da351 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #28: _PyFunction_Vectorcall + 0x18c (0x55ce143ec26c in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #29: _PyEval_EvalFrameDefault + 0x10ea (0x55ce143dc6fa in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #30: _PyEval_EvalCodeWithName + 0x2e1 (0x55ce143da351 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #31: PyEval_EvalCodeEx + 0x39 (0x55ce14499fe9 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #32: PyEval_EvalCode + 0x1b (0x55ce14499fab in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #33: <unknown function> + 0x1fbbb3 (0x55ce144babb3 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #34: <unknown function> + 0x1fab93 (0x55ce144b9b93 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #35: PyRun_StringFlags + 0x7d (0x55ce144b755d in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #36: PyRun_SimpleStringFlags + 0x3d (0x55ce1434de6b in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #37: Py_RunMain + 0x27b (0x55ce144b6a4b in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #38: Py_BytesMain + 0x39 (0x55ce1448e329 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+frame #39: __libc_start_main + 0xf3 (0x7f95c6cf6083 in /lib/x86_64-linux-gnu/libc.so.6)
+frame #40: <unknown function> + 0x1cf235 (0x55ce1448e235 in /home/ubuntu/anaconda3/envs/alpaco/bin/python)
+
+Traceback (most recent call last):
+  File "train_ms.py", line 295, in <module>
+    main()
+  File "train_ms.py", line 51, in main
+    mp.spawn(run, nprocs=n_gpus, args=(n_gpus, hps,))
+  File "/home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 240, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method='spawn')
+  File "/home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 198, in start_processes
+    while not context.join():
+  File "/home/ubuntu/anaconda3/envs/alpaco/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 140, in join
+    raise ProcessExitedException(
+torch.multiprocessing.spawn.ProcessExitedException: process 0 terminated with signal SIGABRT
