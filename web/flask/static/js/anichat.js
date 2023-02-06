@@ -15,7 +15,12 @@ $(document).ready(function () {
 
     $("#btnSend").click(function () {
         var message = $("#exampleFormControlInput1").val();
-        sendMyMessage(message)
+        var use_tts = false;
+        if ($("#flexSwitchCheckDefault").is(":checked") == true) {
+            use_tts = true;
+        }
+
+        sendMyMessage(message, use_tts)
     });
 
     $("#recordButton").click(function() {
@@ -44,7 +49,7 @@ function validationCheck(message) {
     return true;
 }
 
-function sendMyMessage(message) {
+function sendMyMessage(message, use_tts) {
     // validation check
     if (message == '') {
         return false;
@@ -75,13 +80,15 @@ function sendMyMessage(message) {
         // scroll down
         $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
 
+        $("#exampleFormControlInput1").val("");
+
         // send message
         $.ajax({
             url: "sendChat",
             type: "post",
             accept: "application/json",
             contentType: "application/json; charset=utf-8",
-            data: JSON.stringify({'use_tts': false, 'message': message}),
+            data: JSON.stringify({'use_tts': use_tts, 'message': message}),
             dataType: "json",
             success: function(data) {
                 console.log(data)
@@ -119,7 +126,6 @@ function sendAnichatMessage(data) {
     // scroll down
     $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
 
-    $("#exampleFormControlInput1").val("");
 }
 
 

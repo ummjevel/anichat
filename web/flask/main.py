@@ -141,8 +141,9 @@ def sendChat():
         if request.is_json == True:
             params = request.get_json()
             print(params, file=sys.stderr)
-            if params['use_tts'] == 'true': # use tts
+            if params['use_tts'] == True: # use tts
                 print('tts 사용', file=sys.stderr)
+                
             else: # use chatbot only
                 print('chatbot만 사용', file=sys.stderr)
                 try:
