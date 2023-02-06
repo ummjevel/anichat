@@ -34,6 +34,7 @@ $(document).ready(function () {
             $('#btnSend').click();
         }
     });  
+
 });
 
 function validationCheck(message) {
@@ -102,6 +103,9 @@ function sendMyMessage(message, use_tts) {
 }
 
 function sendAnichatMessage(data) {
+
+    console.log(data);
+
     let today = new Date();
     var hours = ('0' + today.getHours()).slice(-2);
     var minutes = ('0' + today.getMinutes()).slice(-2);
@@ -116,6 +120,10 @@ function sendAnichatMessage(data) {
     htmlTags += "<div>";
     htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3' style='background-color: #F5F6F7; '>";
     htmlTags += data.message + "</p>";
+    // if use tts, add audio.
+    if (data.use_tts == true || data.use_tts == "true") {
+        htmlTags += "<div style='margin-right: 17px;'><audio controls='' src='" + data.wav_file + "'></audio></div>"
+    }
     htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-muted'>"
     htmlTags += timeString + "</p>";
     htmlTags += "</div>";
@@ -126,6 +134,9 @@ function sendAnichatMessage(data) {
     // scroll down
     $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
 
+    if (data.use_tts == true || data.use_tts == "true") {
+        $("audio")[$("audio").length - 1].play();
+    }
 }
 
 
@@ -142,7 +153,7 @@ function addRecordMessage(record) {
     htmlTags += "<div>";
     htmlTags += "  <p class='small p-2 me-3 mb-1 text-white rounded-3 bg-primary'>";
     htmlTags += message + "</p>";
-    htmlTags += "  <p class='small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end'>"
+    htmlTags += "  <p class='small me-3 mb-3 rounded-3 text-muted'>"
     htmlTags += timeString + "</p>";
     htmlTags += "</div>";
     htmlTags += "<img src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp'";
@@ -304,7 +315,7 @@ function createMessageLink(blob) {
     var divTemp = document.createElement('div');
 
     var pSmall2 = document.createElement('p');
-    pSmall2.className = "p class='small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end";
+    pSmall2.className = "small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end";
     pSmall2.innerText = timeString;
 
     var imgAvatar1 = document.createElement('img');
@@ -323,6 +334,41 @@ function createMessageLink(blob) {
 
     // scroll down
     $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
+
+    // send message
+    var message = $("#exampleFormControlInput1").val();
+    var use_tts = "false";
+    if ($("#flexSwitchCheckDefault").is(":checked") == true) {
+        use_tts = "true";
+    }
+    var use_stt = "false";
+    if ($("#flexSwitchCheckDefaultSTT").is(":checked") == true) {
+        use_stt = "true";
+    }
+
+    let formData = new FormData();
+    formData.append('data', blob);
+
+    var data = {   
+        "use_tts" : use_tts,
+        "user_stt" : use_stt
+    }
+    formData.append('key', new Blob([ JSON.stringify(data) ], {type : "application/json"}));
+    
+    $.ajax({
+        type: 'POST',
+        url: 'sendSTT',
+        data: formData,
+        contentType: false,
+        processData: false,
+        success: function(data) {
+          console.log('success', data);
+          sendAnichatMessage(data);
+        },
+        error: function(result) {
+          alert('sorry an error occured');
+        }
+    });
 
 }
 function btclick() {
@@ -392,3 +438,4 @@ function loadModel() {
     );
     // add wav format
 }
+

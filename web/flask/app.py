@@ -4,6 +4,7 @@ import logging
 import random
 from werkzeug.utils import secure_filename
 import soundfile
+import codecs
 
 # stt
 import whisper
@@ -195,34 +196,6 @@ def sendChat():
             params = request.get_json()
             text_message = params['message']
             print(params, file=sys.stderr)
-            # use stt
-            if params['use_stt'] == True:
-                file = params['audio']
-                print(file, file=sys.stderr)
-                filename = '/static/stt_{0}.wav'.format(random.randint(0, 1000000))
-                filepath = os.path.join('/Users/jeonminjeong/Documents/dev/anichat/web/flask', filename)
-                file.save(filepath)
-                file.seek(0)
-                # Read the audio data again.
-                data, samplerate = soundfile.read(file)
-                with io.BytesIO() as fio:
-                    soundfile.write(
-                        fio, 
-                        data, 
-                        samplerate=samplerate, 
-                        subtype='PCM_16', 
-                        format='wav'
-                    )
-                    data = fio.getvalue()
-
-                audio = whisper.load_audio(filepath)
-                audio = whisper.pad_or_trim(audio)
-                mel = whisper.log_mel_spectrogram(audio).to(whisper_model.device)
-                options = whisper.DecodingOptions(language="Korean", fp16=False)
-                result = whisper.decode(whisper_model, mel, options)
-                text_message = result["text"]
-            
-                print(text_message, file=sys.stderr)
             # use chatbot only
             print('chatbot만 사용', file=sys.stderr)
             try:
@@ -247,18 +220,18 @@ def sendChat():
 @app.route('/sendSTT', methods=['POST'])
 def sendSTT():
     answer = '오류가 발생했습니다.'
+    
     print(request.files, file=sys.stderr)
         # json 형태로 풀기
         
     if 'data' in request.files:
         file = request.files['data']
-        print(file, file=sys.stderr)
         filename = '/static/stt_{0}.wav'.format(random.randint(0, 1000000))
-        filepath = os.path.join('/Users/jeonminjeong/Documents/dev/anichat/web/flask', filename)
-        file.save('/Users/jeonminjeong/Documents/dev/anichat/web/flask' + filename)
+        filepath = '/Users/jeonminjeong/Documents/dev/anichat/web/flask' + filename
+        file.save(filepath)
         file.seek(0)
         # Read the audio data again.
-        data, samplerate = soundfile.read('/Users/jeonminjeong/Documents/dev/anichat/web/flask' + filename)
+        data, samplerate = soundfile.read(filepath)
         with io.BytesIO() as fio:
             soundfile.write(
                 fio, 
@@ -269,7 +242,7 @@ def sendSTT():
             )
             data = fio.getvalue()
         
-        audio = whisper.load_audio('/Users/jeonminjeong/Documents/dev/anichat/web/flask' + filename)
+        audio = whisper.load_audio(filepath)
         audio = whisper.pad_or_trim(audio)
         mel = whisper.log_mel_spectrogram(audio).to(whisper_model.device)
         options = whisper.DecodingOptions(language="Korean", fp16=False)
@@ -285,14 +258,18 @@ def sendSTT():
             answer = '챗봇이 로드되지 않았습니다. 첫화면부터 다시 시도해주세요.'
         # use tts
         wav_file_path = ''
-        '''
-        if request.files['use_tts'] == True:
+        json_file_content = request.files['key'].read().decode('utf-8')
+        #load the string readed into json object
+        json_content = json.loads(json_file_content)
+        print(json_content, file=sys.stderr)
+
+        if json_content['use_tts'] == 'true':
             print('tts도 사용', file=sys.stderr)
-            wav_file_path = '/static/ttx_{0}.wav'.format(random.randint(0, 1000000))
+            wav_file_path = '/static/tts_{0}.wav'.format(random.randint(0, 1000000))
             wav_file_front_path = '/Users/jeonminjeong/Documents/dev/anichat/web/flask'
             wavfile = executeTTS(hps, net_g, answer, wav_file_front_path + wav_file_path)
-        '''
-        returns = jsonify({"message": answer, "use_tts": False, 'wav_file': filename})
+        
+        returns = jsonify({"message": answer, "use_tts": json_content['use_tts'], 'wav_file': wav_file_path})
     else:
         answer = '데이터 전달이 제대로 되지 않았습니다.'
         print('this is not json...', request.is_json, file=sys.stderr)
