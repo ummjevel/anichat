@@ -10,6 +10,7 @@ var input;                  //MediaStreamAudioSourceNode we'll be recording
 var AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioContext //new audio context to help us record
 
+var current_profile;
 
 $(document).ready(function () {
 
@@ -34,6 +35,45 @@ $(document).ready(function () {
             $('#btnSend').click();
         }
     });  
+
+    $('#flexSwitchCheckDefaultMori').change(function() {
+        if (this.checked) {
+            // turn on you
+            character = 'you';
+        } else {
+            // turn on conan
+            character = 'conan';
+        }    
+        console.log(character);
+        $.ajax({
+            url: "turnTTS",
+            type: "post",
+            accept: "application/json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({'character': character}),
+            dataType: "json",
+            success: function(data) {
+                console.log(data);
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(jqXHR);
+            }
+        });   
+    });
+
+    var conan_talk_image = './static/img/profile_conan.png';
+    var you_talk_image = './static/img/profile_you.png';
+    var nam_talk_image = './static/img/profile_nam.png';
+
+    current_profile = conan_talk_image;
+    var current_profile_value = $("#currentProfile").val();
+    if (current_profile_value == 0) {
+        current_profile = conan_talk_image;
+    } else if (current_profile_value == 1) {
+        current_profile = you_talk_image;
+    } else if (current_profile_value == 2) {
+        current_profile = nam_talk_image;
+    }
 
 });
 
@@ -65,15 +105,15 @@ function sendMyMessage(message, use_tts) {
         // add message
 
         htmlTags = $(".card-body").html();
-        htmlTags += "<div class='d-flex flex-row justify-content-end'>";
+        htmlTags += "<div class='d-flex flex-row justify-content-end mb-4'>";
         htmlTags += "<div>";
-        htmlTags += "  <p class='small p-2 me-3 mb-1 text-white rounded-3 bg-primary'>";
+        htmlTags += "  <p class='small p-2 me-3 mb-1 text-black rounded-3 text-back  '>";
         htmlTags += message + "</p>";
-        htmlTags += "  <p class='small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end'>"
+        htmlTags += "  <p class='small me-3 mb-3 rounded-3 text-white d-flex justify-content-end'>"
         htmlTags += timeString + "</p>";
         htmlTags += "</div>";
-        htmlTags += "<img src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp'";
-        htmlTags += "  alt='avatar 1' style='width: 45px; height: 100%;'>";
+        // htmlTags += "<img src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp'";
+        // htmlTags += "  alt='avatar 1' style='width: 45px; height: 100%;'>";
         htmlTags += "</div>";
 
         $(".card-body").html(htmlTags);
@@ -114,9 +154,9 @@ function sendAnichatMessage(data) {
     // add message
 
     htmlTags = $(".card-body").html();
-    htmlTags += "<div class='d-flex flex-row justify-content-start' style='margin-bottom:-24px;'>";
-    htmlTags += "<img src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp'";
-    htmlTags += "  alt='avatar 1' style='width: 45px; height: 100%;'>";
+    htmlTags += "<div class='d-flex flex-row justify-content-start mb-4' style='margin-bottom:-24px;'>";
+    htmlTags += "<img src='" + current_profile + "'";
+    htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";
     htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3' style='background-color: #F5F6F7; '>";
     htmlTags += data.message + "</p>";
@@ -124,7 +164,7 @@ function sendAnichatMessage(data) {
     if (data.use_tts == true || data.use_tts == "true") {
         htmlTags += "<div style='margin-right: 17px;'><audio controls='' src='" + data.wav_file + "'></audio></div>"
     }
-    htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-muted'>"
+    htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
     htmlTags += timeString + "</p>";
     htmlTags += "</div>";
     htmlTags += "</div>";
@@ -149,15 +189,15 @@ function addRecordMessage(record) {
     // add message
 
     htmlTags = $(".card-body").html();
-    htmlTags += "<div class='d-flex flex-row justify-content-end'>";
+    htmlTags += "<div class='d-flex flex-row justify-content-end mb-4'>";
     htmlTags += "<div>";
-    htmlTags += "  <p class='small p-2 me-3 mb-1 text-white rounded-3 bg-primary'>";
+    htmlTags += "  <p class='small p-2 me-3 mb-1 text-black rounded-3 text-back  '>";
     htmlTags += message + "</p>";
-    htmlTags += "  <p class='small me-3 mb-3 rounded-3 text-muted'>"
+    htmlTags += "  <p class='small me-3 mb-3 rounded-3 text-white'>"
     htmlTags += timeString + "</p>";
     htmlTags += "</div>";
-    htmlTags += "<img src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp'";
-    htmlTags += "  alt='avatar 1' style='width: 45px; height: 100%;'>";
+    // htmlTags += "<img src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp'";
+    // htmlTags += "  alt='avatar 1' style='width: 45px; height: 100%;'>";
     htmlTags += "</div>";
 
     $(".card-body").html(htmlTags);
@@ -315,20 +355,20 @@ function createMessageLink(blob) {
     var divTemp = document.createElement('div');
 
     var pSmall2 = document.createElement('p');
-    pSmall2.className = "small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end";
+    pSmall2.className = "small me-3 mb-3 rounded-3 text-white d-flex justify-content-end mb-4";
     pSmall2.innerText = timeString;
 
-    var imgAvatar1 = document.createElement('img');
-    imgAvatar1.style.width = '45px';
-    imgAvatar1.style.height = '100%';
-    imgAvatar1.src = 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp';
+    // var imgAvatar1 = document.createElement('img');
+    // imgAvatar1.style.width = '45px';
+    // imgAvatar1.style.height = '100%';
+    // imgAvatar1.src = 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp';
     var div = document.createElement('div');
     div.style.marginRight= '17px';
     div.appendChild(au);
     divTemp.appendChild(div);
     divTemp.appendChild(pSmall2);
     divFlex.appendChild(divTemp);
-    divFlex.appendChild(imgAvatar1);
+    // divFlex.appendChild(imgAvatar1);
 
     cardBody.appendChild(divFlex);
 
@@ -355,6 +395,8 @@ function createMessageLink(blob) {
     }
     formData.append('key', new Blob([ JSON.stringify(data) ], {type : "application/json"}));
     
+
+    addLoading();
     $.ajax({
         type: 'POST',
         url: 'sendSTT',
@@ -362,13 +404,16 @@ function createMessageLink(blob) {
         contentType: false,
         processData: false,
         success: function(data) {
-          console.log('success', data);
-          sendAnichatMessage(data);
+            console.log('success', data);
+            deleteLoading();
+            sendAnichatMessage(data);
         },
         error: function(result) {
-          alert('sorry an error occured');
+            deleteLoading();
+            alert('sorry an error occured');
         }
     });
+    
 
 }
 function btclick() {
@@ -384,13 +429,13 @@ function btclick() {
     // add message
 
     htmlTags = $(".card-body").html();
-    htmlTags += "<div class='d-flex flex-row justify-content-start'>";
-    htmlTags += "<img src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp'";
-    htmlTags += "  alt='avatar 1' style='width: 45px; height: 100%;'>";
+    htmlTags += "<div class='d-flex flex-row justify-content-start mb-4'>";
+    htmlTags += "<img src='" + current_profile + "'";
+    htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";
     htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3' style='background-color: #F5F6F7;position: absolute;width: 100px;height: 37px;'>";
     htmlTags += "<div class='dot-flashing'></div>" + "</p>";
-    htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-muted'>"
+    htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
     htmlTags += "</div>";
     htmlTags += "</div>";
     $(".card-body").html(htmlTags);
@@ -399,13 +444,13 @@ function btclick() {
         var divCardbody = $(".card-body > div");
         divCardbody[divCardbody.length - 1].remove();
         htmlTags = $(".card-body").html();
-        htmlTags += "<div class='d-flex flex-row justify-content-start' style='margin-bottom:-24px;'>";
-        htmlTags += "<img src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp'";
-        htmlTags += "  alt='avatar 1' style='width: 45px; height: 100%;'>";
+        htmlTags += "<div class='d-flex flex-row justify-content-start mb-4' style='margin-bottom:-24px;'>";
+        htmlTags += "<img src='" + current_profile +"'";
+        htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
         htmlTags += "<div>";
         htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3' style='background-color: #F5F6F7; '>";
         htmlTags += "ㅇㅇ" + "</p>";
-        htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-muted'>"
+        htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
         htmlTags += timeString + "</p>";
         htmlTags += "</div>";
         htmlTags += "</div>";
@@ -415,27 +460,22 @@ function btclick() {
 
 }
 
-function loadModel() {
-    // get text
-    var textMessage = $('#exampleFormControlInput1').val();
-    // send django
-    // get the value of CSRF token
-    var CSRFtoken = $('input[name=csrfmiddlewaretoken]').val();
-    $.post('model', { 
-        message: textMessage,
-        csrfmiddlewaretoken: CSRFtoken
-    });
-
-    $.post(
-        "model",
-        {
-            message: textMessage,
-            csrfmiddlewaretoken: CSRFtoken
-        },
-        function(data, status){
-            console.log("Data: " + data + "\nStatus: " + status);
-        }
-    );
-    // add wav format
+function addLoading() {
+    htmlTags = $(".card-body").html();
+    htmlTags += "<div class='d-flex flex-row justify-content-start' id='dot-flashing'>";
+    htmlTags += "<img src='" + current_profile + "'";
+    htmlTags += "  alt='avatar 1' style='width: 45px; height: 100%;'>";
+    htmlTags += "<div>";
+    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3' style='background-color: #F5F6F7;position: absolute;width: 100px;height: 37px;'>";
+    htmlTags += "<div class='dot-flashing'></div>" + "</p>";
+    htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
+    htmlTags += "</div>";
+    htmlTags += "</div>";
+    $(".card-body").html(htmlTags);
+    $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
 }
 
+function deleteLoading() {
+    $("#dot-flashing").remove();
+    
+}

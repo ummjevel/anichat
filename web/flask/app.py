@@ -46,6 +46,13 @@ from transform import SelectionJoinTransform
 
 
 device = torch.device("cpu") # ("cuda:0" if torch.cuda.is_available() else "cpu")
+
+paths_for_tts = {
+    "conan": ("/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/conan_base.json"
+            , "/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/G_600000.pth")
+    , "you": ("/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/you_base.json"
+            , "/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/G_40000.pth")
+}
 app = Flask(__name__)
 
 
@@ -137,10 +144,10 @@ def get_text(text, hps):
 
 
 
-def initTTS():
+def initTTS(character):
 
-    hps_path = "/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/conan_base.json"
-    checkpoint_path = "/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/G_600000.pth"
+    hps_path = paths_for_tts[character][0]
+    checkpoint_path = paths_for_tts[character][1]
 
     print('in vits2', file=sys.stderr)
     
@@ -175,6 +182,16 @@ def executeTTS(hps, net_g, text, output_path):
     return True
 
 
+chatbot, context_transform, infer_df, cand_embs = initChatbot()
+hps, net_g = initTTS('conan')
+whisper_model = whisper.load_model("base")
+
+from werkzeug.debug import DebuggedApplication
+app.wsgi_app = DebuggedApplication(app.wsgi_app, True)
+
+logging.basicConfig(level=logging.DEBUG) 
+
+
 @app.route('/')
 def hello_world():
     app.logger.info('logged in successfully')
@@ -206,7 +223,7 @@ def sendChat():
             wav_file_path = ''
             if params['use_tts'] == True:
                 print('tts도 사용', file=sys.stderr)
-                wav_file_path = '/static/ttx_{0}.wav'.format(random.randint(0, 1000000))
+                wav_file_path = '/static/tts_{0}.wav'.format(random.randint(0, 1000000))
                 wav_file_front_path = '/Users/jeonminjeong/Documents/dev/anichat/web/flask'
                 wavfile = executeTTS(hps, net_g, answer, wav_file_front_path + wav_file_path)
             returns = jsonify({"message": answer, "use_tts": params['use_tts'], 'wav_file': wav_file_path})
@@ -275,6 +292,19 @@ def sendSTT():
         print('this is not json...', request.is_json, file=sys.stderr)
         returns = jsonify({"message": answer})
     return returns
+
+
+@app.route('/turnTTS', methods=['POST'])
+def turnTTS():
+    character = 'conan'
+    print('this is json...', request.is_json, file=sys.stderr)
+    params = request.get_json()
+    print(params, file=sys.stderr)
+    character = params['character']
+    global hps
+    global net_g
+    hps, net_g = initTTS(character)
+    return jsonify({"result": 'success'})
 
 
 @app.route('/c2')
@@ -372,15 +402,6 @@ def vits2():
     return 'hello, its me.'
 
 
-
-chatbot, context_transform, infer_df, cand_embs = initChatbot()
-hps, net_g = initTTS()
-whisper_model = whisper.load_model("base")
-
-from werkzeug.debug import DebuggedApplication
-app.wsgi_app = DebuggedApplication(app.wsgi_app, True)
-
-logging.basicConfig(level=logging.DEBUG) 
 
 if __name__ == '__main__':
     print('run', file=sys.stderr)
