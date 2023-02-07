@@ -37,7 +37,7 @@
           </div>
 
           <div class="card" id="chat2">
-            <div class="card-header d-flex justify-content-center align-items-center p-3">
+            <div class="card-header d-flex justify-content-center align-items-center p-3" id="btnSelectCharacter">
               <h5 class="mb-0" id="h5_character">Conan</h5>
               <input type="hidden" id="currentProfile" value="0"/>
             </div>
@@ -190,8 +190,32 @@
           </div>
         </div>
       </div>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div>
+            <span class="close"></span>
+          </div>
+          <div class="divProfile"> 
+            <div>
+              <img src="./static/img/profile_conan.png" id="imgConanProfile"/>
+              <p>CONAN</p>
+            </div>
+            <div>
+              <img src="./static/img/profile_you.png" id="imgYouProfile"/>
+              <p>COGORO</p>
+            </div>
+            <div>
+              <img src="./static/img/profile_nam.png" id="imgNamProfile"/>
+              <p>CUDO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
+  
   <input type="hidden" id="recordFlag" value="0">
   <!-- MDB -->
   <script src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>

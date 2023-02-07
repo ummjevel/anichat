@@ -181,10 +181,14 @@ def executeTTS(hps, net_g, text, output_path):
     print('write wav', file=sys.stderr)
     return True
 
-
+'''
 chatbot, context_transform, infer_df, cand_embs = initChatbot()
 hps, net_g = initTTS('conan')
 whisper_model = whisper.load_model("base")
+'''
+chatbot, context_transform, infer_df, cand_embs = '', '', '', ''
+hps, net_g = '', ''
+whisper_model = ''
 
 from werkzeug.debug import DebuggedApplication
 app.wsgi_app = DebuggedApplication(app.wsgi_app, True)

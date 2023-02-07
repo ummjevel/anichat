@@ -61,6 +61,23 @@ $(document).ready(function () {
         });   
     });
 
+    // When the user clicks the button, open the modal
+    $("#btnSelectCharacter").click(function () {
+        $("#myModal").css('display', 'block');
+    });
+
+    // When the user clicks on <span> (x), close the modal
+    $(".close").click(function () {
+        $("#myModal").css('display', 'none');
+    });
+
+    var modal = document.getElementById("myModal");
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            $("#myModal").css('display', 'none');
+        }
+      };
+
     var conan_talk_image = './static/img/profile_conan.png';
     var you_talk_image = './static/img/profile_you.png';
     var nam_talk_image = './static/img/profile_nam.png';
@@ -464,7 +481,7 @@ function addLoading() {
     htmlTags = $(".card-body").html();
     htmlTags += "<div class='d-flex flex-row justify-content-start' id='dot-flashing'>";
     htmlTags += "<img src='" + current_profile + "'";
-    htmlTags += "  alt='avatar 1' style='width: 45px; height: 100%;'>";
+    htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";
     htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3' style='background-color: #F5F6F7;position: absolute;width: 100px;height: 37px;'>";
     htmlTags += "<div class='dot-flashing'></div>" + "</p>";
