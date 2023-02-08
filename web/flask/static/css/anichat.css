@@ -85,6 +85,7 @@ background: #eee;
 .card-header {
   background-color: #386187;
   --mdb-card-header-border-width: 0px;
+  cursor: pointer;
 }
 
 #h5_character {
@@ -105,7 +106,7 @@ background: #eee;
   border-radius: 13px;
 }
 
-.modal {
+.modalCharacter {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -118,7 +119,7 @@ background: #eee;
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
-.modal-content {
+.modalCharacterContent {
   background-color: #ffffff;
   color: black;
   margin: 0% auto; /* 15% from the top and centered */
@@ -127,15 +128,26 @@ background: #eee;
   width: 65%; /* Could be more or less, depending on screen size */
 }
 
-.close {
+.modalRecorderContent {
+  background-color: #ffffff;
+  color: black;
+  margin: 50% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 65%; /* Could be more or less, depending on screen size */
+}
+
+.characterClose, .recorderClose {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.characterClose:hover,
+.characterClose:focus,
+.recorderClose:hover,
+.recorderClose:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -145,6 +157,8 @@ background: #eee;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  border: medium solid black;
+  border-radius: 42px;
 }
 
 .divProfile > div > img:first-child {

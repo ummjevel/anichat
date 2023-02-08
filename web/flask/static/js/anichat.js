@@ -63,18 +63,18 @@ $(document).ready(function () {
 
     // When the user clicks the button, open the modal
     $("#btnSelectCharacter").click(function () {
-        $("#myModal").css('display', 'block');
+        $("#modalCharacter").css('display', 'block');
     });
 
     // When the user clicks on <span> (x), close the modal
-    $(".close").click(function () {
-        $("#myModal").css('display', 'none');
+    $(".characterClose").click(function () {
+        $("#modalCharacter").css('display', 'none');
     });
 
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("modalCharacter");
     window.onclick = function (event) {
         if (event.target == modal) {
-            $("#myModal").css('display', 'none');
+            $("#modalCharacter").css('display', 'none');
         }
       };
 
@@ -228,28 +228,30 @@ function addRecordMessage(record) {
 }
 
 function clickRecord() {
-    if ($("#recordFlag").val() == '0') {
-        $("#recordButton").addClass('Blink'); 
-        $("#recordButton > i").addClass('red');
-        // start record
-        startRecording();
-        $("#recordFlag").val('1');
-        // limit record time
-        setTimeout(() => {
-            if ($("#recordButton").hasClass('Blink')) {
-                $("#recordButton").removeClass('Blink'); 
-                $("#recordButton > i").removeClass('red');
-                stopRecording();
-                $("#recordFlag").val('0');
-            }
-        }, 10000);
-    } else {
-        $("#recordButton").removeClass('Blink'); 
-        $("#recordButton > i").removeClass('red');
-        stopRecording();
-        $("#recordFlag").val('0');
+    // create popup
     
-    }
+    // if ($("#recordFlag").val() == '0') {
+        // $("#recordButton").addClass('Blink'); 
+        // $("#recordButton > i").addClass('red');
+        // start record
+        // startRecording();
+        // $("#recordFlag").val('1');
+        // limit record time
+        // setTimeout(() => {
+            // if ($("#recordButton").hasClass('Blink')) {
+            //     $("#recordButton").removeClass('Blink'); 
+            //     $("#recordButton > i").removeClass('red');
+            //     stopRecording();
+            //     $("#recordFlag").val('0');
+            // }
+        // }, 10000);
+    // } else {
+        // $("#recordButton").removeClass('Blink'); 
+        // $("#recordButton > i").removeClass('red');
+        // stopRecording();
+        // $("#recordFlag").val('0');
+    
+    // }
 
 }
 
@@ -304,8 +306,8 @@ function startRecording() {
 
     }).catch(function (err) {
         //enable the record button if getUserMedia() fails
-        recordButton.disabled = false;
-        stopButton.disabled = true;
+        // recordButton.disabled = false;
+        // stopButton.disabled = true;
     });
     
 }
