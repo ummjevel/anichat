@@ -290,7 +290,8 @@ def sendSTT():
             wav_file_front_path = '/Users/jeonminjeong/Documents/dev/anichat/web/flask'
             wavfile = executeTTS(hps, net_g, answer, wav_file_front_path + wav_file_path)
         
-        returns = jsonify({"message": answer, "use_tts": json_content['use_tts'], 'wav_file': wav_file_path})
+        returns = jsonify({"message": answer, "use_tts": json_content['use_tts'], 'wav_file': wav_file_path
+                        , "question": text_message, "use_stt": "true"})
     else:
         answer = '데이터 전달이 제대로 되지 않았습니다.'
         print('this is not json...', request.is_json, file=sys.stderr)

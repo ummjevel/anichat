@@ -196,8 +196,18 @@ function sendAnichatMessage(data) {
     var minutes = ('0' + today.getMinutes()).slice(-2);
     var timeString = hours + ':' + minutes;
 
-    // add message
+    // add stt message
+    if (data.hasOwnProperty('use_stt')) {
+        console.log('this use stt');
+        console.log(data.question);
+        question_message = "<p class='small p-2 me-3 mb-1 text-black rounded-3 text-back'>";
+        question_message += data.question + "</p>";
+        // var ttsP = document.createElement("p");
+        // ttsP.classList.add('small', 'p-2', 'me-3', 'mb-1', 'text-black', 'rounded-3', 'text-back');
+        $(question_message).insertBefore($($("audio")[$("audio").length - 1]));
+    }
 
+    // add message
     htmlTags = $(".card-body").html();
     htmlTags += "<div class='d-flex flex-row justify-content-start mb-4' style='margin-bottom:-24px;'>";
     htmlTags += "<img src='" + current_profile + "'";
