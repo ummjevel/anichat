@@ -11,7 +11,7 @@ var AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioContext //new audio context to help us record
 
 var current_profile;
-var current_blob;
+var current_blob, current_record_url;
 
 $(document).ready(function () {
 
@@ -369,6 +369,7 @@ function createMessageLink(blob) {
     au.src = url;
     au.id = "audioPreRecorded";
     current_blob = blob;
+    current_record_url = url;
 
     /*
     //save to disk link
@@ -478,7 +479,10 @@ function uploadRecord() {
     // close modal
     $("#modalRecorder").css('display', 'none');
     // move audio
-    var au = document.getElementById("audioPreRecorded");
+    var au = document.createElement('audio');
+    au.controls = true;
+    au.src = current_record_url;
+
     var blob = current_blob;
     // delete prerecord audio
     $("#btnRecordReload").click();
