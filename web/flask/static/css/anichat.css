@@ -105,6 +105,7 @@ background: #eee;
   width: 45px; 
   height: 100%;
   border-radius: 13px;
+  z-index: 11;
 }
 
 .modalCharacter {
@@ -241,4 +242,66 @@ background: #eee;
 
 #divPreRecord > audio {
   margin-bottom: -7px;
+}
+
+.balloon {
+  display: inline-block;
+  position: relative;
+  background: #f5f013;
+  margin: 0 auto 10px;
+  border-radius: 10px !important;
+  z-index: 10;
+}
+.balloon:after {
+  content: '';
+  position: absolute;
+  height: 51px;
+  width: 50px;
+  border-radius: 18px;
+  z-index: 1;
+  background: #486f91;
+  bottom: -6px;
+  right: -50px;
+}
+.balloon:before {
+  content: '';
+  position: absolute;
+  height: 29px;
+  width: 40px;
+  border-radius: 20px;
+  z-index: -1;
+  background: #f5f013;
+  bottom: -1px;
+  right: -32px;
+}
+
+.balloon-ai {
+  display: inline-block;
+  position: relative;
+  background: #f5f6f7;
+  margin: 0 auto 10px;
+  border-radius: 10px !important;
+  z-index: 10;
+}
+.balloon-ai:after {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 50px;
+  border-radius: 16px;
+  z-index: 1;
+  background: #486f91;
+  bottom: -4px;
+  left: -50px;
+}
+.balloon-ai:before {
+  content: '';
+  position: absolute;
+  height: 31px;
+  width: 50px;
+  border-radius: 10px;
+  z-index: -1;
+  background: #f5f6f7;
+  bottom: -1px;
+  left: -45px;
 }

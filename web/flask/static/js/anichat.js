@@ -152,7 +152,7 @@ function sendMyMessage(message, use_tts) {
         htmlTags = $(".card-body").html();
         htmlTags += "<div class='d-flex flex-row justify-content-end mb-4'>";
         htmlTags += "<div>";
-        htmlTags += "  <p class='small p-2 me-3 mb-1 text-black rounded-3 text-back  '>";
+        htmlTags += "  <p class='small p-2 me-3 mb-1 text-black rounded-3 text-back balloon'>";
         htmlTags += message + "</p>";
         htmlTags += "  <p class='small me-3 mb-3 rounded-3 text-white d-flex justify-content-end'>"
         htmlTags += timeString + "</p>";
@@ -200,7 +200,7 @@ function sendAnichatMessage(data) {
     if (data.hasOwnProperty('use_stt')) {
         console.log('this use stt');
         console.log(data.question);
-        question_message = "<p class='small p-2 me-3 mb-1 text-black rounded-3 text-back'>";
+        question_message = "<p class='small p-2 me-3 mb-1 text-black rounded-3 text-back balloon-ai'>";
         question_message += data.question + "</p>";
         // var ttsP = document.createElement("p");
         // ttsP.classList.add('small', 'p-2', 'me-3', 'mb-1', 'text-black', 'rounded-3', 'text-back');
@@ -213,7 +213,7 @@ function sendAnichatMessage(data) {
     htmlTags += "<img src='" + current_profile + "'";
     htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";
-    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3' style='background-color: #F5F6F7; '>";
+    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style='background-color: #F5F6F7; '>";
     htmlTags += data.message + "</p>";
     // if use tts, add audio.
     if (data.use_tts == true || data.use_tts == "true") {
@@ -246,7 +246,7 @@ function addRecordMessage(record) {
     htmlTags = $(".card-body").html();
     htmlTags += "<div class='d-flex flex-row justify-content-end mb-4'>";
     htmlTags += "<div>";
-    htmlTags += "  <p class='small p-2 me-3 mb-1 text-black rounded-3 text-back  '>";
+    htmlTags += "  <p class='small p-2 me-3 mb-1 text-black rounded-3 text-back balloon '>";
     htmlTags += message + "</p>";
     htmlTags += "  <p class='small me-3 mb-3 rounded-3 text-white'>"
     htmlTags += timeString + "</p>";
@@ -587,7 +587,7 @@ function btclick() {
     htmlTags += "<img src='" + current_profile + "'";
     htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";
-    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3' style='background-color: #F5F6F7;position: absolute;width: 100px;height: 37px;'>";
+    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style='background-color: #F5F6F7;position: absolute;width: 100px;height: 37px;'>";
     htmlTags += "<div class='dot-flashing'></div>" + "</p>";
     htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
     htmlTags += "</div>";
@@ -602,7 +602,7 @@ function btclick() {
         htmlTags += "<img src='" + current_profile +"'";
         htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
         htmlTags += "<div>";
-        htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3' style='background-color: #F5F6F7; '>";
+        htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style='background-color: #F5F6F7; '>";
         htmlTags += "ㅇㅇ" + "</p>";
         htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
         htmlTags += timeString + "</p>";
@@ -620,7 +620,7 @@ function addLoading() {
     htmlTags += "<img src='" + current_profile + "'";
     htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";
-    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3' style='background-color: #F5F6F7;position: absolute;width: 100px;height: 37px;'>";
+    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style='background-color: #F5F6F7;position: absolute;width: 100px;height: 37px;'>";
     htmlTags += "<div class='dot-flashing'></div>" + "</p>";
     htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
     htmlTags += "</div>";
