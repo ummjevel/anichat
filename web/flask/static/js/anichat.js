@@ -11,6 +11,7 @@ var AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioContext //new audio context to help us record
 
 var current_profile;
+var current_blob;
 
 $(document).ready(function () {
 
@@ -22,10 +23,6 @@ $(document).ready(function () {
         }
 
         sendMyMessage(message, use_tts)
-    });
-
-    $("#recordButton").click(function() {
-        clickRecord();
     });
 
     // press enter then send message
@@ -71,12 +68,43 @@ $(document).ready(function () {
         $("#modalCharacter").css('display', 'none');
     });
 
+    $("#recordButton").click(function() {
+        // clickRecord();
+        $("#modalRecorder").css('display', 'block');
+    });
+
+    // When the user clicks on <span> (x), close the modal
+    $(".recorderClose").click(function () {
+        $("#modalRecorder").css('display', 'none');
+    });
+
+    $("#btnRecord").click(function() {
+        $("#btnRecordReload").click();
+        clickRecord();
+    })
+
+    $("#btnRecordReload").click(function() {
+        $("#divPreRecord > img").css('display', 'block');
+        $("#divPreRecord > audio").remove();
+        $("#btnRecordReload").css('display', 'none');
+        $("#btnRecordUpload").css('display', 'none');
+    });
+
+    $("#btnRecordUpload").click(function() {
+        uploadRecord();
+    });
+
     var modal = document.getElementById("modalCharacter");
+    var modalRecorder = document.getElementById("modalRecorder");
+
     window.onclick = function (event) {
         if (event.target == modal) {
             $("#modalCharacter").css('display', 'none');
         }
-      };
+        if (event.target == modalRecorder) {
+            $("#modalRecorder").css('display', 'none');
+        }
+    };
 
     var conan_talk_image = './static/img/profile_conan.png';
     var you_talk_image = './static/img/profile_you.png';
@@ -227,31 +255,31 @@ function addRecordMessage(record) {
     $("#exampleFormControlInput1").val("");
 }
 
+
 function clickRecord() {
-    // create popup
     
-    // if ($("#recordFlag").val() == '0') {
-        // $("#recordButton").addClass('Blink'); 
-        // $("#recordButton > i").addClass('red');
+    if ($("#recordFlag").val() == '0') {
+        $("#btnRecord").addClass('Blink'); 
+        // $("#btnRecord > i").addClass('red');
         // start record
-        // startRecording();
-        // $("#recordFlag").val('1');
+        startRecording();
+        $("#recordFlag").val('1');
         // limit record time
-        // setTimeout(() => {
-            // if ($("#recordButton").hasClass('Blink')) {
-            //     $("#recordButton").removeClass('Blink'); 
-            //     $("#recordButton > i").removeClass('red');
-            //     stopRecording();
-            //     $("#recordFlag").val('0');
-            // }
-        // }, 10000);
-    // } else {
-        // $("#recordButton").removeClass('Blink'); 
-        // $("#recordButton > i").removeClass('red');
-        // stopRecording();
-        // $("#recordFlag").val('0');
+        setTimeout(() => {
+            if ($("#btnRecord").hasClass('Blink')) {
+                $("#btnRecord").removeClass('Blink'); 
+                // $("#btnRecord > i").removeClass('red');
+                stopRecording();
+                $("#recordFlag").val('0');
+            }
+        }, 10000);
+    } else {
+        $("#btnRecord").removeClass('Blink'); 
+        // $("#btnRecord > i").removeClass('red');
+        stopRecording();
+        $("#recordFlag").val('0');
     
-    // }
+    }
 
 }
 
@@ -339,6 +367,8 @@ function createMessageLink(blob) {
     //add controls to the <audio> element
     au.controls = true;
     au.src = url;
+    au.id = "audioPreRecorded";
+    current_blob = blob;
 
     /*
     //save to disk link
@@ -359,6 +389,7 @@ function createMessageLink(blob) {
     recordingsList.appendChild(li);
     */
 
+    /*
     let today = new Date();
     var hours = ('0' + today.getHours()).slice(-2);
     var minutes = ('0' + today.getMinutes()).slice(-2);
@@ -433,13 +464,103 @@ function createMessageLink(blob) {
         }
     });
     
+*/
+    // var div = document.getElementById('divPreRecord');
+    // div.appendChild(au);
+    $("#divPreRecord > img").css('display', 'none');
+    $("#divPreRecord").append(au);
+    $("#btnRecordReload").css('display', 'block');
+    $("#btnRecordUpload").css('display', 'block');
 
 }
+
+function uploadRecord() {
+    // close modal
+    $("#modalRecorder").css('display', 'none');
+    // move audio
+    var au = document.getElementById("audioPreRecorded");
+    var blob = current_blob;
+    // delete prerecord audio
+    $("#btnRecordReload").click();
+
+    let today = new Date();
+    var hours = ('0' + today.getHours()).slice(-2);
+    var minutes = ('0' + today.getMinutes()).slice(-2);
+    var timeString = hours + ':' + minutes;
+
+    var cardBody = document.getElementsByClassName("card-body")[0];
+
+    // add message
+
+    var divFlex = document.createElement('div');
+    divFlex.className = "d-flex flex-row justify-content-end";
+
+    var divTemp = document.createElement('div');
+
+    var pSmall2 = document.createElement('p');
+    pSmall2.className = "small me-3 mb-3 rounded-3 text-white d-flex justify-content-end mb-4";
+    pSmall2.innerText = timeString;
+
+    // var imgAvatar1 = document.createElement('img');
+    // imgAvatar1.style.width = '45px';
+    // imgAvatar1.style.height = '100%';
+    // imgAvatar1.src = 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp';
+    var div = document.createElement('div');
+    div.style.marginRight= '17px';
+    div.appendChild(au);
+    divTemp.appendChild(div);
+    divTemp.appendChild(pSmall2);
+    divFlex.appendChild(divTemp);
+    // divFlex.appendChild(imgAvatar1);
+
+    cardBody.appendChild(divFlex);
+
+    // scroll down
+    $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
+
+    // send message
+    var message = $("#exampleFormControlInput1").val();
+    var use_tts = "false";
+    if ($("#flexSwitchCheckDefault").is(":checked") == true) {
+        use_tts = "true";
+    }
+    var use_stt = "false";
+    if ($("#flexSwitchCheckDefaultSTT").is(":checked") == true) {
+        use_stt = "true";
+    }
+
+    let formData = new FormData();
+    formData.append('data', blob);
+
+    var data = {   
+        "use_tts" : use_tts,
+        "user_stt" : use_stt
+    }
+    formData.append('key', new Blob([ JSON.stringify(data) ], {type : "application/json"}));
+    
+
+    addLoading();
+    $.ajax({
+        type: 'POST',
+        url: 'sendSTT',
+        data: formData,
+        contentType: false,
+        processData: false,
+        success: function(data) {
+            console.log('success', data);
+            deleteLoading();
+            sendAnichatMessage(data);
+        },
+        error: function(result) {
+            deleteLoading();
+            alert('sorry an error occured');
+        }
+    });
+}
+
 function btclick() {
 
     // loading 2 seconds
-
-
     let today = new Date();
     var hours = ('0' + today.getHours()).slice(-2);
     var minutes = ('0' + today.getMinutes()).slice(-2);

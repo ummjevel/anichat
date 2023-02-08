@@ -172,60 +172,63 @@
               <a class="ms-3 text-muted" href="#!" id="stopButton" disabled><i class="fas fa-smile"></i></a>
               <a class="ms-3" href="#!" id="btnSend"><i class="fas fa-paper-plane"></i></a>
             </div>
-            <!-- test buttons -->
-            <button onclick="btclick()">클릭</button>
-            <button onclick="loadModel()">load model</button>
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-              <label class="form-check-label" for="flexSwitchCheckDefault">TTS</label>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefaultSTT" />
-              <label class="form-check-label" for="flexSwitchCheckDefaultSTT">STT</label>
-            </div>
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefaultMori" />
-              <label class="form-check-label" for="flexSwitchCheckDefaultMori">모리 코고로 ON</label>
-            </div>
+            
           </div>
         </div>
       </div>
-
-      <div id="modalCharacter" class="modalCharacter">
-        <div class="modalCharacterContent">
-          <div>
-            <span class="characterClose"></span>
-          </div>
-          <div class="divProfile"> 
-            <div>
-              <img src="./static/img/profile_conan.png" id="imgConanProfile"/>
-              <p>CONAN</p>
-            </div>
-            <div>
-              <img src="./static/img/profile_you.png" id="imgYouProfile"/>
-              <p>COGORO</p>
-            </div>
-            <div>
-              <img src="./static/img/profile_nam.png" id="imgNamProfile"/>
-              <p>CUDO</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="modalRecorder" class="modalRecorder">
-        <div class="modalRecorderContent">
-          <div>
-            <span class="recorderClose"></span>
-          </div>
-          
-        </div>
-      </div>
-
-
-
     </div>
   </section>
+
+  <div id="modalCharacter" class="modalCharacter">
+    <div class="modalCharacterContent">
+      <div>
+        <span class="characterClose">x </span>
+      </div>
+      <div class="divProfile"> 
+        <div>
+          <img src="./static/img/profile_conan.png" id="imgConanProfile"/>
+          <p>CONAN</p>
+        </div>
+        <div>
+          <img src="./static/img/profile_you.png" id="imgYouProfile"/>
+          <p>COGORO</p>
+        </div>
+        <div>
+          <img src="./static/img/profile_nam.png" id="imgNamProfile"/>
+          <p>CUDO</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalRecorder" class="modalRecorder">
+    <div class="modalRecorderContent">
+      <div id="divPreRecord">
+        <!-- <span class="recorderClose">x </span> -->
+        <img src="./static/img/voice.gif" class="gifVoice"/>
+      </div>
+      <div class="divRecord">
+        <!-- <a href="#" id="btnRecordStop"><i class="fa-solid fa-pause fa-xl"></i></a> -->
+        <a href="#" id="btnRecordReload"><i class="fa-solid fa-rotate-right"></i></a>
+        <a href="#" id="btnRecord"><i class="fa-solid fa-record-vinyl fa-xl"></i></a>
+        <a href="#" id="btnRecordUpload"><i class="fa-solid fa-arrow-up fa-xl"></i></a>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+    <label class="form-check-label" for="flexSwitchCheckDefault">TTS</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefaultSTT" />
+    <label class="form-check-label" for="flexSwitchCheckDefaultSTT">STT</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefaultMori" />
+    <label class="form-check-label" for="flexSwitchCheckDefaultMori">모리 코고로 ON</label>
+  </div>
   
   <input type="hidden" id="recordFlag" value="0">
   <!-- MDB -->
