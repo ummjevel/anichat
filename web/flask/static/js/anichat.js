@@ -200,7 +200,7 @@ function sendAnichatMessage(data) {
     if (data.hasOwnProperty('use_stt')) {
         console.log('this use stt');
         console.log(data.question);
-        question_message = "<p class='small p-2 me-3 mb-1 text-black rounded-3 text-back balloon-ai'>";
+        question_message = "<p class='small p-2 me-3 mb-1 text-black rounded-3 text-back balloon'>";
         question_message += data.question + "</p>";
         // var ttsP = document.createElement("p");
         // ttsP.classList.add('small', 'p-2', 'me-3', 'mb-1', 'text-black', 'rounded-3', 'text-back');
