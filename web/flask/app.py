@@ -25,7 +25,7 @@ import sys
 from os import path
 import io
 
-sys.path.append("/Users/jeonminjeong/Documents/dev/anichat/tts/vits")
+sys.path.append("C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\tts\\vits")
 
 import utils
 import commons
@@ -38,7 +38,7 @@ from scipy.io.wavfile import write
 
 # chatbot
 
-sys.path.append("/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference")
+sys.path.append("C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\chatbot\\chatbot_only_inference")
 
 import pickle
 # import pandas as pd
@@ -50,10 +50,10 @@ from transform import SelectionJoinTransform
 device = torch.device("cpu") # ("cuda:0" if torch.cuda.is_available() else "cpu")
 
 paths_for_tts = {
-    "conan": ("/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/conan_base.json"
-            , "/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/G_600000.pth")
-    , "you": ("/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/you_base.json"
-            , "/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/G_40000.pth")
+    "conan": ("C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\tts\\tts_test\\conan_base.json"
+            , "C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\tts\\tts_test\\G_410000.pth")
+    , "you": ("C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\tts\\tts_test\\you_base.json"
+            , "C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\tts\\tts_test\\G_152000.pth")
 }
 
 paths_for_login = "/Users/jeonminjeong/Documents/dev/anichat/web/flask/static/data/members.pkl"
@@ -99,9 +99,9 @@ def initChatbot():
     base_model_name = 'klue/roberta-base'
     question_length = 256
     poly_m = 16
-    model_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/poly_16_pytorch_model.bin'
-    infer_df_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/inference_df.pickle'
-    infer_emb_data_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/inference_cand_embs.pickle'
+    model_path = 'C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\chatbot\\chatbot_only_inference\\poly_16_pytorch_model.bin'
+    infer_df_path = 'C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\chatbot\\chatbot_only_inference\\inference_df.pickle'
+    infer_emb_data_path = 'C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\chatbot\\chatbot_only_inference\\inference_cand_embs.pickle'
 
     model_config = RobertaConfig.from_pretrained(base_model_name)
     tokenizer = RobertaTokenizerFast.from_pretrained(base_model_name)
@@ -287,8 +287,8 @@ def sendChat():
             wav_file_path = ''
             if params['use_tts'] == True:
                 print('tts도 사용', file=sys.stderr)
-                wav_file_path = '/static/tts_{0}.wav'.format(random.randint(0, 1000000))
-                wav_file_front_path = '/Users/jeonminjeong/Documents/dev/anichat/web/flask'
+                wav_file_path = '\\static\\tts_{0}.wav'.format(random.randint(0, 1000000))
+                wav_file_front_path = 'C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\web\\flask'
                 wavfile = executeTTS(hps, net_g, answer, wav_file_front_path + wav_file_path)
             returns = jsonify({"message": answer, "use_tts": params['use_tts'], 'wav_file': wav_file_path})
         else:
@@ -307,8 +307,8 @@ def sendSTT():
         
     if 'data' in request.files:
         file = request.files['data']
-        filename = '/static/stt_{0}.wav'.format(random.randint(0, 1000000))
-        filepath = '/Users/jeonminjeong/Documents/dev/anichat/web/flask' + filename
+        filename = '\\static\\stt_{0}.wav'.format(random.randint(0, 1000000))
+        filepath = 'C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\web\\flask' + filename
         file.save(filepath)
         file.seek(0)
         # Read the audio data again.
@@ -346,8 +346,8 @@ def sendSTT():
 
         if json_content['use_tts'] == 'true':
             print('tts도 사용', file=sys.stderr)
-            wav_file_path = '/static/tts_{0}.wav'.format(random.randint(0, 1000000))
-            wav_file_front_path = '/Users/jeonminjeong/Documents/dev/anichat/web/flask'
+            wav_file_path = '\\static\\tts_{0}.wav'.format(random.randint(0, 1000000))
+            wav_file_front_path = 'C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\web\\flask'
             wavfile = executeTTS(hps, net_g, answer, wav_file_front_path + wav_file_path)
         
         returns = jsonify({"message": answer, "use_tts": json_content['use_tts'], 'wav_file': wav_file_path
@@ -427,9 +427,9 @@ def chatbot_web():
     base_model_name = 'klue/roberta-base'
     question_length = 256
     poly_m = 16
-    model_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/poly_16_pytorch_model.bin'
-    infer_df_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/inference_df.pickle'
-    infer_emb_data_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/inference_cand_embs.pickle'
+    model_path = 'C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\chatbot\\chatbot_only_inference\\poly_16_pytorch_model.bin'
+    infer_df_path = 'C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\chatbot\\chatbot_only_inference\\inference_df.pickle'
+    infer_emb_data_path = 'C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\chatbot\\chatbot_only_inference\\inference_cand_embs.pickle'
 
     model_config = RobertaConfig.from_pretrained(base_model_name)
     tokenizer = RobertaTokenizerFast.from_pretrained(base_model_name)
@@ -465,7 +465,7 @@ def whisper2():
     print('in whisper2', file=sys.stderr)
     model = whisper.load_model("base")
     print('loaded model', file=sys.stderr)
-    result = model.transcribe("/Users/jeonminjeong/Documents/dev/anichat/tts/vits/DUMMY4/anichat_con_01_00007.wav",fp16=False, language='Korean')
+    result = model.transcribe("C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\tts\\vits\\DUMMY4\\anichat_con_01_00007.wav",fp16=False, language='Korean')
     print(result["text"], file=sys.stderr)
     return result["text"]
 
@@ -482,7 +482,7 @@ def vits2():
     
     print('in vits2', file=sys.stderr)
     
-    hps = utils.get_hparams_from_file("/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/conan_base.json")
+    hps = utils.get_hparams_from_file("C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\tts\\tts_test\\conan_base.json")
     print('load config', file=sys.stderr)
     net_g = SynthesizerTrn(
         len(symbols),
@@ -492,7 +492,7 @@ def vits2():
     print('load net_g', file=sys.stderr)
     _ = net_g.eval()
     
-    _ = utils.load_checkpoint("/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/G_600000.pth", net_g, None)
+    _ = utils.load_checkpoint("C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\tts\\tts_test\\G_410000.pth", net_g, None)
     print('load G_600000', file=sys.stderr)
    
     stn_tst = get_text("난 에도가와 코난 탐정이지", hps)
@@ -503,7 +503,7 @@ def vits2():
         audio = net_g.infer(x_tst, x_tst_lengths, noise_scale=.667, noise_scale_w=0.8, length_scale=1)[0][0,0].data.cpu().float().numpy()
 
     print('no grad', file=sys.stderr)
-    write('/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/conan.wav', hps.data.sampling_rate, audio)
+    write('C:\\Users\\82103\\anaconda3\\envs\\dori\\anichat\\anichat\\tts\\tts_test\\conan.wav', hps.data.sampling_rate, audio)
     print('write wav', file=sys.stderr)
     
     return 'hello, its me.'

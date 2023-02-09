@@ -68,6 +68,36 @@ $(document).ready(function () {
         $("#modalCharacter").css('display', 'none');
     });
 
+    // When the user clicks the button, change the background img
+    function replaceClass(id, oldClass, newClass) {
+        var elem = $(`#${id}`);
+        if (elem.hasClass(oldClass)) {
+            elem.removeClass(oldClass);
+        }
+        elem.addClass(newClass);
+    }
+     
+    $("#character_change_conan").click(function() {
+        replaceClass("chat2", "you_card", "conan_card");
+        replaceClass("chat2", "nam_card", "conan_card");
+        $('h5').text('CONAN');
+        $("#modalCharacter").css('display', 'none');
+    });
+    
+    $("#character_change_you").click(function() {
+        replaceClass("chat2", "conan_card", "you_card");
+        replaceClass("chat2", "nam_card", "you_card");
+        $('h5').text('KOGORO');
+        $("#modalCharacter").css('display', 'none');
+    });
+
+    $("#character_change_nam").click(function() {
+        replaceClass("chat2", "conan_card", "nam_card");
+        replaceClass("chat2", "you_card", "nam_card");
+        $('h5').text('KUDO');
+        $("#modalCharacter").css('display', 'none');
+    });
+
     $("#recordButton").click(function() {
         // clickRecord();
         $("#modalRecorder").css('display', 'block');
@@ -92,6 +122,7 @@ $(document).ready(function () {
 
     $("#btnRecordUpload").click(function() {
         uploadRecord();
+
     });
 
     var modal = document.getElementById("modalCharacter");

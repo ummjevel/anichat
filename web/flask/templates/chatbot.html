@@ -36,9 +36,9 @@
             <!-- <button type="button" class="btn-close ms-2" data-mdb-dismiss="alert" aria-label="Close"></button> -->
           </div>
 
-          <div class="card" id="chat2">
+          <div class="card conan_card" id="chat2">
             <div class="card-header d-flex justify-content-center align-items-center p-3" id="btnSelectCharacter">
-              <h5 class="mb-0" id="h5_character">Conan</h5>
+              <h5 class="mb-0" id="h5_character">CONAN</h5>
               <input type="hidden" id="currentProfile" value="0"/>
             </div>
             <div class="card-body" data-mdb-perfect-scrollbar="true"
@@ -176,30 +176,67 @@
           </div>
         </div>
       </div>
+
+      <div id="modalCharacter" class="modalCharacter">
+        <div class="modalCharacterContent">
+          <div>
+            <span class="characterClose"></span>
+          </div>
+          <div class="divProfile">
+          
+            <button id="character_change_conan" style="
+              display: inline-block;
+              border-color: lightgray;
+              border-radius: 30px;
+              width: 26%;
+              margin: 3%;
+              padding: 2%;
+              "><img src="./static/img/profile_conan.png" id="imgYouProfile" class="opac" style="
+              width: 100%"></button>
+            <button id="character_change_you" style="
+              display: inline-block;
+              border-color: lightgray;
+              border-radius: 30px;
+              width: 26%;
+              margin: 3%;
+              padding: 2%;
+              "><img src="./static/img/profile_you.png" id="imgYouProfile" class="opac" style="
+              width: 100%"></button>
+            <button id="character_change_nam" style="
+              display: inline-block;
+              border-color: lightgray;
+              border-radius: 30px;
+              width: 26%;
+              margin: 3%;
+              padding: 2%;
+              "><img src="./static/img/profile_nam.png" id="imgYouProfile" class="opac" style="
+              width: 100%"></button>
+            <span style="
+              margin-left: 10%;
+              margin-right: 10%;
+              ">CONAN</span>
+            <span style="
+              margin-left: 10%;
+              margin-right: 10%;
+              ">KOGORO</span>
+            <span style="
+              margin-left: 11%;
+              margin-right: 10%;
+              ">CUDO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modalRecorder" class="modalRecorder">
+        <div class="modalRecorderContent">
+          <div>
+            <span class="recorderClose"></span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-
-  <div id="modalCharacter" class="modalCharacter">
-    <div class="modalCharacterContent">
-      <div>
-        <span class="characterClose">x </span>
-      </div>
-      <div class="divProfile"> 
-        <div>
-          <img src="./static/img/profile_conan.png" id="imgConanProfile"/>
-          <p>CONAN</p>
-        </div>
-        <div>
-          <img src="./static/img/profile_you.png" id="imgYouProfile"/>
-          <p>COGORO</p>
-        </div>
-        <div>
-          <img src="./static/img/profile_nam.png" id="imgNamProfile"/>
-          <p>CUDO</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div id="modalRecorder" class="modalRecorder">
     <div class="modalRecorderContent">

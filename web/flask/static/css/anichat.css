@@ -75,13 +75,35 @@ background: #eee;
     background-color: rgba(152, 128, 255, 0.2);
   }
 }
-
-.card {
+img.opac {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* IE8 및 그 이하 버전용 */
+}
+  
+img.opac:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* IE8 및 그 이하 버전용 */
+}
+.conan_card {
   background-image: url(../img/background_conan.png);
   background-repeat: no-repeat;
   background-position: 105px 70px;
   background-color: #486F91;
   background-size: contain;
+}
+
+.you_card {
+  background-image: url(../img/background_you.png);
+  background-repeat: no-repeat;
+  background-position: 60px 70px;
+  background-color: #486F91;
+}
+
+.nam_card {
+  background-image: url(../img/background_nam.png);
+  background-repeat: no-repeat;
+  background-position: 60px 70px;
+  background-color: #486F91;
 }
 
 .card-header {
@@ -138,10 +160,10 @@ background: #eee;
 .modalCharacterContent {
   background-color: #ffffff;
   color: black;
-  margin: 0% auto; /* 15% from the top and centered */
-  padding: 20px;
+  margin: 8% auto;
+  padding: 3%;
   border: 1px solid #888;
-  width: 65%; /* Could be more or less, depending on screen size */
+  width: 45%;
 }
 
 .modalRecorderContent {
