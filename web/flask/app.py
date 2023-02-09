@@ -5,6 +5,8 @@ import random
 from werkzeug.utils import secure_filename
 import soundfile
 import codecs
+import pickle
+import pandas as pd
 
 # stt
 import whisper
@@ -53,6 +55,9 @@ paths_for_tts = {
     , "you": ("/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/you_base.json"
             , "/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/G_40000.pth")
 }
+
+paths_for_login = "/Users/jeonminjeong/Documents/dev/anichat/web/flask/static/data/members.pkl"
+
 app = Flask(__name__)
 
 
@@ -180,6 +185,61 @@ def executeTTS(hps, net_g, text, output_path):
     write(output_path, hps.data.sampling_rate, audio)
     print('write wav', file=sys.stderr)
     return True
+
+
+def checkLogin(username, pw):
+
+    # open pickle file
+    member = getLoginInfo(username)
+
+    print(member, file=sys.stderr)
+    # if there is no name and password than error
+    if len(member) > 0:
+        if member['password'][0] == pw:
+            return True
+        else:
+            return False
+    else:
+        return False
+
+
+def registerMember(username, password, name, email):
+    print('this is register3', file=sys.stderr)
+    # open pickle file
+    members = pd.read_pickle(paths_for_login)
+    print(members, file=sys.stderr)
+    # write pickle file
+    data = [[username, password, name, email, True]]
+    member = pd.DataFrame(data, columns=['username', 'password', 'name', 'email', 'first'])
+    members = pd.concat([members, member])
+    members.to_pickle(paths_for_login)  
+
+    print('register member: ', username, file=sys.stderr)
+    # return success
+    return True
+
+
+def getLoginInfo(username):
+    members = pd.read_pickle(paths_for_login)
+    print(members, file=sys.stderr)
+    member = members[members['username'] == username]
+    return member
+
+
+def checkFirstLogin(username):
+
+    member = getLoginInfo(username)
+
+    if len(member) > 0:
+        return member['first'][0]
+    else:
+        True
+
+
+def setSecondLogin(username):
+    members = pd.read_pickle(paths_for_login)
+    members.loc[members['username'] == username, 'first'] = False
+    members.to_pickle(paths_for_login) 
 
 
 chatbot, context_transform, infer_df, cand_embs = initChatbot()
@@ -310,6 +370,48 @@ def turnTTS():
     global net_g
     hps, net_g = initTTS(character)
     return jsonify({"result": 'success'})
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        if "loginName" in request.form:
+            loginName = request.form['loginName']
+            loginPassword = request.form['loginPassword']
+
+            returns = checkLogin(loginName, loginPassword)
+
+            if returns:
+                setSecondLogin(loginName)
+                return render_template('select.html')
+            else:
+                result = 'fail'
+
+        else:
+            print('this is register', file=sys.stderr)
+            registerName = request.form['registerName']
+            print(registerName, file=sys.stderr)
+            registerUsername = request.form['registerUsername']
+            print(registerUsername, file=sys.stderr)
+            registerEmail = request.form['registerEmail']
+            print(registerEmail, file=sys.stderr)
+            registerPassword = request.form['registerPassword']
+            print(registerPassword, file=sys.stderr)
+            registerMember(registerUsername, registerPassword, registerName, registerEmail)
+
+            result = 'success'
+
+        return render_template('login.html', result = result)
+    else:
+        return render_template('login.html')
+
+
+@app.route('/select', methods=['GET', 'POST'])
+def select():
+    # check first login
+    firstLogin = checkFirstLogin(username)
+
+    return render_template('select.html', first = firstLogin)
 
 
 @app.route('/c2')

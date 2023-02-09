@@ -120,6 +120,9 @@ $(document).ready(function () {
         current_profile = nam_talk_image;
     }
 
+    // if url is select and hidden value is true then click help
+    
+
 });
 
 function validationCheck(message) {
