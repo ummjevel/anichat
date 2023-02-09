@@ -151,7 +151,7 @@ function sendMyMessage(message, use_tts) {
 
         htmlTags = $(".card-body").html();
         htmlTags += "<div class='d-flex flex-row justify-content-end mb-4'>";
-        htmlTags += "<div>";
+        htmlTags += "<div style='display: inline-grid;'>";
         htmlTags += "  <p class='small p-2 me-3 mb-1 text-black rounded-3 text-back balloon'>";
         htmlTags += message + "</p>";
         htmlTags += "  <p class='small me-3 mb-3 rounded-3 text-white d-flex justify-content-end'>"
@@ -204,7 +204,7 @@ function sendAnichatMessage(data) {
         question_message += data.question + "</p>";
         // var ttsP = document.createElement("p");
         // ttsP.classList.add('small', 'p-2', 'me-3', 'mb-1', 'text-black', 'rounded-3', 'text-back');
-        $(question_message).insertBefore($($("audio")[$("audio").length - 1]));
+        $(question_message).insertBefore($($($("audio")[$("audio").length - 1]).parent()[$($("audio")[$("audio").length - 1]).parent().length - 1]));
     }
 
     // add message
@@ -520,7 +520,7 @@ function uploadRecord() {
     // imgAvatar1.style.height = '100%';
     // imgAvatar1.src = 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp';
     var div = document.createElement('div');
-    div.style.marginRight= '17px';
+    // div.style.marginRight= '17px';
     div.appendChild(au);
     divTemp.appendChild(div);
     divTemp.appendChild(pSmall2);

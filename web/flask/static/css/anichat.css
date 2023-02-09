@@ -33,12 +33,13 @@ background: #eee;
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: #9880FF;
-  color: #9880FF;
+  background-color: #324d64;
+  color: #324d64;
   animation: dot-flashing 1s infinite linear alternate;
   animation-delay: 0.5s;
   margin-left: 60px;
   margin-top: 13px;
+  z-index: 11;
 }
 .dot-flashing::before, .dot-flashing::after {
   content: "";
@@ -51,8 +52,8 @@ background: #eee;
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: #9880FF;
-  color: #9880FF;
+  background-color: #324d64;
+  color: #324d64;
   animation: dot-flashing 1s infinite alternate;
   animation-delay: 0s;
 }
@@ -61,14 +62,14 @@ background: #eee;
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: #9880FF;
-  color: #9880FF;
+  background-color: #324d64;
+  color: #324d64;
   animation: dot-flashing 1s infinite alternate;
   animation-delay: 1s;
 }
 @keyframes dot-flashing {
   0% {
-    background-color: #9880FF;
+    background-color: #324d64;
   }
   50%, 100% {
     background-color: rgba(152, 128, 255, 0.2);
@@ -111,7 +112,7 @@ background: #eee;
 .modalCharacter {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 11; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -124,7 +125,7 @@ background: #eee;
 .modalRecorder {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 11; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -251,6 +252,7 @@ background: #eee;
   margin: 0 auto 10px;
   border-radius: 10px !important;
   z-index: 10;
+  float: right;
 }
 .balloon:after {
   content: '';
