@@ -74,12 +74,21 @@ background: #eee;
     background-color: rgba(152, 128, 255, 0.2);
   }
 }
-
+img.opac {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* IE8 및 그 이하 버전용 */
+}
+  
+img.opac:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* IE8 및 그 이하 버전용 */
+}
 .conan_card {
   background-image: url(../img/background_conan.png);
   background-repeat: no-repeat;
-  background-position: 60px 70px;
+  background-position: 105px 70px;
   background-color: #486F91;
+  background-size: contain;
 }
 
 .you_card {
@@ -118,9 +127,23 @@ background: #eee;
   width: 45px; 
   height: 100%;
   border-radius: 13px;
+  z-index: 11;
 }
 
 .modalCharacter {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modalRecorder {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -148,7 +171,16 @@ background: #eee;
   margin: 50% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 65%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
+  border-radius: 5px
+}
+
+.modalRecorderContent > div:first-child {
+  background-color: #e0e0e0;
+  margin: 0px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  width: 100%;
 }
 
 .characterClose, .recorderClose {
@@ -193,4 +225,105 @@ background: #eee;
 
 .divProfile {
   display: inherit;
+}
+
+.gifVoice {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 42%;
+}
+
+#btnRecord > i {
+  color: red;
+}
+
+.divRecord {
+  padding: 20px 10px 0px 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#btnRecordReload > i, #btnRecordUpload > i {
+  color: black;
+}
+
+#btnRecordReload {
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: none;
+}
+
+#btnRecordUpload {
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  display: none;
+}
+
+#divPreRecord > audio {
+  margin-bottom: -7px;
+}
+
+.balloon {
+  display: inline-block;
+  position: relative;
+  background: #f5f013;
+  margin: 0 auto 10px;
+  border-radius: 10px !important;
+  z-index: 10;
+}
+.balloon:after {
+  content: '';
+  position: absolute;
+  height: 51px;
+  width: 50px;
+  border-radius: 18px;
+  z-index: 1;
+  background: #486f91;
+  bottom: -6px;
+  right: -50px;
+}
+.balloon:before {
+  content: '';
+  position: absolute;
+  height: 29px;
+  width: 40px;
+  border-radius: 20px;
+  z-index: -1;
+  background: #f5f013;
+  bottom: -1px;
+  right: -32px;
+}
+
+.balloon-ai {
+  display: inline-block;
+  position: relative;
+  background: #f5f6f7;
+  margin: 0 auto 10px;
+  border-radius: 10px !important;
+  z-index: 10;
+}
+.balloon-ai:after {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 50px;
+  border-radius: 16px;
+  z-index: 1;
+  background: #486f91;
+  bottom: -4px;
+  left: -50px;
+}
+.balloon-ai:before {
+  content: '';
+  position: absolute;
+  height: 31px;
+  width: 50px;
+  border-radius: 10px;
+  z-index: -1;
+  background: #f5f6f7;
+  bottom: -1px;
+  left: -45px;
 }
