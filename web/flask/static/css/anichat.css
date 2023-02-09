@@ -75,8 +75,22 @@ background: #eee;
   }
 }
 
-.card {
+.conan_card {
   background-image: url(../img/background_conan.png);
+  background-repeat: no-repeat;
+  background-position: 60px 70px;
+  background-color: #486F91;
+}
+
+.you_card {
+  background-image: url(../img/background_you.png);
+  background-repeat: no-repeat;
+  background-position: 60px 70px;
+  background-color: #486F91;
+}
+
+.nam_card {
+  background-image: url(../img/background_nam.png);
   background-repeat: no-repeat;
   background-position: 60px 70px;
   background-color: #486F91;
@@ -122,10 +136,10 @@ background: #eee;
 .modalCharacterContent {
   background-color: #ffffff;
   color: black;
-  margin: 0% auto; /* 15% from the top and centered */
-  padding: 20px;
+  margin: 8% auto;
+  padding: 3%;
   border: 1px solid #888;
-  width: 65%; /* Could be more or less, depending on screen size */
+  width: 45%;
 }
 
 .modalRecorderContent {
