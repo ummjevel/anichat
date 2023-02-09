@@ -59,7 +59,7 @@ $(document).ready(function () {
     });
 
     // When the user clicks the button, open the modal
-    $("#btnSelectCharacter").click(function () {
+    $(".div_character").click(function () {
         $("#modalCharacter").css('display', 'block');
     });
 
@@ -82,6 +82,20 @@ $(document).ready(function () {
         replaceClass("chat2", "nam_card", "conan_card");
         $('h5').text('CONAN');
         $("#modalCharacter").css('display', 'none');
+        $.ajax({
+            url: "turnTTS",
+            type: "post",
+            accept: "application/json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({'character': 'conan'}),
+            dataType: "json",
+            success: function(data) {
+                console.log(data);
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(jqXHR);
+            }
+        });   
     });
     
     $("#character_change_you").click(function() {
@@ -89,6 +103,20 @@ $(document).ready(function () {
         replaceClass("chat2", "nam_card", "you_card");
         $('h5').text('KOGORO');
         $("#modalCharacter").css('display', 'none');
+        $.ajax({
+            url: "turnTTS",
+            type: "post",
+            accept: "application/json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({'character': 'you'}),
+            dataType: "json",
+            success: function(data) {
+                console.log(data);
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(jqXHR);
+            }
+        });  
     });
 
     $("#character_change_nam").click(function() {
@@ -125,8 +153,17 @@ $(document).ready(function () {
 
     });
 
+    $(".btnHelp").click(function() {
+        $("#modalHelper").css('display', 'block');
+    });
+
+    $(".btnPrevious").click(function() {
+        location.href = "/select"
+    });
+
     var modal = document.getElementById("modalCharacter");
     var modalRecorder = document.getElementById("modalRecorder");
+    var modalHelper = document.getElementById("modalHelper");
 
     window.onclick = function (event) {
         if (event.target == modal) {
@@ -134,6 +171,9 @@ $(document).ready(function () {
         }
         if (event.target == modalRecorder) {
             $("#modalRecorder").css('display', 'none');
+        }
+        if (event.target == modalHelper) {
+            $("#modalHelper").css('display', 'none');
         }
     };
 
@@ -152,7 +192,7 @@ $(document).ready(function () {
     }
 
     // if url is select and hidden value is true then click help
-    
+
 
 });
 

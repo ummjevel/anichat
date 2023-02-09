@@ -116,6 +116,11 @@ img.opac:hover {
   color: white;
 }
 
+.div_character {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .card-footer {
   background-color: white;
 }
@@ -157,6 +162,19 @@ img.opac:hover {
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
+.modalHelper {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
 .modalCharacterContent {
   background-color: #ffffff;
   color: black;
@@ -173,7 +191,17 @@ img.opac:hover {
   padding: 20px;
   border: 1px solid #888;
   width: 60%; /* Could be more or less, depending on screen size */
-  border-radius: 5px
+  border-radius: 5px;
+}
+
+.modalHelperContent {
+  background-color: #ffffff;
+  color: black;
+  margin: 20% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+  border-radius: 5px;
 }
 
 .modalRecorderContent > div:first-child {
@@ -184,7 +212,7 @@ img.opac:hover {
   width: 100%;
 }
 
-.characterClose, .recorderClose {
+.characterClose, .recorderClose, .helperClose {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -335,4 +363,60 @@ img.opac:hover {
   margin-left: auto;
   margin-right: auto;
   max-width: 80%;
+}
+
+.span_conan {
+  margin-left: 7%;
+  margin-right: 10%;
+}
+
+.span_kogoro {
+  margin-left: 4%;
+  margin-right: 7%;
+}
+
+.span_nam {
+  margin-left: 9%;
+  margin-right: 3%;
+}
+
+#character_change_conan {
+  display: inline-block;
+  border-color: lightgray;
+  border-radius: 30px;
+  width: 26%;
+  margin: 3%;
+  padding: 2%;
+}
+
+#character_change_you {
+  display: inline-block;
+  border-color: lightgray;
+  border-radius: 30px;
+  width: 26%;
+  margin: 3%;
+  padding: 2%;
+}
+
+#character_change_nam {
+  display: inline-block;
+  border-color: lightgray;
+  border-radius: 30px;
+  width: 26%;
+  margin: 3%;
+  padding: 2%;
+}
+
+#imgConanProfile, #imgYouProfile, #imgNamProfile {
+  width: 100%;
+  border-radius: 30%;
+}
+
+.btnPrevious {
+  float: left;
+  color: white;
+}
+
+.btnHelp {
+  color: white;
 }
