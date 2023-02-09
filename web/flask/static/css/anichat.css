@@ -307,3 +307,10 @@ background: #eee;
   bottom: -1px;
   left: -45px;
 }
+
+.body_login {
+  width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
