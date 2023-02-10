@@ -435,7 +435,7 @@ img.opac:hover {
 }
 
 .divPoster {
-  padding: 16px 16px 0 0px;
+  padding: 16px 8px 0 8px;
 }
 
 .divPoster > img {
@@ -451,8 +451,6 @@ img.opac:hover {
   overflow: auto;
   display: inherit;
   flex: 1 1 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .ani-header {
@@ -465,6 +463,6 @@ img.opac:hover {
   background-color: #141414;
 }
 
-.ani-body > div:first-child {
-  padding: 16px 16px 0px 16px;
+.divPoster:hover {
+  background-color: gold;
 }

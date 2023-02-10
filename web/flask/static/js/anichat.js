@@ -14,6 +14,9 @@ var current_profile;
 var current_blob, current_record_url;
 
 var recordTimeout;
+var conan_talk_image = './static/img/profile_conan.png';
+var you_talk_image = './static/img/profile_you.png';
+var nam_talk_image = './static/img/profile_nam.png';
 
 $(document).ready(function () {
 
@@ -34,9 +37,6 @@ $(document).ready(function () {
         }
     };
 
-    var conan_talk_image = './static/img/profile_conan.png';
-    var you_talk_image = './static/img/profile_you.png';
-    var nam_talk_image = './static/img/profile_nam.png';
 
     current_profile = conan_talk_image;
     changeProfile();
@@ -162,6 +162,10 @@ $(document).ready(function () {
     $("#btnMimic").click(function() {
         var message = $("#exampleFormControlInput1").val();
         sendMimic(message);
+    });
+
+    $("#divDiveToConan").click(function() {
+        location.href = "/webchat";
     });
 
 });
