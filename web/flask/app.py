@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, session
+from flask import Flask, render_template, request, jsonify, session, send_file
 import sys
 import logging 
 import random
@@ -7,13 +7,29 @@ import soundfile
 import codecs
 import pickle
 import pandas as pd
+import sys
+import io
+import os
+from os import path
+
+app = Flask(__name__, instance_path='/Users/jeonminjeong/Documents/dev/anichat')
+APP_PATH = os.path.join(app.instance_path, "web", "flask")
+TTS_PATH = os.path.join(app.instance_path, "tts", "vits")
+CHATBOT_PATH = os.path.join(app.instance_path, "chatbot", "chatbot_only_inference")
+
+TTS_MODEL_PATH = {
+    "conan": ("./static/model/conan_base.json"
+            , "./static/model/G_410000.pth")
+    , "you": ("./static/model/you_base.json"
+            , "./static/model/G_152000.pth")
+}
+
+MEMBER_FILE_PATH = "./static/data/members.pkl"
 
 # stt
 import whisper
 
 # tts
-
-import os
 import json
 import math
 import torch
@@ -21,11 +37,7 @@ from torch import nn
 from torch.nn import functional as F
 from torch.utils.data import DataLoader
 
-import sys
-from os import path
-import io
-
-sys.path.append("/Users/jeonminjeong/Documents/dev/anichat/tts/vits")
+sys.path.append(TTS_PATH)
 
 import utils
 import commons
@@ -37,28 +49,14 @@ from scipy.io.wavfile import write
 
 
 # chatbot
+sys.path.append(CHATBOT_PATH)
 
-sys.path.append("/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference")
-
-import pickle
-# import pandas as pd
 from transformers import RobertaConfig, RobertaModel, RobertaTokenizerFast
 from encoder import PolyEncoder
 from transform import SelectionJoinTransform
 
 
 device = torch.device("cpu") # ("cuda:0" if torch.cuda.is_available() else "cpu")
-
-paths_for_tts = {
-    "conan": ("/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/conan_base.json"
-            , "/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/G_410000.pth")
-    , "you": ("/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/you_base.json"
-            , "/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/G_152000.pth")
-}
-
-paths_for_login = "/Users/jeonminjeong/Documents/dev/anichat/web/flask/static/data/members.pkl"
-
-app = Flask(__name__)
 
 
 def context_input(context, context_transform):
@@ -99,9 +97,9 @@ def initChatbot():
     base_model_name = 'klue/roberta-base'
     question_length = 256
     poly_m = 16
-    model_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/poly_16_pytorch_model.bin'
-    infer_df_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/inference_df.pickle'
-    infer_emb_data_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/inference_cand_embs.pickle'
+    model_path = './static/model/poly_16_pytorch_model.bin'
+    infer_df_path = './static/model/inference_df.pickle'
+    infer_emb_data_path = './static/model/inference_cand_embs.pickle'
 
     model_config = RobertaConfig.from_pretrained(base_model_name)
     tokenizer = RobertaTokenizerFast.from_pretrained(base_model_name)
@@ -151,8 +149,8 @@ def get_text(text, hps):
 
 def initTTS(character):
 
-    hps_path = paths_for_tts[character][0]
-    checkpoint_path = paths_for_tts[character][1]
+    hps_path = TTS_MODEL_PATH[character][0]
+    checkpoint_path = TTS_MODEL_PATH[character][1]
 
     print('in vits2', file=sys.stderr)
     
@@ -206,13 +204,13 @@ def checkLogin(username, pw):
 def registerMember(username, password, name, email):
     print('this is register3', file=sys.stderr)
     # open pickle file
-    members = pd.read_pickle(paths_for_login)
+    members = pd.read_pickle(MEMBER_FILE_PATH)
     print(members, file=sys.stderr)
     # write pickle file
     data = [[username, password, name, email, True]]
     member = pd.DataFrame(data, columns=['username', 'password', 'name', 'email', 'first'])
     members = pd.concat([members, member])
-    members.to_pickle(paths_for_login)  
+    members.to_pickle(MEMBER_FILE_PATH)  
 
     print('register member: ', username, file=sys.stderr)
     # return success
@@ -220,7 +218,7 @@ def registerMember(username, password, name, email):
 
 
 def getLoginInfo(username):
-    members = pd.read_pickle(paths_for_login)
+    members = pd.read_pickle(MEMBER_FILE_PATH)
     print(members, file=sys.stderr)
     member = members[members['username'] == username]
     return member
@@ -237,9 +235,9 @@ def checkFirstLogin(username):
 
 
 def setSecondLogin(username):
-    members = pd.read_pickle(paths_for_login)
+    members = pd.read_pickle(MEMBER_FILE_PATH)
     members.loc[members['username'] == username, 'first'] = False
-    members.to_pickle(paths_for_login) 
+    members.to_pickle(MEMBER_FILE_PATH) 
 
 
 chatbot, context_transform, infer_df, cand_embs = initChatbot()
@@ -287,8 +285,8 @@ def sendChat():
             wav_file_path = ''
             if params['use_tts'] == True:
                 print('tts도 사용', file=sys.stderr)
-                wav_file_path = '/static/tts_{0}.wav'.format(random.randint(0, 1000000))
-                wav_file_front_path = '/Users/jeonminjeong/Documents/dev/anichat/web/flask'
+                wav_file_path = '/static/record/tts_{0}.wav'.format(random.randint(0, 1000000))
+                wav_file_front_path = APP_PATH
                 wavfile = executeTTS(hps, net_g, answer, wav_file_front_path + wav_file_path)
             returns = jsonify({"message": answer, "use_tts": params['use_tts'], 'wav_file': wav_file_path})
         else:
@@ -307,8 +305,8 @@ def sendSTT():
         
     if 'data' in request.files:
         file = request.files['data']
-        filename = '\\static\\stt_{0}.wav'.format(random.randint(0, 1000000))
-        filepath = '/Users/jeonminjeong/Documents/dev/anichat/web/flask' + filename
+        filename = '/static/record/stt_{0}.wav'.format(random.randint(0, 1000000))
+        filepath = APP_PATH + filename
         file.save(filepath)
         file.seek(0)
         # Read the audio data again.
@@ -346,8 +344,8 @@ def sendSTT():
 
         if json_content['use_tts'] == 'true':
             print('tts도 사용', file=sys.stderr)
-            wav_file_path = '/static/tts_{0}.wav'.format(random.randint(0, 1000000))
-            wav_file_front_path = '/Users/jeonminjeong/Documents/dev/anichat/web/flask'
+            wav_file_path = '/static/record/tts_{0}.wav'.format(random.randint(0, 1000000))
+            wav_file_front_path = APP_PATH
             wavfile = executeTTS(hps, net_g, answer, wav_file_front_path + wav_file_path)
         
         returns = jsonify({"message": answer, "use_tts": json_content['use_tts'], 'wav_file': wav_file_path
@@ -358,6 +356,26 @@ def sendSTT():
         returns = jsonify({"message": answer})
     return returns
 
+
+@app.route('/sendMimic', methods=['POST'])
+def sendMimic():
+    answer = '오류가 발생했습니다.'
+    if request.method == 'POST':
+        # json 형태로 풀기
+        params = {}
+        if request.is_json == True:
+            params = request.get_json()
+            text_message = params['message']
+            # use tts
+            wav_file_path = '/static/record/tts_{0}.wav'.format(random.randint(0, 1000000))
+            wav_file_front_path = APP_PATH
+            wavfile = executeTTS(hps, net_g, text_message, wav_file_front_path + wav_file_path)
+            returns = jsonify({"message": text_message, "use_tts": "true", 'wav_file': wav_file_path})
+        else:
+            answer = '데이터 전달이 제대로 되지 않았습니다.'
+            print('this is not json...', request.is_json, file=sys.stderr)
+            returns = jsonify({"message": answer})
+    return returns
 
 @app.route('/turnTTS', methods=['POST'])
 def turnTTS():
@@ -415,9 +433,17 @@ def select():
         username = session['username']
         firstLogin = checkFirstLogin(username)
 
-    
-
     return render_template('select.html', first = firstLogin)
+
+
+@app.route('/download/<filename>',methods=["GET","POST"])
+def downloadFile(filename): #In your case fname is your filename
+    try:
+       path = f'./static/record/{filename}'
+       return send_file(path, as_attachment=True)
+    except Exception as e:
+        print("error... during download", file=sys.stderr)
+        return str(e)
 
 
 @app.route('/c2')
@@ -433,9 +459,9 @@ def chatbot_web():
     base_model_name = 'klue/roberta-base'
     question_length = 256
     poly_m = 16
-    model_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/poly_16_pytorch_model.bin'
-    infer_df_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/inference_df.pickle'
-    infer_emb_data_path = '/Users/jeonminjeong/Documents/dev/anichat/chatbot/chatbot_only_inference/inference_cand_embs.pickle'
+    model_path = './static/model/poly_16_pytorch_model.bin'
+    infer_df_path = './static/model/inference_df.pickle'
+    infer_emb_data_path = './static/model/inference_cand_embs.pickle'
 
     model_config = RobertaConfig.from_pretrained(base_model_name)
     tokenizer = RobertaTokenizerFast.from_pretrained(base_model_name)
@@ -471,7 +497,7 @@ def whisper2():
     print('in whisper2', file=sys.stderr)
     model = whisper.load_model("base")
     print('loaded model', file=sys.stderr)
-    result = model.transcribe("/Users/jeonminjeong/Documents/dev/anichat/tts/vits/DUMMY4/anichat_con_01_00007.wav",fp16=False, language='Korean')
+    result = model.transcribe(TTS_PATH + "/DUMMY4/anichat_con_01_00007.wav", fp16=False, language='Korean')
     print(result["text"], file=sys.stderr)
     return result["text"]
 
@@ -488,7 +514,7 @@ def vits2():
     
     print('in vits2', file=sys.stderr)
     
-    hps = utils.get_hparams_from_file("/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/conan_base.json")
+    hps = utils.get_hparams_from_file("./static/model/conan_base.json")
     print('load config', file=sys.stderr)
     net_g = SynthesizerTrn(
         len(symbols),
@@ -498,7 +524,7 @@ def vits2():
     print('load net_g', file=sys.stderr)
     _ = net_g.eval()
     
-    _ = utils.load_checkpoint("/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/G_410000.pth", net_g, None)
+    _ = utils.load_checkpoint("./static/model/G_410000.pth", net_g, None)
     print('load G_600000', file=sys.stderr)
    
     stn_tst = get_text("난 에도가와 코난 탐정이지", hps)
@@ -509,7 +535,7 @@ def vits2():
         audio = net_g.infer(x_tst, x_tst_lengths, noise_scale=.667, noise_scale_w=0.8, length_scale=1)[0][0,0].data.cpu().float().numpy()
 
     print('no grad', file=sys.stderr)
-    write('/Users/jeonminjeong/Documents/dev/anichat/tts/tts_test/conan.wav', hps.data.sampling_rate, audio)
+    write('./static/model/conan.wav', hps.data.sampling_rate, audio)
     print('write wav', file=sys.stderr)
     
     return 'hello, its me.'

@@ -176,12 +176,10 @@ img.opac:hover {
 }
 
 .modalCharacterContent {
-  background-color: #ffffff;
   color: black;
   margin: 8% auto;
   padding: 3%;
-  border: 1px solid #888;
-  width: 45%;
+  width: 80%;
 }
 
 .modalRecorderContent {
@@ -419,4 +417,54 @@ img.opac:hover {
 
 .btnHelp {
   color: white;
+}
+
+#btnSend {
+  color: #396187!important;
+}
+
+.audioDown {
+  position: relative;
+  right: 35px;
+  bottom: 21px;
+}
+
+.audioDown > i {
+  color: black;
+  background-color: white;
+}
+
+.divPoster {
+  padding: 16px 16px 0 0px;
+}
+
+.divPoster > img {
+  width: auto;
+  cursor: pointer;
+  height: 400px;
+  
+}
+
+.ani-body {
+  position: relative;
+  height: 447px;
+  overflow: auto;
+  display: inherit;
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ani-header {
+  background-color: #482443;
+  --mdb-card-header-border-width: 0px;
+  cursor: pointer;
+}
+
+.ani-card {
+  background-color: #141414;
+}
+
+.ani-body > div:first-child {
+  padding: 16px 16px 0px 16px;
 }

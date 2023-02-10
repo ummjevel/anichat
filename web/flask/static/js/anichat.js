@@ -13,12 +13,41 @@ var audioContext //new audio context to help us record
 var current_profile;
 var current_blob, current_record_url;
 
+var recordTimeout;
+
 $(document).ready(function () {
+
+
+    var modal = document.getElementById("modalCharacter");
+    var modalRecorder = document.getElementById("modalRecorder");
+    var modalHelper = document.getElementById("modalHelper");
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            $("#modalCharacter").css('display', 'none');
+        }
+        if (event.target == modalRecorder) {
+            $("#modalRecorder").css('display', 'none');
+        }
+        if (event.target == modalHelper) {
+            $("#modalHelper").css('display', 'none');
+        }
+    };
+
+    var conan_talk_image = './static/img/profile_conan.png';
+    var you_talk_image = './static/img/profile_you.png';
+    var nam_talk_image = './static/img/profile_nam.png';
+
+    current_profile = conan_talk_image;
+    changeProfile();
+
+    // if url is select and hidden value is true then click help
+
 
     $("#btnSend").click(function () {
         var message = $("#exampleFormControlInput1").val();
         var use_tts = false;
-        if ($("#flexSwitchCheckDefault").is(":checked") == true) {
+        if ($("#btnTTS").val() == "on" || $("#btnTTS").val() == "") {
             use_tts = true;
         }
 
@@ -32,31 +61,6 @@ $(document).ready(function () {
             $('#btnSend').click();
         }
     });  
-
-    $('#flexSwitchCheckDefaultMori').change(function() {
-        if (this.checked) {
-            // turn on you
-            character = 'you';
-        } else {
-            // turn on conan
-            character = 'conan';
-        }    
-        console.log(character);
-        $.ajax({
-            url: "turnTTS",
-            type: "post",
-            accept: "application/json",
-            contentType: "application/json; charset=utf-8",
-            data: JSON.stringify({'character': character}),
-            dataType: "json",
-            success: function(data) {
-                console.log(data);
-            },
-            error: function(jqXHR, textStatus, errorThrown) {
-                console.log(jqXHR);
-            }
-        });   
-    });
 
     // When the user clicks the button, open the modal
     $(".div_character").click(function () {
@@ -82,20 +86,9 @@ $(document).ready(function () {
         replaceClass("chat2", "nam_card", "conan_card");
         $('h5').text('CONAN');
         $("#modalCharacter").css('display', 'none');
-        $.ajax({
-            url: "turnTTS",
-            type: "post",
-            accept: "application/json",
-            contentType: "application/json; charset=utf-8",
-            data: JSON.stringify({'character': 'conan'}),
-            dataType: "json",
-            success: function(data) {
-                console.log(data);
-            },
-            error: function(jqXHR, textStatus, errorThrown) {
-                console.log(jqXHR);
-            }
-        });   
+        $("#currentProfile").val(0);
+        changeProfile();
+        changeCharacter('conan');
     });
     
     $("#character_change_you").click(function() {
@@ -103,20 +96,9 @@ $(document).ready(function () {
         replaceClass("chat2", "nam_card", "you_card");
         $('h5').text('KOGORO');
         $("#modalCharacter").css('display', 'none');
-        $.ajax({
-            url: "turnTTS",
-            type: "post",
-            accept: "application/json",
-            contentType: "application/json; charset=utf-8",
-            data: JSON.stringify({'character': 'you'}),
-            dataType: "json",
-            success: function(data) {
-                console.log(data);
-            },
-            error: function(jqXHR, textStatus, errorThrown) {
-                console.log(jqXHR);
-            }
-        });  
+        $("#currentProfile").val(1);
+        changeProfile();
+        changeCharacter('you');  
     });
 
     $("#character_change_nam").click(function() {
@@ -124,6 +106,8 @@ $(document).ready(function () {
         replaceClass("chat2", "you_card", "nam_card");
         $('h5').text('KUDO');
         $("#modalCharacter").css('display', 'none');
+        $("#currentProfile").val(2);
+        changeProfile();
     });
 
     $("#recordButton").click(function() {
@@ -161,38 +145,24 @@ $(document).ready(function () {
         location.href = "/select"
     });
 
-    var modal = document.getElementById("modalCharacter");
-    var modalRecorder = document.getElementById("modalRecorder");
-    var modalHelper = document.getElementById("modalHelper");
-
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            $("#modalCharacter").css('display', 'none');
+    $("#btnTTS").click(function() {
+        var previousClass = 'fa-volume-high';
+        var nextClass = 'fa-volume-xmark';
+        if ($("#btnTTS").val() == "off") {
+            previousClass = 'fa-volume-xmark';
+            nextClass = 'fa-volume-high';
+            $("#btnTTS").val("on");
+        } else {
+            $("#btnTTS").val("off");
         }
-        if (event.target == modalRecorder) {
-            $("#modalRecorder").css('display', 'none');
-        }
-        if (event.target == modalHelper) {
-            $("#modalHelper").css('display', 'none');
-        }
-    };
+        $("#btnTTS > i").removeClass(previousClass);
+        $("#btnTTS > i").addClass(nextClass)
+    });
 
-    var conan_talk_image = './static/img/profile_conan.png';
-    var you_talk_image = './static/img/profile_you.png';
-    var nam_talk_image = './static/img/profile_nam.png';
-
-    current_profile = conan_talk_image;
-    var current_profile_value = $("#currentProfile").val();
-    if (current_profile_value == 0) {
-        current_profile = conan_talk_image;
-    } else if (current_profile_value == 1) {
-        current_profile = you_talk_image;
-    } else if (current_profile_value == 2) {
-        current_profile = nam_talk_image;
-    }
-
-    // if url is select and hidden value is true then click help
-
+    $("#btnMimic").click(function() {
+        var message = $("#exampleFormControlInput1").val();
+        sendMimic(message);
+    });
 
 });
 
@@ -291,7 +261,10 @@ function sendAnichatMessage(data) {
     htmlTags += data.message + "</p>";
     // if use tts, add audio.
     if (data.use_tts == true || data.use_tts == "true") {
-        htmlTags += "<div style='margin-right: 17px;'><audio controls='' src='" + data.wav_file + "'></audio></div>"
+        htmlTags += "<div style='margin-right: 17px;'><audio controls='' src='" + data.wav_file + "'></audio>"
+        htmlTags += "<a href='" + '/download/' + data.wav_file.replace('/static/record/', '') + "' class='audioDown'>"
+        htmlTags += "<i class='fa-solid fa-arrow-down'></i></a>"
+        htmlTags += "</div>"
     }
     htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
     htmlTags += timeString + "</p>";
@@ -349,22 +322,23 @@ function clickRecord() {
         startRecording();
         $("#recordFlag").val('1');
         // limit record time
-        setTimeout(() => {
+        recordTimeout = setTimeout(() => {
             if ($("#btnRecord").hasClass('Blink')) {
                 $("#btnRecord").removeClass('Blink'); 
                 // $("#btnRecord > i").removeClass('red');
-                stopRecording();
+                clearTimeout(recordTimeout);
                 $("#recordFlag").val('0');
+                stopRecording();
             }
-        }, 10000);
+        }, 12000);
     } else {
         $("#btnRecord").removeClass('Blink'); 
         // $("#btnRecord > i").removeClass('red');
-        stopRecording();
+        clearTimeout(recordTimeout);
         $("#recordFlag").val('0');
+        stopRecording();
     
     }
-
 }
 
 
@@ -372,8 +346,6 @@ function startRecording() {
     console.log("recordButton clicked");
 
     // Disable the record button until we get a success or fail from getUserMedia()
-    // recordButton.disabled = true;
-    // stopButton.disabled = false;
     if (navigator.mediaDevices === undefined) {
         navigator.mediaDevices = {};
     }
@@ -398,7 +370,6 @@ function startRecording() {
     }
 
     navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then(function (stream) {
-        console.log("getUserMedia() success, stream created, initializing Recorder.js ...");
 
         audioContext = new AudioContext({ sampleRate: 16000 });
 
@@ -424,11 +395,6 @@ function startRecording() {
     
 }
 function stopRecording() {
-    console.log("stopButton clicked");
-
-    //disable the stop button, enable the record too allow for new recordings
-    // stopButton.disabled = true;
-    // recordButton.disabled = false;
 
     //tell the recorder to stop the recording
     rec.stop(); //stop microphone access
@@ -442,9 +408,6 @@ function stopRecording() {
 function createMessageLink(blob) {
     var url = URL.createObjectURL(blob);
     var au = document.createElement('audio');
-    var li = document.createElement('li');
-    var link = document.createElement('a');
-    var recordingsList = document.getElementById("recordingsList");
     //name of .wav file to use during upload and download (without extension)
     var filename = new Date().toISOString();
 
@@ -454,104 +417,8 @@ function createMessageLink(blob) {
     au.id = "audioPreRecorded";
     current_blob = blob;
     current_record_url = url;
+    console.log(current_record_url);
 
-    /*
-    //save to disk link
-    link.href = url;
-    link.download = filename + ".wav"; //download forces the browser to download the file using the  filename
-    link.innerHTML = "Save to disk";
-
-    //add the new audio element to li
-    li.appendChild(au);
-
-    //add the filename to the li
-    li.appendChild(document.createTextNode(filename + ".wav "))
-
-    //add the save to disk link to li
-    li.appendChild(link);
-
-    //add the li element to the ol
-    recordingsList.appendChild(li);
-    */
-
-    /*
-    let today = new Date();
-    var hours = ('0' + today.getHours()).slice(-2);
-    var minutes = ('0' + today.getMinutes()).slice(-2);
-    var timeString = hours + ':' + minutes;
-
-    var cardBody = document.getElementsByClassName("card-body")[0];
-
-    // add message
-
-    var divFlex = document.createElement('div');
-    divFlex.className = "d-flex flex-row justify-content-end";
-
-    var divTemp = document.createElement('div');
-
-    var pSmall2 = document.createElement('p');
-    pSmall2.className = "small me-3 mb-3 rounded-3 text-white d-flex justify-content-end mb-4";
-    pSmall2.innerText = timeString;
-
-    // var imgAvatar1 = document.createElement('img');
-    // imgAvatar1.style.width = '45px';
-    // imgAvatar1.style.height = '100%';
-    // imgAvatar1.src = 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp';
-    var div = document.createElement('div');
-    div.style.marginRight= '17px';
-    div.appendChild(au);
-    divTemp.appendChild(div);
-    divTemp.appendChild(pSmall2);
-    divFlex.appendChild(divTemp);
-    // divFlex.appendChild(imgAvatar1);
-
-    cardBody.appendChild(divFlex);
-
-    // scroll down
-    $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
-
-    // send message
-    var message = $("#exampleFormControlInput1").val();
-    var use_tts = "false";
-    if ($("#flexSwitchCheckDefault").is(":checked") == true) {
-        use_tts = "true";
-    }
-    var use_stt = "false";
-    if ($("#flexSwitchCheckDefaultSTT").is(":checked") == true) {
-        use_stt = "true";
-    }
-
-    let formData = new FormData();
-    formData.append('data', blob);
-
-    var data = {   
-        "use_tts" : use_tts,
-        "user_stt" : use_stt
-    }
-    formData.append('key', new Blob([ JSON.stringify(data) ], {type : "application/json"}));
-    
-
-    addLoading();
-    $.ajax({
-        type: 'POST',
-        url: 'sendSTT',
-        data: formData,
-        contentType: false,
-        processData: false,
-        success: function(data) {
-            console.log('success', data);
-            deleteLoading();
-            sendAnichatMessage(data);
-        },
-        error: function(result) {
-            deleteLoading();
-            alert('sorry an error occured');
-        }
-    });
-    
-*/
-    // var div = document.getElementById('divPreRecord');
-    // div.appendChild(au);
     $("#divPreRecord > img").css('display', 'none');
     $("#divPreRecord").append(au);
     $("#btnRecordReload").css('display', 'block');
@@ -609,12 +476,8 @@ function uploadRecord() {
     // send message
     var message = $("#exampleFormControlInput1").val();
     var use_tts = "false";
-    if ($("#flexSwitchCheckDefault").is(":checked") == true) {
+    if ($("#btnTTS").val() == "on") {
         use_tts = "true";
-    }
-    var use_stt = "false";
-    if ($("#flexSwitchCheckDefaultSTT").is(":checked") == true) {
-        use_stt = "true";
     }
 
     let formData = new FormData();
@@ -622,7 +485,7 @@ function uploadRecord() {
 
     var data = {   
         "use_tts" : use_tts,
-        "user_stt" : use_stt
+        "user_stt" : true
     }
     formData.append('key', new Blob([ JSON.stringify(data) ], {type : "application/json"}));
     
@@ -706,4 +569,52 @@ function addLoading() {
 function deleteLoading() {
     $("#dot-flashing").remove();
     
+}
+
+function changeCharacter(character) {
+    $.ajax({
+        url: "turnTTS",
+        type: "post",
+        accept: "application/json",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify({'character': character}),
+        dataType: "json",
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR);
+        }
+    }); 
+}
+
+function changeProfile() {
+    var current_profile_value = $("#currentProfile").val();
+    if (current_profile_value == 0) {
+        current_profile = conan_talk_image;
+    } else if (current_profile_value == 1) {
+        current_profile = you_talk_image;
+    } else if (current_profile_value == 2) {
+        current_profile = nam_talk_image;
+    }
+}
+
+function sendMimic(message) {
+    $.ajax({
+        url: "sendMimic",
+        type: "post",
+        accept: "application/json",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify({'message': message}),
+        dataType: "json",
+        success: function(data) {
+            console.log('success', data);
+            deleteLoading();
+            sendAnichatMessage(data);
+        },
+        error: function(result) {
+            deleteLoading();
+            alert('sorry an error occured');
+        }
+    }); 
 }
