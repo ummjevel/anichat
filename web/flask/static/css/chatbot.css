@@ -1,0 +1,633 @@
+.chatbot-body {
+    background-color: #141414;
+}
+
+#chat3 .form-control {
+    border-color: transparent;
+}
+
+#chat3 .form-control:focus {
+    border-color: transparent;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.badge-dot {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin-left: 2.9rem;
+    margin-top: -.75rem;
+}
+
+.card-body-chat {
+    height: 515px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 55px;
+}
+
+.div-profile-chat {
+    display: flex;
+}
+
+.card-body-padding-chat {
+    padding: 1.0rem 0rem 1.0rem 1.0rem;
+}
+
+.balloon {
+    display: inline-block;
+    position: relative;
+    background: #e785d3;
+    margin: 0 auto 10px;
+    border-radius: 10px !important;
+    z-index: 10;
+    float: right;
+}
+
+.balloon:after {
+    content: '';
+    position: absolute;
+    height: 51px;
+    width: 37px;
+    border-radius: 18px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: -4px;
+    right: -37px;
+}
+
+.balloon:before {
+    content: '';
+    position: absolute;
+    height: 29px;
+    width: 40px;
+    border-radius: 33px;
+    z-index: -1;
+    background: #e785d3;
+    bottom: -1px;
+    right: -33px;
+}
+
+.balloon-ai {
+    display: inline-block;
+    position: relative;
+    background: #F5F6F7;
+    margin: 0 auto 10px;
+    border-radius: 10px !important;
+    z-index: 10;
+}
+
+.balloon-ai:after {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 50px;
+    border-radius: 16px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: -4px;
+    left: -50px;
+}
+
+.balloon-ai:before {
+    content: '';
+    position: absolute;
+    height: 31px;
+    width: 50px;
+    border-radius: 10px;
+    z-index: -1;
+    background: #F5F6F7;
+    bottom: -1px;
+    left: -45px;
+}
+
+.left-width-per {
+    width: 41.33333%;
+    background-image: url(../img/conan_poster_hover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+.right-width-per {
+    width: 57.666667%;
+    padding: 0px 22px 0px 22px;
+    background-image: url(/static/img/web_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.img-conan-profile-chat {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px !important;
+    display: block;
+}
+
+.img-you-profile-chat {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #141414;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-profile-img-parent {
+    width: 100%;
+    flex: 1 1 0px;
+    margin-top: 10rem;
+}
+
+.div-profile-img-parent:first-child {
+    width: 100%;
+    flex: 1 1 0px;
+    margin-top: 17rem;
+}
+
+
+.Blink {
+    animation: blinker 0.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+}
+
+@keyframes blinker {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.red {
+    color: red;
+}
+
+.dot-flashing {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #324d64;
+    color: #324d64;
+    animation: dot-flashing 1s infinite linear alternate;
+    animation-delay: 0.5s;
+    margin-left: 60px;
+    margin-top: 13px;
+    z-index: 11;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.dot-flashing::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #324d64;
+    color: #324d64;
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 0s;
+}
+
+.dot-flashing::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #324d64;
+    color: #324d64;
+    animation: dot-flashing 1s infinite alternate;
+    animation-delay: 1s;
+}
+
+@keyframes dot-flashing {
+    0% {
+        background-color: #324d64;
+    }
+
+    50%,
+    100% {
+        background-color: rgba(152, 128, 255, 0.2);
+    }
+}
+
+img.opac {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* IE8 및 그 이하 버전용 */
+}
+
+img.opac:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    /* IE8 및 그 이하 버전용 */
+}
+
+.conan_card {
+    background-image: url(../img/background_conan.png);
+    background-repeat: no-repeat;
+    background-position: 105px 70px;
+    background-color: #486F91;
+    background-size: contain;
+}
+
+.you_card {
+    background-image: url(../img/background_you.png);
+    background-repeat: no-repeat;
+    background-position: 60px 70px;
+    background-color: #486F91;
+}
+
+.nam_card {
+    background-image: url(../img/background_nam.png);
+    background-repeat: no-repeat;
+    background-position: 60px 70px;
+    background-color: #486F91;
+}
+
+.card-header {
+    background-color: white;
+    --mdb-card-header-border-width: 0px;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Chewy';
+    src: url('./Chewy-Regular.ttf') format('truetype');
+}
+
+#h5_character {
+    color: #deebf7;
+    font-family: 'Chewy';
+    -webkit-text-stroke: 1px #4f608d;
+    font-size: 30px;
+}
+
+.div_character {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.card-footer {
+    background-color: white;
+}
+
+.text-back {
+    background-color: #e785d3;
+}
+
+.img_profile_character {
+    width: 45px;
+    height: 100%;
+    border-radius: 13px;
+    z-index: 11;
+}
+
+.modalCharacter {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 11;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modalRecorder {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 11;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modalHelper {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 11;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modalCharacterContent {
+    color: black;
+    margin: 8% auto;
+    padding: 3%;
+    width: 80%;
+}
+
+.modalRecorderContent {
+    background-color: #ffffff;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21%;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 365px;
+    /* Could be more or less, depending on screen size */
+    border-radius: 5px;
+}
+
+.modalHelperContent {
+    background-color: #ffffff;
+    color: black;
+    margin: 20% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+    border-radius: 5px;
+}
+
+.modalRecorderContent>div:first-child {
+    background-color: #e0e0e0;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.characterClose,
+.recorderClose,
+.helperClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.characterClose:hover,
+.characterClose:focus,
+.recorderClose:hover,
+.recorderClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.divProfile>div>img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divProfile>div>img:first-child {
+    margin-left: 10px;
+}
+
+.divProfile>div {
+    width: 33%;
+}
+
+.divProfile>div>p {
+    width: 30%;
+    text-align: center;
+    margin-left: 34%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.divProfile {
+    display: inherit;
+    text-align: center;
+}
+
+.gifVoice {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 42%;
+}
+
+#btnRecord>i {
+    color: red;
+}
+
+.divRecord {
+    padding: 15px 10px 0px 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#btnRecordReload>i,
+#btnRecordUpload>i {
+    color: black;
+}
+
+#btnRecordReload {
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    display: none;
+    margin-top: 8px;
+}
+
+#btnRecordUpload {
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    display: none;
+    margin-top: 8px;
+}
+
+#divPreRecord>audio {
+    margin-bottom: -7px;
+}
+
+#character_change_conan {
+    display: inline-block;
+    border-color: lightgray;
+    border-radius: 30px;
+    width: 26%;
+    margin: 3%;
+    padding: 2%;
+}
+
+#character_change_you {
+    display: inline-block;
+    border-color: lightgray;
+    border-radius: 30px;
+    width: 26%;
+    margin: 3%;
+    padding: 2%;
+}
+
+#character_change_nam {
+    display: inline-block;
+    border-color: lightgray;
+    border-radius: 30px;
+    width: 26%;
+    margin: 3%;
+    padding: 2%;
+}
+
+#imgConanProfile,
+#imgYouProfile,
+#imgNamProfile {
+    width: 100%;
+    cursor: pointer;
+}
+
+#imgConanProfile {
+    width: 117px;
+    margin-top: 146px;
+    text-align: center;
+    margin-left: 45px;
+}
+
+#imgYouProfile {
+    margin-left: 5px;
+    width: 228px;
+    text-align: center;
+}
+
+.btnPrevious {
+    float: left;
+    color: #4F608D;
+}
+
+.btnHelp {
+    color: #4F608D;
+}
+
+#btnSend {
+    color: #396187 !important;
+}
+
+.audioDown {
+    position: relative;
+    right: 35px;
+    bottom: 21px;
+}
+
+.audioDown>i {
+    color: black;
+    background-color: #f1f3f4;
+}
+
+.divPoster,
+.divPosterConan,
+.divPosterNaruto,
+.divPosterOnePiece,
+.divPosterBleach {
+    padding: 16px 8px 0 8px;
+}
+
+.divPoster>img {
+    width: auto;
+    cursor: pointer;
+    height: 400px;
+
+}
+
+.ani-body {
+    position: relative;
+    height: 447px;
+    overflow: auto;
+    display: inherit;
+    flex: 1 1 auto;
+}
+
+.ani-header {
+    background-color: #482443;
+    --mdb-card-header-border-width: 0px;
+    cursor: pointer;
+}
+
+.ani-card {
+    background-color: #141414;
+}
+
+.imgRecord {
+    width: 45px;
+}
+
+.audio-a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    left: -41px;
+    position: relative;
+    background-color: #f1f3f4;
+    bottom: 12px;
+}
+
+.audio-p {
+    position: relative;
+    padding-top: 20px;
+    display: inline;
+    left: -27px;
+}
+
+.audio-i {
+    vertical-align: baseline;
+}
+
+.audio-a {
+    right: 62px;
+}
+
+.text-white {
+    color: black !important;
+}

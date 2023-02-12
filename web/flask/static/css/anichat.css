@@ -107,18 +107,28 @@ img.opac:hover {
 }
 
 .card-header {
-  background-color: #386187;
+  background-color: white;
   --mdb-card-header-border-width: 0px;
   cursor: pointer;
 }
 
+@font-face {
+  font-family: 'Chewy';
+  src: url('./Chewy-Regular.ttf') format('truetype');
+}
+
 #h5_character {
-  color: white;
+  color: #deebf7;
+  font-family: 'Chewy';
+  -webkit-text-stroke: 1px #4f608d;
+  font-size: 30px;
 }
 
 .div_character {
   margin-left: auto;
   margin-right: auto;
+  margin-top: -5px;
+  margin-bottom: -5px;
 }
 
 .card-footer {
@@ -188,7 +198,7 @@ img.opac:hover {
   margin: 50% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 60%; /* Could be more or less, depending on screen size */
+  width: 365px; /* Could be more or less, depending on screen size */
   border-radius: 5px;
 }
 
@@ -230,8 +240,6 @@ img.opac:hover {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  border: medium solid black;
-  border-radius: 42px;
 }
 
 .divProfile > div > img:first-child {
@@ -252,6 +260,7 @@ img.opac:hover {
 
 .divProfile {
   display: inherit;
+  text-align: center;
 }
 
 .gifVoice {
@@ -266,7 +275,7 @@ img.opac:hover {
 }
 
 .divRecord {
-  padding: 20px 10px 0px 10px;
+  padding: 15px 10px 0px 10px;
   width: 100%;
   text-align: center;
 }
@@ -280,6 +289,7 @@ img.opac:hover {
   margin-right: auto;
   float: left;
   display: none;
+  margin-top: 8px;
 }
 
 #btnRecordUpload {
@@ -287,6 +297,7 @@ img.opac:hover {
   margin-right: auto;
   float: right;
   display: none;
+  margin-top: 8px;
 }
 
 #divPreRecord > audio {
@@ -306,23 +317,23 @@ img.opac:hover {
   content: '';
   position: absolute;
   height: 51px;
-  width: 50px;
+  width: 37px;
   border-radius: 18px;
   z-index: 1;
   background: #486f91;
-  bottom: -6px;
-  right: -50px;
+  bottom: -4px;
+  right: -37px;
 }
 .balloon:before {
   content: '';
   position: absolute;
   height: 29px;
   width: 40px;
-  border-radius: 20px;
+  border-radius: 33px;
   z-index: -1;
   background: #f5f013;
   bottom: -1px;
-  right: -32px;
+  right: -33px;
 }
 
 .balloon-ai {
@@ -407,16 +418,29 @@ img.opac:hover {
 
 #imgConanProfile, #imgYouProfile, #imgNamProfile {
   width: 100%;
-  border-radius: 30%;
+  cursor: pointer;
+}
+
+#imgConanProfile {
+  width: 117px;
+  margin-top: 146px;
+  text-align: center;
+  margin-left: 45px;
+}
+
+#imgYouProfile {
+  margin-left: 5px;
+  width: 228px;
+  text-align: center;
 }
 
 .btnPrevious {
   float: left;
-  color: white;
+  color: #4F608D;
 }
 
 .btnHelp {
-  color: white;
+  color: #4F608D;
 }
 
 #btnSend {
@@ -431,10 +455,10 @@ img.opac:hover {
 
 .audioDown > i {
   color: black;
-  background-color: white;
+  background-color: #f1f3f4;
 }
 
-.divPoster {
+.divPoster, .divPosterConan, .divPosterNaruto, .divPosterOnePiece, .divPosterBleach {
   padding: 16px 8px 0 8px;
 }
 
@@ -463,6 +487,6 @@ img.opac:hover {
   background-color: #141414;
 }
 
-.divPoster:hover {
-  background-color: gold;
+.imgRecord {
+  width: 45px;
 }

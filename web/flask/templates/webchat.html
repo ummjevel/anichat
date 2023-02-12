@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <!-- recorder -->
+  <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/mdb.min.css') }}"></link>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/anichat.css') }}"></link>
+</head>
+
+<body style="background-color: #eee;">
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-6">
+          <!-- alert -->
+          <div class="alert alert-warning mb-0 alert-dismissible alert-absolute" id="alertExample"
+            role="alert" data-mdb-color="warning" style="display:none; z-index:100;">
+            <i class="fas fa-check me-2"></i>
+            <a href="#" class="alert-link me-1">한글과 숫자, 영어</a>외에는 입력이 불가능합니다. 다시 입력해주세요.
+            <!-- <button type="button" class="btn-close ms-2" data-mdb-dismiss="alert" aria-label="Close"></button> -->
+          </div>
+
+          <div class="card conan_card" id="chat2">
+            <div class="card-header d-flex justify-content-center align-items-center p-3" id="btnSelectCharacter">
+              <div id="btnPrevious"><i class="fa-solid fa-chevron-left fa-xl btnPrevious"></i></div>
+              <div class="div_character"><h5 class="mb-0" id="h5_character">CONAN</h5></div>
+              <div id="btnHelp"><i class="fa-regular fa-circle-question fa-xl btnHelp"></i></div>
+              <input type="hidden" id="currentProfile" value="0"/>
+            </div>
+            <div class="card-body" data-mdb-perfect-scrollbar="true"
+              style="position: relative; height: 400px; overflow: auto;" id="cardBody">
+            </div>
+            <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
+              <a class="text-muted" href="#" id="btnTTS" value="on"><i class="fa-solid fa-volume-high text-muted"></i></a>
+              <a class="ms-3 text-muted" href="#" id="recordButton"><i class="fas fa-microphone"></i></a>
+              <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1"
+                style="margin: 0px 5px 0px 10px;" placeholder="Type message">
+              <a class="ms-3 text-muted" href="#" id="btnMimic" disabled><i class="fas fa-smile"></i></a>
+              <a class="ms-3" href="#" id="btnSend"><i class="fas fa-paper-plane"></i></a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="modalCharacter" class="modalCharacter">
+    <div class="modalCharacterContent">
+      <div>
+        <span class="characterClose">x</span>
+      </div>
+      <div class="divProfile">
+        <img src="./static/img/change_to_conan.png" id="imgConanProfile">
+        <img src="./static/img/change_to_you.png" id="imgYouProfile">
+      </div>
+    </div>
+  </div>
+
+  <div id="modalHelper" class="modalHelper">
+    <div class="modalHelperContent">
+      <div>
+        <span class="helperClose"></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalRecorder" class="modalRecorder">
+    <div class="modalRecorderContent">
+      <div id="divPreRecord">
+        <!-- <span class="recorderClose">x </span> -->
+        <img src="./static/img/voice.png" class="gifVoice"/>
+      </div>
+      <div class="divRecord">
+        <!-- <a href="#" id="btnRecordStop"><i class="fa-solid fa-pause fa-xl"></i></a> -->
+        <a href="#" id="btnRecordReload"><i class="fa-solid fa-rotate-right"></i></a>
+        <a href="#" id="btnRecord"><img src="./static/img/recording_button.png" class="imgRecord"/></a>
+        <!-- <a href="#" id="btnRecord"><i class="fa-solid fa-record-vinyl fa-xl"></i></a> -->
+        <a href="#" id="btnRecordUpload"><i class="fa-solid fa-arrow-up fa-xl"></i></a>
+      </div>
+      
+    </div>
+  </div>
+
+  <input type="hidden" id="recordFlag" value="0">
+  <!-- MDB -->
+  <script src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>
+  <!-- Custom scripts -->
+  <script src="{{ url_for('static', filename='js/anichat.js') }}"></script>
+</body>
+
+</html>

@@ -29,7 +29,10 @@ $(document).ready(function () {
         if (event.target == modal) {
             $("#modalCharacter").css('display', 'none');
         }
-        if (event.target == modalRecorder) {
+        /*if (event.target == modalRecorder) {
+            $("#modalRecorder").css('display', 'none');
+        }*/
+        if(event.target == document.getElementsByClassName("modalRecorderContent")[0]) {
             $("#modalRecorder").css('display', 'none');
         }
         if (event.target == modalHelper) {
@@ -81,7 +84,7 @@ $(document).ready(function () {
         elem.addClass(newClass);
     }
      
-    $("#character_change_conan").click(function() {
+    $("#imgConanProfile").click(function() {
         replaceClass("chat2", "you_card", "conan_card");
         replaceClass("chat2", "nam_card", "conan_card");
         $('h5').text('CONAN');
@@ -91,7 +94,7 @@ $(document).ready(function () {
         changeCharacter('conan');
     });
     
-    $("#character_change_you").click(function() {
+    $("#imgYouProfile").click(function() {
         replaceClass("chat2", "conan_card", "you_card");
         replaceClass("chat2", "nam_card", "you_card");
         $('h5').text('KOGORO');
@@ -99,15 +102,6 @@ $(document).ready(function () {
         $("#currentProfile").val(1);
         changeProfile();
         changeCharacter('you');  
-    });
-
-    $("#character_change_nam").click(function() {
-        replaceClass("chat2", "conan_card", "nam_card");
-        replaceClass("chat2", "you_card", "nam_card");
-        $('h5').text('KUDO');
-        $("#modalCharacter").css('display', 'none');
-        $("#currentProfile").val(2);
-        changeProfile();
     });
 
     $("#recordButton").click(function() {
@@ -168,6 +162,46 @@ $(document).ready(function () {
         location.href = "/webchat";
     });
 
+    $("#imgConanProfile").hover(function() {
+        $(this).attr('src', './static/img/change_to_gray_conan.png');
+        $($(".div-profile-img-parent > p")[0]).addClass('arrow-down Blink');
+    }, function() {
+        $(this).attr('src', './static/img/change_to_conan.png');
+        $($(".div-profile-img-parent > p")[0]).removeClass('arrow-down Blink');
+    });
+
+    $("#imgYouProfile").hover(function() {
+        $(this).attr('src', './static/img/change_to_gray_you.png');
+        $($(".div-profile-img-parent > p")[1]).addClass('arrow-down Blink');
+    }, function() {
+        $(this).attr('src', './static/img/change_to_you.png');
+        $($(".div-profile-img-parent > p")[1]).removeClass('arrow-down Blink');
+    });
+
+    $(".divPosterConan").hover(function() {
+        $(".divPosterConan > img").attr('src', './static/img/conan_poster_hover.png');
+    }, function() {
+        $(".divPosterConan > img").attr('src', './static/img/conan_poster.jpg');
+    });
+
+    $(".divPosterOnePiece").hover(function() {
+        $(".divPosterOnePiece > img").attr('src', './static/img/onepiece_poster_hover.png');
+    }, function() {
+        $(".divPosterOnePiece > img").attr('src', './static/img/onepiece_poster.jpg');
+    });
+
+    $(".divPosterNaruto").hover(function() {
+        $(".divPosterNaruto > img").attr('src', './static/img/naruto_poster_hover.png');
+    }, function() {
+        $(".divPosterNaruto > img").attr('src', './static/img/naruto_poster.jpg');
+    });
+
+    $(".divPosterBleach").hover(function() {
+        $(".divPosterBleach > img").attr('src', './static/img/bleach_poster_hover.png');
+    }, function() {
+        $(".divPosterBleach > img").attr('src', './static/img/bleach_poster.jpg');
+    });
+
 });
 
 function validationCheck(message) {
@@ -197,8 +231,8 @@ function sendMyMessage(message, use_tts) {
 
         // add message
 
-        htmlTags = $(".card-body").html();
-        htmlTags += "<div class='d-flex flex-row justify-content-end mb-4'>";
+        htmlTags = $("#cardBody").html();
+        htmlTags += "<div class='d-flex flex-row justify-content-end '>";
         htmlTags += "<div style='display: inline-grid;'>";
         htmlTags += "  <p class='small p-2 me-3 mb-1 text-black rounded-3 text-back balloon'>";
         htmlTags += message + "</p>";
@@ -209,10 +243,10 @@ function sendMyMessage(message, use_tts) {
         // htmlTags += "  alt='avatar 1' style='width: 45px; height: 100%;'>";
         htmlTags += "</div>";
 
-        $(".card-body").html(htmlTags);
+        $("#cardBody").html(htmlTags);
 
         // scroll down
-        $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
+        $('#cardBody').animate({ scrollTop: document.getElementById("cardBody").scrollHeight }, 'fast');
 
         $("#exampleFormControlInput1").val("");
 
@@ -256,29 +290,30 @@ function sendAnichatMessage(data) {
     }
 
     // add message
-    htmlTags = $(".card-body").html();
-    htmlTags += "<div class='d-flex flex-row justify-content-start mb-4' style='margin-bottom:-24px;'>";
+    htmlTags = $("#cardBody").html();
+    htmlTags += "<div class='d-flex flex-row justify-content-start ' style=''>";
     htmlTags += "<img src='" + current_profile + "'";
     htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";
-    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style='background-color: #F5F6F7; '>";
+    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style=''>";
     htmlTags += data.message + "</p>";
     // if use tts, add audio.
     if (data.use_tts == true || data.use_tts == "true") {
-        htmlTags += "<div style='margin-right: 17px;'><audio controls='' src='" + data.wav_file + "'></audio>"
-        htmlTags += "<a href='" + '/download/' + data.wav_file.replace('/static/record/', '') + "' class='audioDown'>"
-        htmlTags += "<i class='fa-solid fa-arrow-down'></i></a>"
-        htmlTags += "</div>"
+        htmlTags += "<div style='margin-right: 17px;'><audio controls='' src='" + data.wav_file + "'></audio>";
+        htmlTags += "<div style='display:inline'><a href='#' class='audio-a'></a></div><p class='audio-p'>";
+        htmlTags += "<a href='" + '/download/' + data.wav_file.replace('/static/record/', '') + "' class='audioDown'>";
+        htmlTags += "<i class='fa-solid fa-arrow-down audio-i'></i></a></p>";
+        htmlTags += "</div>";
     }
-    htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
+    htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>";
     htmlTags += timeString + "</p>";
     htmlTags += "</div>";
     htmlTags += "</div>";
 
-    $(".card-body").html(htmlTags);
+    $("#cardBody").html(htmlTags);
 
     // scroll down
-    $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
+    $('#cardBody').animate({ scrollTop: document.getElementById("cardBody").scrollHeight }, 'fast');
 
     if (data.use_tts == true || data.use_tts == "true") {
         $("audio")[$("audio").length - 1].play();
@@ -294,8 +329,8 @@ function addRecordMessage(record) {
 
     // add message
 
-    htmlTags = $(".card-body").html();
-    htmlTags += "<div class='d-flex flex-row justify-content-end mb-4'>";
+    htmlTags = $("#cardBody").html();
+    htmlTags += "<div class='d-flex flex-row justify-content-end '>";
     htmlTags += "<div>";
     htmlTags += "  <p class='small p-2 me-3 mb-1 text-black rounded-3 text-back balloon '>";
     htmlTags += message + "</p>";
@@ -306,10 +341,10 @@ function addRecordMessage(record) {
     // htmlTags += "  alt='avatar 1' style='width: 45px; height: 100%;'>";
     htmlTags += "</div>";
 
-    $(".card-body").html(htmlTags);
+    $("#cardBody").html(htmlTags);
 
     // scroll down
-    $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
+    $('#cardBody').animate({ scrollTop: document.getElementById("cardBody").scrollHeight }, 'fast');
 
     // send message
 
@@ -321,6 +356,7 @@ function clickRecord() {
     
     if ($("#recordFlag").val() == '0') {
         $("#btnRecord").addClass('Blink'); 
+        $(".gifVoice").attr('src', './static/img/voice.gif');
         // $("#btnRecord > i").addClass('red');
         // start record
         startRecording();
@@ -329,6 +365,7 @@ function clickRecord() {
         recordTimeout = setTimeout(() => {
             if ($("#btnRecord").hasClass('Blink')) {
                 $("#btnRecord").removeClass('Blink'); 
+                $(".gifVoice").attr('src', './static/img/voice.png');
                 // $("#btnRecord > i").removeClass('red');
                 clearTimeout(recordTimeout);
                 $("#recordFlag").val('0');
@@ -337,6 +374,7 @@ function clickRecord() {
         }, 12000);
     } else {
         $("#btnRecord").removeClass('Blink'); 
+        $(".gifVoice").attr('src', './static/img/voice.png');
         // $("#btnRecord > i").removeClass('red');
         clearTimeout(recordTimeout);
         $("#recordFlag").val('0');
@@ -407,6 +445,7 @@ function stopRecording() {
     //create the wav blob and pass it on to createDownloadLink
     rec.exportWAV(createMessageLink);
 
+    // rec.clear();
 }
 
 function createMessageLink(blob) {
@@ -447,7 +486,7 @@ function uploadRecord() {
     var minutes = ('0' + today.getMinutes()).slice(-2);
     var timeString = hours + ':' + minutes;
 
-    var cardBody = document.getElementsByClassName("card-body")[0];
+    var cardBody = document.getElementById("cardBody");
 
     // add message
 
@@ -457,7 +496,7 @@ function uploadRecord() {
     var divTemp = document.createElement('div');
 
     var pSmall2 = document.createElement('p');
-    pSmall2.className = "small me-3 mb-3 rounded-3 text-white d-flex justify-content-end mb-4";
+    pSmall2.className = "small me-3 mb-3 rounded-3 text-white d-flex justify-content-end ";
     pSmall2.innerText = timeString;
 
     // var imgAvatar1 = document.createElement('img');
@@ -475,12 +514,12 @@ function uploadRecord() {
     cardBody.appendChild(divFlex);
 
     // scroll down
-    $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
+    $('#cardBody').animate({ scrollTop: document.getElementById("cardBody").scrollHeight }, 'fast');
 
     // send message
     var message = $("#exampleFormControlInput1").val();
     var use_tts = "false";
-    if ($("#btnTTS").val() == "on") {
+    if ($("#btnTTS").val() == "on" || $("#btnTTS").val() == "") {
         use_tts = "true";
     }
 
@@ -511,6 +550,8 @@ function uploadRecord() {
             alert('sorry an error occured');
         }
     });
+
+
 }
 
 function btclick() {
@@ -523,51 +564,51 @@ function btclick() {
 
     // add message
 
-    htmlTags = $(".card-body").html();
-    htmlTags += "<div class='d-flex flex-row justify-content-start mb-4'>";
+    htmlTags = $("#cardBody").html();
+    htmlTags += "<div class='d-flex flex-row justify-content-start '>";
     htmlTags += "<img src='" + current_profile + "'";
     htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";
-    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style='background-color: #F5F6F7;position: absolute;width: 100px;height: 37px;'>";
+    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style='position: absolute;width: 100px;height: 37px;'>";
     htmlTags += "<div class='dot-flashing'></div>" + "</p>";
     htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
     htmlTags += "</div>";
     htmlTags += "</div>";
-    $(".card-body").html(htmlTags);
-    $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
+    $("#cardBody").html(htmlTags);
+    $('#cardBody').animate({ scrollTop: document.getElementById("cardBody").scrollHeight }, 'fast');
     setTimeout(() => {
-        var divCardbody = $(".card-body > div");
+        var divCardbody = $("#cardBody > div");
         divCardbody[divCardbody.length - 1].remove();
-        htmlTags = $(".card-body").html();
-        htmlTags += "<div class='d-flex flex-row justify-content-start mb-4' style='margin-bottom:-24px;'>";
+        htmlTags = $("#cardBody").html();
+        htmlTags += "<div class='d-flex flex-row justify-content-start ' style=''>";
         htmlTags += "<img src='" + current_profile +"'";
         htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
         htmlTags += "<div>";
-        htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style='background-color: #F5F6F7; '>";
+        htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style=''>";
         htmlTags += "ㅇㅇ" + "</p>";
         htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
         htmlTags += timeString + "</p>";
         htmlTags += "</div>";
         htmlTags += "</div>";
-        $(".card-body").html(htmlTags);
-        $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
+        $("#cardBody").html(htmlTags);
+        $('#cardBody').animate({ scrollTop: document.getElementById("cardBody").scrollHeight }, 'fast');
     }, 2000);
 
 }
 
 function addLoading() {
-    htmlTags = $(".card-body").html();
+    htmlTags = $("#cardBody").html();
     htmlTags += "<div class='d-flex flex-row justify-content-start' id='dot-flashing'>";
     htmlTags += "<img src='" + current_profile + "'";
     htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";
-    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style='background-color: #F5F6F7;position: absolute;width: 100px;height: 37px;'>";
+    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style='position: absolute;width: 100px;height: 37px;'>";
     htmlTags += "<div class='dot-flashing'></div>" + "</p>";
     htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>"
     htmlTags += "</div>";
     htmlTags += "</div>";
-    $(".card-body").html(htmlTags);
-    $('.card-body').animate({ scrollTop: document.getElementsByClassName("card-body")[0].scrollHeight }, 'fast');
+    $("#cardBody").html(htmlTags);
+    $('#cardBody').animate({ scrollTop: document.getElementById("cardBody").scrollHeight }, 'fast');
 }
 
 function deleteLoading() {
@@ -604,21 +645,28 @@ function changeProfile() {
 }
 
 function sendMimic(message) {
-    $.ajax({
-        url: "sendMimic",
-        type: "post",
-        accept: "application/json",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify({'message': message}),
-        dataType: "json",
-        success: function(data) {
-            console.log('success', data);
-            deleteLoading();
-            sendAnichatMessage(data);
-        },
-        error: function(result) {
-            deleteLoading();
-            alert('sorry an error occured');
-        }
-    }); 
+
+    if (message == '') {
+        return false;
+    }
+
+    if (validationCheck(message)) {
+        $.ajax({
+            url: "sendMimic",
+            type: "post",
+            accept: "application/json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({'message': message}),
+            dataType: "json",
+            success: function(data) {
+                console.log('success', data);
+                deleteLoading();
+                sendAnichatMessage(data);
+            },
+            error: function(result) {
+                deleteLoading();
+                alert('sorry an error occured');
+            }
+        }); 
+    }
 }

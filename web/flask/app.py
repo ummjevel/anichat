@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, session, send_file
+from flask import Flask, render_template, request, jsonify, session, send_file, url_for, redirect
 import sys
 import logging 
 import random
@@ -11,6 +11,7 @@ import sys
 import io
 import os
 from os import path
+import traceback
 
 app = Flask(__name__, instance_path='/Users/jeonminjeong/Documents/dev/anichat')
 APP_PATH = os.path.join(app.instance_path, "web", "flask")
@@ -240,7 +241,7 @@ def setSecondLogin(username):
     members.to_pickle(MEMBER_FILE_PATH) 
 
 
-chatbot, context_transform, infer_df, cand_embs = initChatbot()
+anichat_chatbot, context_transform, infer_df, cand_embs = initChatbot()
 hps, net_g = initTTS('conan')
 whisper_model = whisper.load_model("base")
 '''
@@ -256,14 +257,12 @@ logging.basicConfig(level=logging.DEBUG)
 
 @app.route('/')
 def hello_world():
-    app.logger.info('logged in successfully')
-    print('Hello world!', file=sys.stderr)
-    return render_template('index.html')
+    return redirect(url_for('login'))
 
 
 @app.route('/webchat', methods=['GET', 'POST'])
 def webchat():
-    return render_template('chatbot.html')
+    return render_template('webchat.html')
 
 @app.route('/sendChat', methods=['POST'])
 def sendChat():
@@ -278,9 +277,11 @@ def sendChat():
             # use chatbot only
             print('chatbot만 사용', file=sys.stderr)
             try:
-                answer = executeChatbot(chatbot, context_transform, infer_df, cand_embs, text_message)
-            except:
+                answer = executeChatbot(anichat_chatbot, context_transform, infer_df, cand_embs, text_message)
+            except Exception as e:
                 answer = '챗봇이 로드되지 않았습니다. 첫화면부터 다시 시도해주세요.'
+                print(e, file=sys.stderr)
+                traceback.print_exc()
             # use tts
             wav_file_path = ''
             if params['use_tts'] == True:
@@ -332,9 +333,11 @@ def sendSTT():
         # use chatbot only
         print('chatbot만 사용', file=sys.stderr)
         try:
-            answer = executeChatbot(chatbot, context_transform, infer_df, cand_embs, text_message)
-        except:
+            answer = executeChatbot(anichat_chatbot, context_transform, infer_df, cand_embs, text_message)
+        except Exception as e:
             answer = '챗봇이 로드되지 않았습니다. 첫화면부터 다시 시도해주세요.'
+            print(e, file=sys.stderr)
+            traceback.print_exc()
         # use tts
         wav_file_path = ''
         json_file_content = request.files['key'].read().decode('utf-8')
@@ -401,7 +404,7 @@ def login():
 
             if returns:
                 setSecondLogin(loginName)
-                return render_template('select.html', username = loginName)
+                return render_template('select.html', username = loginName, first=returns)
             else:
                 result = 'fail'
 
@@ -428,10 +431,6 @@ def login():
 def select():
     # check first login
     firstLogin = False
-    # get username from cookie
-    if 'username' in session:
-        username = session['username']
-        firstLogin = checkFirstLogin(username)
 
     return render_template('select.html', first = firstLogin)
 
@@ -445,6 +444,10 @@ def downloadFile(filename): #In your case fname is your filename
         print("error... during download", file=sys.stderr)
         return str(e)
 
+
+@app.route('/chatbot', methods=['GET', 'POST'])
+def chatbot():
+    return render_template('chatbot.html')
 
 @app.route('/c2')
 def chatbot_web2():
@@ -471,14 +474,16 @@ def chatbot_web():
 
     chatbot=PolyEncoder(model_config, bert=base_model, poly_m=poly_m)
     chatbot.resize_token_embeddings(len(tokenizer))
-    chatbot.load_state_dict(torch.load(model_path))
+    chatbot.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
     chatbot.to(device)
     print('load chatbot', file=sys.stderr)
 
     with open(infer_df_path, 'rb') as fr:
-        infer_df=pickle.load(fr)
+        infer_df = CPU_Unpickler(fr).load()
+        # infer_df=pickle.load(fr)
     with open(infer_emb_data_path, 'rb') as fr:
-        cand_embs=pickle.load(fr)
+        cand_embs = CPU_Unpickler(fr).load()
+        # cand_embs=pickle.load(fr)
 
     print('opened pickle files', file=sys.stderr)
     query = [text.strip()]
