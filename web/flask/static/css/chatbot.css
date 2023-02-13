@@ -1,5 +1,10 @@
 .chatbot-body {
-    background-color: #141414;
+    background-image: url(../img/mainpage_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #chat3 .form-control {
