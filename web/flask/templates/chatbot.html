@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Material Design for Bootstrap</title>
+  <title>ANICHAT</title>
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/mdb.min.css') }}">
   </link>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
   </link>
 </head>
 
@@ -33,15 +34,16 @@
             <div class="card-body card-body-padding-chat">
               <div class="row">
                 <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0 left-width-per">
+                  <input type="hidden" id="currentProfile" value="0"/>
                   <div class="div-profile-chat">
                     <div class="div-profile-img-parent">
-                      <p class=""></p>
+                      <p class="p-select p-conan"></p>
                       <img src="./static/img/change_to_conan.png" id="imgConanProfile" class="img-conan-profile-chat"
                         style="margin-left:auto;">
                     </div>
                     <div class="div-profile-img-parent">
-                      <p class=""></p>
-                      <img src="./static/img/change_to_you.png" id="imgYouProfile" class="img-you-profile-chat"
+                      <p class="p-select p-you"></p>
+                      <img src="./static/img/before_select_you.png" id="imgYouProfile" class="img-you-profile-chat"
                         style="margin-left:auto;">
                     </div>
                   </div>

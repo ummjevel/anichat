@@ -103,23 +103,18 @@
 
 .left-width-per {
     width: 41.33333%;
-    background-image: url(../img/conan_poster_hover.png);
-    background-position: center;
+    background-image: url(../img/character_select_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid;
-    border-radius: 15px;
     overflow: auto;
 }
 
 .right-width-per {
     width: 57.666667%;
     padding: 0px 22px 0px 22px;
-    background-image: url(/static/img/web_background.png);
+    background-image: url(/static/img/web_right_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid;
-    border-radius: 15px;
 }
 
 .img-conan-profile-chat {
@@ -147,13 +142,13 @@
 .div-profile-img-parent {
     width: 100%;
     flex: 1 1 0px;
-    margin-top: 10rem;
+    margin-top: 2rem;
 }
 
 .div-profile-img-parent:first-child {
     width: 100%;
     flex: 1 1 0px;
-    margin-top: 17rem;
+    margin-top: 9rem;
 }
 
 
@@ -530,17 +525,18 @@ img.opac:hover {
 }
 
 #imgConanProfile {
-    width: 117px;
+    width: 155px;
     margin-top: 146px;
     text-align: center;
     margin-left: 45px;
-}
-
-#imgYouProfile {
+  }
+  
+  #imgYouProfile {
     margin-left: 5px;
-    width: 228px;
+    width: 196px;
     text-align: center;
-}
+  }
+
 
 .btnPrevious {
     float: left;
@@ -630,4 +626,28 @@ img.opac:hover {
 
 .text-white {
     color: black !important;
+}
+
+.arrow_btn {
+    width: 50px;
+  }
+  
+.p-select {
+    text-align: center;
+    height: 50px;
+    margin-right: 4rem;
+    margin-top: 0rem;
+    margin-bottom: -2px;
+}
+
+.p-you {
+    margin-right: 4rem;
+    height: 10px;
+    padding-bottom: 3rem;
+}
+
+.p-conan {
+    height: 10px;
+    margin-left: 5rem;
+    margin-bottom: 25px;
 }

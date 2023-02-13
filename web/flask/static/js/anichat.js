@@ -92,6 +92,8 @@ $(document).ready(function () {
         $("#currentProfile").val(0);
         changeProfile();
         changeCharacter('conan');
+        $(this).attr('src', "./static/img/change_to_conan.png");
+        $("#imgYouProfile").attr('src', './static/img/before_select_you.png');
     });
     
     $("#imgYouProfile").click(function() {
@@ -102,6 +104,8 @@ $(document).ready(function () {
         $("#currentProfile").val(1);
         changeProfile();
         changeCharacter('you');  
+        $(this).attr('src', "./static/img/change_to_you.png");
+        $("#imgConanProfile").attr('src', './static/img/before_select_conan.png');
     });
 
     $("#recordButton").click(function() {
@@ -163,19 +167,40 @@ $(document).ready(function () {
     });
 
     $("#imgConanProfile").hover(function() {
-        $(this).attr('src', './static/img/change_to_gray_conan.png');
-        $($(".div-profile-img-parent > p")[0]).addClass('arrow-down Blink');
+        if (current_profile != conan_talk_image) {
+            $(this).attr('src', './static/img/change_to_gray_conan.png');
+        } else {
+            $(this).attr('src', './static/img/change_to_conan.png');
+        }
+        $($(".div-profile-img-parent > p")[0]).addClass('Blink');
+        $($(".div-profile-img-parent > p")[0]).append("<img src='./static/img/character_select_button.png' class='arrow_btn'/>");
+
     }, function() {
-        $(this).attr('src', './static/img/change_to_conan.png');
-        $($(".div-profile-img-parent > p")[0]).removeClass('arrow-down Blink');
+        if (current_profile != conan_talk_image) {
+            $(this).attr('src', './static/img/before_select_conan.png');
+        } else {
+            $(this).attr('src', './static/img/change_to_conan.png');
+        }
+        $($(".div-profile-img-parent > p")[0]).removeClass('Blink');
+        $($(".div-profile-img-parent > p > img")[0]).remove();
     });
 
     $("#imgYouProfile").hover(function() {
-        $(this).attr('src', './static/img/change_to_gray_you.png');
-        $($(".div-profile-img-parent > p")[1]).addClass('arrow-down Blink');
+        if (current_profile != you_talk_image) {
+            $(this).attr('src', './static/img/change_to_gray_you.png');
+        } else {
+            $(this).attr('src', './static/img/change_to_you.png');
+        }
+        $($(".div-profile-img-parent > p")[1]).addClass('Blink');
+        $($(".div-profile-img-parent > p")[1]).append("<img src='./static/img/character_select_button.png' class='arrow_btn'/>");
     }, function() {
-        $(this).attr('src', './static/img/change_to_you.png');
-        $($(".div-profile-img-parent > p")[1]).removeClass('arrow-down Blink');
+        if (current_profile != you_talk_image) {
+            $(this).attr('src', './static/img/before_select_you.png');
+        } else {
+            $(this).attr('src', './static/img/change_to_you.png');
+        }
+        $($(".div-profile-img-parent > p")[1]).removeClass('Blink');
+        $($(".div-profile-img-parent > p > img")[0]).remove();
     });
 
     $(".divPosterConan").hover(function() {
@@ -598,7 +623,7 @@ function btclick() {
 
 function addLoading() {
     htmlTags = $("#cardBody").html();
-    htmlTags += "<div class='d-flex flex-row justify-content-start' id='dot-flashing'>";
+    htmlTags += "<div class='d-flex flex-row justify-content-start mb-4' id='dot-flashing'>";
     htmlTags += "<img src='" + current_profile + "'";
     htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";

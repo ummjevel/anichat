@@ -7,6 +7,10 @@ border-color: transparent;
 box-shadow: inset 0px 0px 0px 1px transparent;
 }
 
+#chat2 {
+  height: 100vh;
+}
+
 .divider:after,
 .divider:before {
 content: "";
