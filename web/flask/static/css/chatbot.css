@@ -42,7 +42,7 @@
 .balloon {
     display: inline-block;
     position: relative;
-    background: #e785d3;
+    background: #d3d9e6;
     margin: 0 auto 10px;
     border-radius: 10px !important;
     z-index: 10;
@@ -68,7 +68,7 @@
     width: 40px;
     border-radius: 33px;
     z-index: -1;
-    background: #e785d3;
+    background: #d3d9e6;
     bottom: -1px;
     right: -33px;
 }
@@ -116,7 +116,7 @@
 
 .right-width-per {
     width: 57.666667%;
-    padding: 0px 22px 0px 22px;
+    padding: 0px 34px 0px 34px;
     background-image: url(/static/img/web_right_background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -655,4 +655,8 @@ img.opac:hover {
     height: 10px;
     margin-left: 5rem;
     margin-bottom: 25px;
+}
+
+.mb-4 {
+    margin-bottom: 0px !important;
 }

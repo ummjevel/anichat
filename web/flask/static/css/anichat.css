@@ -8,7 +8,10 @@ box-shadow: inset 0px 0px 0px 1px transparent;
 }
 
 #chat2 {
-  height: 100vh;
+  height: 95vh;
+  width: 98%;
+  text-align: center;
+  margin: auto;
 }
 
 .divider:after,
@@ -91,29 +94,34 @@ img.opac:hover {
 .conan_card {
   background-image: url(../img/background_conan.png);
   background-repeat: no-repeat;
-  background-position: 105px 70px;
-  background-color: #486F91;
-  background-size: contain;
+  background-color: #ffffff;
+  background-size: 56% 67%;
+  background-position: 45% 72%;
 }
 
 .you_card {
   background-image: url(../img/background_you.png);
   background-repeat: no-repeat;
-  background-position: 60px 70px;
-  background-color: #486F91;
+  background-color: #ffffff;
+  background-position: center center;
+  background-size: 75% 71%;
+  background-position: 50% 68%;
 }
 
 .nam_card {
   background-image: url(../img/background_nam.png);
   background-repeat: no-repeat;
   background-position: 60px 70px;
-  background-color: #486F91;
+  background-color: #ffffff;
 }
 
 .card-header {
   background-color: white;
   --mdb-card-header-border-width: 0px;
   cursor: pointer;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
 }
 
 @font-face {
@@ -265,6 +273,7 @@ img.opac:hover {
 .divProfile {
   display: inherit;
   text-align: center;
+
 }
 
 .gifVoice {
@@ -311,7 +320,7 @@ img.opac:hover {
 .balloon {
   display: inline-block;
   position: relative;
-  background: #f5f013;
+  background: #deebf7;
   margin: 0 auto 10px;
   border-radius: 10px !important;
   z-index: 10;
@@ -324,7 +333,7 @@ img.opac:hover {
   width: 37px;
   border-radius: 18px;
   z-index: 1;
-  background: #486f91;
+  background: #ffffff;
   bottom: -4px;
   right: -37px;
 }
@@ -335,7 +344,7 @@ img.opac:hover {
   width: 40px;
   border-radius: 33px;
   z-index: -1;
-  background: #f5f013;
+  background: #deebf7;
   bottom: -1px;
   right: -33px;
 }
@@ -351,11 +360,11 @@ img.opac:hover {
 .balloon-ai:after {
   content: '';
   position: absolute;
-  height: 70px;
+  height: 59px;
   width: 50px;
   border-radius: 16px;
   z-index: 1;
-  background: #486f91;
+  background: #ffffff;
   bottom: -4px;
   left: -50px;
 }
@@ -452,9 +461,9 @@ img.opac:hover {
 }
 
 .audioDown {
-  position: relative;
-  right: 35px;
-  bottom: 21px;
+  left: 267px;
+  bottom: -24px;
+  position: absolute;
 }
 
 .audioDown > i {
@@ -469,7 +478,7 @@ img.opac:hover {
 .divPoster > img {
   width: auto;
   cursor: pointer;
-  height: 400px;
+  height: 590px;
   
 }
 
@@ -489,8 +498,31 @@ img.opac:hover {
 
 .ani-card {
   background-color: #141414;
+  width: 100%;
 }
 
 .imgRecord {
   width: 45px;
 }
+
+.text-white {
+  color: black !important;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.div-audio {
+  text-align: center;
+  position: absolute;
+  left: 10%;
+}
+
+.div-in-audio {
+  scale: 0.8;
+  left: 10%;
+  position: absolute;
+}
+
+.text-p {
+  margin-top: 54px;
+}
+

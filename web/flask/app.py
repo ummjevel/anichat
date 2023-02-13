@@ -242,7 +242,8 @@ def setSecondLogin(username):
 
 
 anichat_chatbot, context_transform, infer_df, cand_embs = initChatbot()
-hps, net_g = initTTS('conan')
+hps_conan, net_g_conan = initTTS('conan')
+hps_you, net_g_you = initTTS('you')
 whisper_model = whisper.load_model("base")
 '''
 chatbot, context_transform, infer_df, cand_embs = '', '', '', ''
@@ -288,6 +289,12 @@ def sendChat():
                 print('tts도 사용', file=sys.stderr)
                 wav_file_path = '/static/record/tts_{0}.wav'.format(random.randint(0, 1000000))
                 wav_file_front_path = APP_PATH
+                if params['choose'] == 'conan':
+                    hps = hps_conan
+                    net_g = net_g_conan
+                else:
+                    hps = hps_you
+                    net_g = net_g_you
                 wavfile = executeTTS(hps, net_g, answer, wav_file_front_path + wav_file_path)
             returns = jsonify({"message": answer, "use_tts": params['use_tts'], 'wav_file': wav_file_path})
         else:
@@ -349,6 +356,12 @@ def sendSTT():
             print('tts도 사용', file=sys.stderr)
             wav_file_path = '/static/record/tts_{0}.wav'.format(random.randint(0, 1000000))
             wav_file_front_path = APP_PATH
+            if json_content['choose'] == 'conan':
+                    hps = hps_conan
+                    net_g = net_g_conan
+            else:
+                hps = hps_you
+                net_g = net_g_you
             wavfile = executeTTS(hps, net_g, answer, wav_file_front_path + wav_file_path)
         
         returns = jsonify({"message": answer, "use_tts": json_content['use_tts'], 'wav_file': wav_file_path
@@ -372,6 +385,12 @@ def sendMimic():
             # use tts
             wav_file_path = '/static/record/tts_{0}.wav'.format(random.randint(0, 1000000))
             wav_file_front_path = APP_PATH
+            if params['choose'] == 'conan':
+                hps = hps_conan
+                net_g = net_g_conan
+            else:
+                hps = hps_you
+                net_g = net_g_you
             wavfile = executeTTS(hps, net_g, text_message, wav_file_front_path + wav_file_path)
             returns = jsonify({"message": text_message, "use_tts": "true", 'wav_file': wav_file_path})
         else:

@@ -19,17 +19,20 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mdb.min.css') }}">
     </link>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/anichat.css') }}">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
     </link>
 </head>
 
-<body class="" style="background-color: #ffdcff;">
-    <section style="background-color: #ffdcff;">
-        <div class="container py-5">
+<body class="" style="background-color: #141414;">
+    <div style="margin: 0.4rem 0px -10px 4.5rem;">
+        <img src="./static/img/mainpage_logo.png" style="width: 229px;">
+    </div>
+    <section >
+        <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-6">
+                <div class="" style="flex: 1 1 auto; margin-left: 0px;">
                     <div class="card ani-card" id="chat2">
-                        <div class="ani-header d-flex justify-content-center align-items-center p-3"
+                        <!-- <div class="ani-header d-flex justify-content-center align-items-center p-3"
                             id="btnSelectCharacter">
                             <div id="btnPrevious"><img src="./static/img/arrow_mark.png" class="btnPrevious"/></div>
                             <div class="div_character">
@@ -37,19 +40,19 @@
                             </div>
                             <div id="btnHelp"><img src="./static/img/question_mark.png" class="btnHelp"/></div>
                             <input type="hidden" id="currentProfile" value="0">
-                        </div>
+                        </div> -->
                         <div class="ani-body" data-mdb-perfect-scrollbar="true" >
                             <div class="divPoster divPosterConan" id="divDiveToConan">
-                                <img src="./static/img/conan_poster.jpg" >
+                                <img src="./static/img/conan_poster.png" >
                             </div>
                             <div  class="divPoster divPosterNaruto">
-                                <img src="./static/img/naruto_poster.jpg">
+                                <img src="./static/img/naruto_poster.png">
                             </div>
                             <div  class="divPoster divPosterOnePiece">
-                                <img src="./static/img/onepiece_poster.jpg">
+                                <img src="./static/img/onepiece_poster.png">
                             </div>
                             <div  class="divPoster divPosterBleach">
-                                <img src="./static/img/bleach_poster.jpg">
+                                <img src="./static/img/bleach_poster.png">
                             </div>
                         </div>
                     </div>

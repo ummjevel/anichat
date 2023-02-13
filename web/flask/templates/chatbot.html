@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />-->
+  <!--<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0"> 
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>ANICHAT</title>
   <!-- jquery -->
@@ -21,19 +23,21 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/mdb.min.css') }}">
   </link>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot.css') }}">
-  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
   </link>
+ 
 </head>
 
 <body class="chatbot-body">
   <div style="margin: 0.4rem 0px -10px 4.5rem;">
-    <img src="./static/img/mainpage_logo.png" style="width: 229px;">
+    <a href="/select"><img src="./static/img/mainpage_logo.png" style="width: 229px;"></a>
   </div>
   <section>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="card" id="chat3" style="border-radius: 15px; background: none;">
+            
             <div class="card-body card-body-padding-chat">
               <div class="row">
                 <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0 left-width-per">
@@ -52,6 +56,9 @@
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-7 col-xl-8 right-width-per">
+                  <div>
+                    <img src="./static/img/question_mark.png" style="display: block; float: right; margin-top: 1.6rem; margin-right: -0.5rem;"/>
+                  </div>
                   <div class="pt-3" data-mdb-perfect-scrollbar="true" style="position: relative;">
                     <div id="cardBody" class="card-body-chat">
                     </div>

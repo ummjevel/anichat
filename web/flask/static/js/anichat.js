@@ -20,7 +20,6 @@ var nam_talk_image = './static/img/profile_nam.png';
 
 $(document).ready(function () {
 
-
     var modal = document.getElementById("modalCharacter");
     var modalRecorder = document.getElementById("modalRecorder");
     var modalHelper = document.getElementById("modalHelper");
@@ -53,8 +52,12 @@ $(document).ready(function () {
         if ($("#btnTTS").val() == "on" || $("#btnTTS").val() == "") {
             use_tts = true;
         }
+        var choose = 'conan';
+        if (current_profile == you_talk_image) {
+            choose = 'you';
+        }
 
-        sendMyMessage(message, use_tts)
+        sendMyMessage(message, use_tts, choose);
     });
 
     // press enter then send message
@@ -91,7 +94,7 @@ $(document).ready(function () {
         $("#modalCharacter").css('display', 'none');
         $("#currentProfile").val(0);
         changeProfile();
-        changeCharacter('conan');
+        // changeCharacter('conan');
         $(this).attr('src', "./static/img/change_to_conan.png");
         $("#imgYouProfile").attr('src', './static/img/before_select_you.png');
     });
@@ -103,7 +106,7 @@ $(document).ready(function () {
         $("#modalCharacter").css('display', 'none');
         $("#currentProfile").val(1);
         changeProfile();
-        changeCharacter('you');  
+        // changeCharacter('you');  
         $(this).attr('src', "./static/img/change_to_you.png");
         $("#imgConanProfile").attr('src', './static/img/before_select_conan.png');
     });
@@ -160,10 +163,22 @@ $(document).ready(function () {
     $("#btnMimic").click(function() {
         var message = $("#exampleFormControlInput1").val();
         sendMimic(message);
+        $("#exampleFormControlInput1").val("");
     });
 
     $("#divDiveToConan").click(function() {
-        location.href = "/webchat";
+        if (navigator.userAgent.match(/Android/i)
+         || navigator.userAgent.match(/webOS/i)
+         || navigator.userAgent.match(/iPhone/i)
+         || navigator.userAgent.match(/iPad/i)
+         || navigator.userAgent.match(/iPod/i)
+         || navigator.userAgent.match(/BlackBerry/i)
+         || navigator.userAgent.match(/Windows Phone/i)) {
+            location.href = "/webchat";
+         } else {
+            
+            location.href = "/chatbot";
+         }
     });
 
     $("#imgConanProfile").hover(function() {
@@ -206,19 +221,19 @@ $(document).ready(function () {
     $(".divPosterConan").hover(function() {
         $(".divPosterConan > img").attr('src', './static/img/conan_poster_hover.png');
     }, function() {
-        $(".divPosterConan > img").attr('src', './static/img/conan_poster.jpg');
+        $(".divPosterConan > img").attr('src', './static/img/conan_poster.png');
     });
 
     $(".divPosterOnePiece").hover(function() {
         $(".divPosterOnePiece > img").attr('src', './static/img/onepiece_poster_hover.png');
     }, function() {
-        $(".divPosterOnePiece > img").attr('src', './static/img/onepiece_poster.jpg');
+        $(".divPosterOnePiece > img").attr('src', './static/img/onepiece_poster.png');
     });
 
     $(".divPosterNaruto").hover(function() {
         $(".divPosterNaruto > img").attr('src', './static/img/naruto_poster_hover.png');
     }, function() {
-        $(".divPosterNaruto > img").attr('src', './static/img/naruto_poster.jpg');
+        $(".divPosterNaruto > img").attr('src', './static/img/naruto_poster.png');
     });
 
     $(".divPosterBleach").hover(function() {
@@ -242,7 +257,7 @@ function validationCheck(message) {
     return true;
 }
 
-function sendMyMessage(message, use_tts) {
+function sendMyMessage(message, use_tts, choose) {
     // validation check
     if (message == '') {
         return false;
@@ -281,7 +296,7 @@ function sendMyMessage(message, use_tts) {
             type: "post",
             accept: "application/json",
             contentType: "application/json; charset=utf-8",
-            data: JSON.stringify({'use_tts': use_tts, 'message': message}),
+            data: JSON.stringify({'use_tts': use_tts, 'message': message, "choose": choose}),
             dataType: "json",
             success: function(data) {
                 console.log(data)
@@ -316,7 +331,7 @@ function sendAnichatMessage(data) {
 
     // add message
     htmlTags = $("#cardBody").html();
-    htmlTags += "<div class='d-flex flex-row justify-content-start ' style=''>";
+    htmlTags += "<div class='d-flex flex-row justify-content-start mb-4' style=''>";
     htmlTags += "<img src='" + current_profile + "'";
     htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";
@@ -324,13 +339,22 @@ function sendAnichatMessage(data) {
     htmlTags += data.message + "</p>";
     // if use tts, add audio.
     if (data.use_tts == true || data.use_tts == "true") {
-        htmlTags += "<div style='margin-right: 17px;'><audio controls='' src='" + data.wav_file + "'></audio>";
+        if (location.pathname == "/webchat") {
+            htmlTags += "<div class='div-audio' ><audio controls='' src='" + data.wav_file + "' class='div-in-audio'></audio>";
+        } else {
+            htmlTags += "<div style='margin-right: 17px;' ><audio controls='' src='" + data.wav_file + "'></audio>";
+        }
         htmlTags += "<div style='display:inline'><a href='#' class='audio-a'></a></div><p class='audio-p'>";
         htmlTags += "<a href='" + '/download/' + data.wav_file.replace('/static/record/', '') + "' class='audioDown'>";
         htmlTags += "<i class='fa-solid fa-arrow-down audio-i'></i></a></p>";
         htmlTags += "</div>";
     }
-    htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>";
+    
+    if (location.pathname == "/webchat" && ((data.use_tts == true || data.use_tts == "true"))) {
+        htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white text-p'>";
+    } else {
+        htmlTags += "  <p class='small ms-3 mb-3 rounded-3 text-white'>";
+    }
     htmlTags += timeString + "</p>";
     htmlTags += "</div>";
     htmlTags += "</div>";
@@ -547,13 +571,18 @@ function uploadRecord() {
     if ($("#btnTTS").val() == "on" || $("#btnTTS").val() == "") {
         use_tts = "true";
     }
+    var choose = 'conan';
+    if (current_profile == you_talk_image) {
+        choose = 'you';
+    }
 
     let formData = new FormData();
     formData.append('data', blob);
 
     var data = {   
         "use_tts" : use_tts,
-        "user_stt" : true
+        "user_stt" : true,
+        "choose" : choose
     }
     formData.append('key', new Blob([ JSON.stringify(data) ], {type : "application/json"}));
     
@@ -674,6 +703,10 @@ function sendMimic(message) {
     if (message == '') {
         return false;
     }
+    var choose = 'conan';
+    if (current_profile == you_talk_image) {
+        choose = 'you';
+    }
 
     if (validationCheck(message)) {
         $.ajax({
@@ -681,7 +714,7 @@ function sendMimic(message) {
             type: "post",
             accept: "application/json",
             contentType: "application/json; charset=utf-8",
-            data: JSON.stringify({'message': message}),
+            data: JSON.stringify({'message': message, 'choose': choose}),
             dataType: "json",
             success: function(data) {
                 console.log('success', data);
