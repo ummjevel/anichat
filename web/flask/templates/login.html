@@ -1,7 +1,8 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
+        <meta name="viewport" content="width=640, user-scalable=yes">
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <title>ANICHAT</title>
         <!-- jquery -->
@@ -15,20 +16,25 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
         <!-- MDB -->
         <link rel="stylesheet" href="{{ url_for('static', filename='css/mdb.min.css') }}"></link>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/anichat.css') }}"></link>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
         <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
     </head>
     <body class="body_login">
-        <div style="padding: 100px 10px 10px 10px;"><h1>anichat</h1></div>
+        <div style="padding: 100px 10px 10px 10px;">
+            <img src="./static/img/mainpage_logo.png" class="img-logo">
+        </div>
         <!-- Pills navs -->
         <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
             <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
-                aria-controls="pills-login" aria-selected="true">Login</a>
+                <a class="active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">
+                    <img src="./static/img/login.png" class="img-login">
+                </a>
             </li>
             <li class="nav-item" role="presentation">
-            <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
-                aria-controls="pills-register" aria-selected="false">Register</a>
+                <a class="" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+                aria-controls="pills-register" aria-selected="false">
+                <img src="./static/img/register.png" class="img-register">
+            </a>
             </li>
         </ul>
         <!-- Pills navs -->
@@ -39,69 +45,64 @@
             <form method="post">
         
                 <!-- Email input -->
-                <div class="form-outline mb-4">
-                <input type="text" id="loginName" class="form-control" name="loginName"/>
-                <label class="form-label" for="loginName">Email or username</label>
+                <div class="form-outline form-outline2 mb-4">
+                <input type="text" id="loginName" class="form-control form-line" name="loginName"/>
+                <label class="form-label form-label2" for="loginName">Username</label>
                 </div>
         
                 <!-- Password input -->
-                <div class="form-outline mb-4">
-                <input type="password" id="loginPassword" class="form-control" name="loginPassword"/>
-                <label class="form-label" for="loginPassword">Password</label>
+                <div class="form-outline form-outline2 mb-4">
+                <input type="password" id="loginPassword" class="form-control form-line" name="loginPassword"/>
+                <label class="form-label form-label2" for="loginPassword">Password</label>
                 </div>
-        
-                <!-- 2 column grid layout -->
-                <div class="row mb-4">
-                    <div class="col-md-6 d-flex justify-content-center">
-                        <!-- Simple link -->
-                        <a href="#!">Forgot password?</a>
-                    </div>
-                </div>
-        
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
-        
+                <button type="submit" class="btn-login">
+                    <img src="./static/img/signin.png" class="img-signin"/>
+                </button>
+                <a href="#" >
                 <!-- Register buttons -->
-                <div class="text-center">
+                <!-- <div class="text-center">
                 <p>Not a member? <a href="#!">Register</a></p>
-                </div>
+                </div> -->
             </form>
             </div>
             <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
             <form method="post">
         
                 <!-- Name input -->
-                <div class="form-outline mb-4">
-                <input type="text" id="registerName" class="form-control" name="registerName" />
-                <label class="form-label" for="registerName">Name</label>
+                <div class="form-outline form-outline2 mb-4">
+                <input type="text" id="registerName" class="form-control form-line" name="registerName" />
+                <label class="form-label form-label2" for="registerName">Name</label>
                 </div>
         
                 <!-- Username input -->
-                <div class="form-outline mb-4">
-                <input type="text" id="registerUsername" class="form-control" name="registerUsername"/>
-                <label class="form-label" for="registerUsername">Username</label>
+                <div class="form-outline form-outline2 mb-4">
+                <input type="text" id="registerUsername" class="form-control form-line" name="registerUsername"/>
+                <label class="form-label form-label2" for="registerUsername">Username</label>
                 </div>
         
                 <!-- Email input -->
-                <div class="form-outline mb-4">
-                <input type="email" id="registerEmail" class="form-control" name="registerEmail"/>
-                <label class="form-label" for="registerEmail">Email</label>
+                <div class="form-outline form-outline2 mb-4">
+                <input type="email" id="registerEmail" class="form-control form-line" name="registerEmail"/>
+                <label class="form-label form-label2" for="registerEmail">Email</label>
                 </div>
         
                 <!-- Password input -->
-                <div class="form-outline mb-4">
-                <input type="password" id="registerPassword" class="form-control" name="registerPassword"/>
-                <label class="form-label" for="registerPassword">Password</label>
+                <div class="form-outline form-outline2 mb-4">
+                <input type="password" id="registerPassword" class="form-control form-line" name="registerPassword"/>
+                <label class="form-label form-label2" for="registerPassword">Password</label>
                 </div>
         
                 <!-- Repeat Password input -->
-                <div class="form-outline mb-4">
-                <input type="password" id="registerRepeatPassword" class="form-control" name="registerRepeatPassword"/>
-                <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                <div class="form-outline form-outline2 mb-4">
+                <input type="password" id="registerRepeatPassword" class="form-control form-line" name="registerRepeatPassword"/>
+                <label class="form-label form-label2" for="registerRepeatPassword">Repeat password</label>
                 </div>
         
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+                <button type="submit" class="btn-login">
+                    <img src="./static/img/signup.png" class="img-signin"/>
+                </button>
             </form>
             </div>
         </div>
@@ -109,6 +110,6 @@
         <!-- MDB -->
         <script src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>
         <!-- Custom scripts -->
-        <script src="{{ url_for('static', filename='js/anichat.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/login.js') }}"></script>
     </body>
 </html>

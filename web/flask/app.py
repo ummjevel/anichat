@@ -26,6 +26,7 @@ TTS_MODEL_PATH = {
 }
 
 MEMBER_FILE_PATH = "./static/data/members.pkl"
+FEEDBACK_PATH = "./static/data/feedbacks.txt"
 
 # stt
 import whisper
@@ -467,6 +468,27 @@ def downloadFile(filename): #In your case fname is your filename
 @app.route('/chatbot', methods=['GET', 'POST'])
 def chatbot():
     return render_template('chatbot.html')
+
+
+@app.route('/sendFeedback', methods=['POST'])
+def sendFeedback():
+    answer = '오류가 발생했습니다.'
+    if request.method == 'POST':
+        # json 형태로 풀기
+        params = {}
+        if request.is_json == True:
+            params = request.get_json()
+            ai_text = params['ai_text']
+            user_text = params['user_text']
+            charactor = params['charactor']
+            feedback = params['feedback']
+            
+            with open(FEEDBACK_PATH, 'a') as f:
+                f.write(user_text + '\t' + ai_text + '\t' + charactor + '\t' + feedback  + '\n')
+
+            return jsonify({"result": 'success'})
+
+    return jsonify({"result": 'fail'})
 
 @app.route('/c2')
 def chatbot_web2():

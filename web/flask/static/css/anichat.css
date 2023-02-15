@@ -8,10 +8,11 @@ box-shadow: inset 0px 0px 0px 1px transparent;
 }
 
 #chat2 {
-  height: 95vh;
+  height: 615px;
   width: 98%;
   text-align: center;
   margin: auto;
+  background: none;
 }
 
 .divider:after,
@@ -488,6 +489,8 @@ img.opac:hover {
   overflow: auto;
   display: inherit;
   flex: 1 1 auto;
+  /* margin-left: auto; */
+  margin-top: 70px;
 }
 
 .ani-header {
@@ -524,5 +527,19 @@ img.opac:hover {
 
 .text-p {
   margin-top: 54px;
+}
+
+.chatbot-body {
+  background-image: url(../img/mainpage_background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.div-logo {
+  margin: 16px 0px -13px 86px;
+  position: fixed;
 }
 

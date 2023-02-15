@@ -29,8 +29,9 @@
 </head>
 
 <body class="chatbot-body">
-  <div style="margin: 0.4rem 0px -10px 4.5rem;">
+  <div style="margin: 0.4rem 0px -10px 5.5rem;">
     <a href="/select"><img src="./static/img/mainpage_logo.png" style="width: 229px;"></a>
+    <img src="./static/img/question_mark2.png" style="width: 29px; cursor: pointer;" id="imgHelper">
   </div>
   <section>
     <div class="container">
@@ -56,9 +57,9 @@
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-7 col-xl-8 right-width-per">
-                  <div>
+                  <!-- <div>
                     <img src="./static/img/question_mark.png" style="display: block; float: right; margin-top: 1.6rem; margin-right: -0.5rem;"/>
-                  </div>
+                  </div> -->
                   <div class="pt-3" data-mdb-perfect-scrollbar="true" style="position: relative;">
                     <div id="cardBody" class="card-body-chat">
                     </div>
@@ -68,7 +69,7 @@
                       <a class="ms-3 text-muted" href="#" id="recordButton"><i class="fas fa-microphone"></i></a>
                       <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1"
                         style="margin: 0px 5px 0px 10px;" placeholder="Type message">
-                      <a class="ms-3 text-muted" href="#" id="btnMimic" disabled><i class="fas fa-smile"></i></a>
+                      <a class="ms-3 text-muted" href="#" id="btnMimic"><img src="/static/img/parrot_button.png" style="width: 21px; "></a>
                       <a class="ms-3" href="#" id="btnSend"><i class="fas fa-paper-plane"></i></a>
                     </div>
                   </div>
@@ -95,6 +96,11 @@
       </div>
   </section>
 
+
+  <div id="feedback" class="feedback-chat">
+    <div><a href="" id="btnThumbsUp" class="btnThums" value="good" onclick="return false;"><i class="fa-regular fa-thumbs-up fa-lg"></i></a></div>
+    <div><a href="" id="btnThumbsDown" class="btnThums" value="bad" onclick="return false;"><i class="fa-regular fa-thumbs-down fa-lg"></i></a></div>
+  </div>
   <input type="hidden" id="recordFlag" value="0">
   <!-- MDB -->
   <script src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>

@@ -120,6 +120,7 @@
     background-image: url(/static/img/web_right_background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -3px;
 }
 
 .img-conan-profile-chat {
@@ -294,7 +295,7 @@ img.opac:hover {
 }
 
 .text-back {
-    background-color: #e785d3;
+    background-color: #d3d9e6;
 }
 
 .img_profile_character {
@@ -659,4 +660,36 @@ img.opac:hover {
 
 .mb-4 {
     margin-bottom: 0px !important;
+}
+
+.feedback-chat {
+    display: none;
+    position: relative;
+    background-color: #d3d9e6;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    z-index: 15;
+    width: 80px;
+}
+
+.feedback-chat > div:first-child {
+    display: inline;
+    margin-right: 10px;
+}
+
+.feedback-chat > div {
+    display: inline;
+}
+
+#btnThumbsUp, #btnThumbsDown {
+    color: black;
+}
+
+#btnThumbsUp > i, #btnThumbsDown > i {
+    color: black;
+}
+
+.ai-msg {
+    cursor: pointer;
 }

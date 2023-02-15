@@ -1,0 +1,74 @@
+.img-login {
+    width: 174px;
+    float: right;
+    margin-right: 0.2rem;
+    margin-top: 1rem;
+}
+
+.img-register {
+    width: 174px;
+    float: left;
+    margin-left: 0.8rem;
+    margin-top: 1rem;
+}
+
+.img-logo {
+    width: 394px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.form-outline2 {
+    position: relative;
+    width: 360px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn-login {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@font-face {
+    font-family: 'Barlow-Bold';
+    src: url('./BarlowCondensed-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Barlow-BoldItalic';
+    src: url('./BarlowCondensed-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Barlow-SemiBoldItalic';
+    src: url('./BarlowCondensed-SemiBoldItalic.ttf') format('truetype');
+}
+
+.form-label2 {
+    padding-top: 0.79rem !important;
+    font-family: 'Barlow-SemiBoldItalic';
+}
+
+.form-line {
+    border: 2px solid #bdbdbd;
+    box-shadow: 2px 2px 2px #9e9e9e;
+    line-height: 2.6;
+}
+
+.img-signin {
+    width: 374px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: 0px 0px 0px 3px;
+}

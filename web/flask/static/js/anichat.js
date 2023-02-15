@@ -18,6 +18,8 @@ var conan_talk_image = './static/img/profile_conan.png';
 var you_talk_image = './static/img/profile_you.png';
 var nam_talk_image = './static/img/profile_nam.png';
 
+var hiddenBalloon;
+
 $(document).ready(function () {
 
     var modal = document.getElementById("modalCharacter");
@@ -28,12 +30,12 @@ $(document).ready(function () {
         if (event.target == modal) {
             $("#modalCharacter").css('display', 'none');
         }
-        /*if (event.target == modalRecorder) {
-            $("#modalRecorder").css('display', 'none');
-        }*/
-        if(event.target == document.getElementsByClassName("modalRecorderContent")[0]) {
+        if (event.target == modalRecorder) {
             $("#modalRecorder").css('display', 'none');
         }
+        // if(event.target == document.getElementsByClassName("modalRecorderContent")[0]) {
+        //     $("#modalRecorder").css('display', 'none');
+        // }
         if (event.target == modalHelper) {
             $("#modalHelper").css('display', 'none');
         }
@@ -239,9 +241,51 @@ $(document).ready(function () {
     $(".divPosterBleach").hover(function() {
         $(".divPosterBleach > img").attr('src', './static/img/bleach_poster_hover.png');
     }, function() {
-        $(".divPosterBleach > img").attr('src', './static/img/bleach_poster.jpg');
+        $(".divPosterBleach > img").attr('src', './static/img/bleach_poster.png');
+    });
+    
+    $(document).on("click", ".ai-msg", function (e) {
+    // $(".balloon-ai").on("click", function () {
+        // show button
+        $("#feedback").css('display', 'inline-block');
+
+        $('#feedback').offset({
+            left: e.pageX - 50,
+            top: e.pageY - 60
+        });
+
+        hiddenBalloon = $(this);
+        
     });
 
+    $(".btnThums").click(function() {
+
+        var currentText = hiddenBalloon.text();
+        var currentUserText = $($(hiddenBalloon.parents()[0]).parents()[0]).prev().find($(".balloon")).text();
+        var choose = 'conan';
+        if (current_profile == you_talk_image) {
+            choose = 'you';
+        }
+        var feedback = $(this).attr('value');
+        console.log(feedback);
+        // write user's feedback
+        $.ajax({
+            url: "sendFeedback",
+            type: "post",
+            accept: "application/json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({'ai_text': currentText, 'user_text': currentUserText, "charactor": choose, "feedback": feedback}),
+            dataType: "json",
+            success: function(data) {
+                $("#feedback").css('display', 'none');
+                // alert('반응이 저장되었습니다. 피드백 감사합니다.');
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(jqXHR);
+            }
+        });
+        
+    });
 });
 
 function validationCheck(message) {
@@ -300,7 +344,7 @@ function sendMyMessage(message, use_tts, choose) {
             dataType: "json",
             success: function(data) {
                 console.log(data)
-                sendAnichatMessage(data);
+                sendAnichatMessage(data, true);
             },
             error: function(jqXHR, textStatus, errorThrown) {
                 console.log(jqXHR);
@@ -309,7 +353,7 @@ function sendMyMessage(message, use_tts, choose) {
     }
 }
 
-function sendAnichatMessage(data) {
+function sendAnichatMessage(data, use_feedback) {
 
     console.log(data);
 
@@ -335,7 +379,11 @@ function sendAnichatMessage(data) {
     htmlTags += "<img src='" + current_profile + "'";
     htmlTags += "  alt='avatar 1' style='' class='img_profile_character'>";
     htmlTags += "<div>";
-    htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style=''>";
+    if (use_feedback == true) {
+        htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai ai-msg' style=''>";
+    } else {
+        htmlTags += "  <p class='small p-2 ms-3 mb-1 rounded-3 balloon-ai' style=''>";
+    }
     htmlTags += data.message + "</p>";
     // if use tts, add audio.
     if (data.use_tts == true || data.use_tts == "true") {
@@ -597,7 +645,7 @@ function uploadRecord() {
         success: function(data) {
             console.log('success', data);
             deleteLoading();
-            sendAnichatMessage(data);
+            sendAnichatMessage(data, true);
         },
         error: function(result) {
             deleteLoading();
@@ -719,7 +767,7 @@ function sendMimic(message) {
             success: function(data) {
                 console.log('success', data);
                 deleteLoading();
-                sendAnichatMessage(data);
+                sendAnichatMessage(data, false);
             },
             error: function(result) {
                 deleteLoading();
