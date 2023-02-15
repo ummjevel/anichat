@@ -83,6 +83,7 @@ $(document).ready(function () {
     var modal = document.getElementById("modalCharacter");
     var modalRecorder = document.getElementById("modalRecorder");
     var modalHelper = document.getElementById("modalHelper");
+    var btnFeedback = document.getElementById("feedback");
 
     window.onclick = function (event) {
         if (event.target == modal) {
@@ -97,6 +98,9 @@ $(document).ready(function () {
         if (event.target == modalHelper) {
             $("#modalHelper").css('display', 'none');
         }
+        if (event.target != btnFeedback && event.target != document.getElementsByClassName("ai-msg")[0]) {
+            $("#feedback").css('display', 'none');
+        } 
     };
 
 

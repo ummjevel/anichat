@@ -85,7 +85,7 @@
 .balloon-ai:after {
     content: '';
     position: absolute;
-    height: 70px;
+    height: 43px;
     width: 50px;
     border-radius: 16px;
     z-index: 1;

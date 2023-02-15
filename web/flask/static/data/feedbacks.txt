@@ -15,3 +15,7 @@ hi	응!	conan	bad
 진이 누구야?	진이야. 냉혹하고 아주 잔인한 사람이야. 그 자식을 무조건 찾아내고 말겠어	conan	good
 ㅗㅑ	설마	conan	bad
 	설마	conan	bad
+hi	응!	conan	bad
+hi	응!	conan	bad
+hi	응!	conan	good
+hi	응!	conan	good
