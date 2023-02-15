@@ -72,3 +72,12 @@
     display: block;
     padding: 0px 0px 0px 3px;
 }
+
+.span-result {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    font-family: 'Barlow-SemiBoldItalic';
+}

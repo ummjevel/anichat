@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />-->
   <!--<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>ANICHAT</title>
   <!-- jquery -->
@@ -25,7 +25,8 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot.css') }}">
   <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
   </link>
- 
+  <!-- slider -->
+  
 </head>
 
 <body class="chatbot-body">
@@ -38,11 +39,11 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card" id="chat3" style="border-radius: 15px; background: none;">
-            
+
             <div class="card-body card-body-padding-chat">
               <div class="row">
                 <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0 left-width-per">
-                  <input type="hidden" id="currentProfile" value="0"/>
+                  <input type="hidden" id="currentProfile" value="0" />
                   <div class="div-profile-chat">
                     <div class="div-profile-img-parent">
                       <p class="p-select p-conan"></p>
@@ -69,7 +70,8 @@
                       <a class="ms-3 text-muted" href="#" id="recordButton"><i class="fas fa-microphone"></i></a>
                       <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1"
                         style="margin: 0px 5px 0px 10px;" placeholder="Type message">
-                      <a class="ms-3 text-muted" href="#" id="btnMimic"><img src="/static/img/parrot_button.png" style="width: 21px; "></a>
+                      <a class="ms-3 text-muted" href="#" id="btnMimic"><img src="/static/img/parrot_button.png"
+                          style="width: 21px; "></a>
                       <a class="ms-3" href="#" id="btnSend"><i class="fas fa-paper-plane"></i></a>
                     </div>
                   </div>
@@ -94,12 +96,69 @@
           </div>
         </div>
       </div>
+      <div id="modalHelper" class="modalHelper">
+        <div class="container">
+          <div class="slide-wrapper">
+            <div class="slide" style="background-image:url(./static/img/description_page1.png); display: block;"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page2.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page3.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page4.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page5.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page6.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page7.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page8.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page9.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page10.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page11.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page12.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page13.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page14.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page15.png)"></div>
+            <div class="slide" style="background-image:url(./static/img/description_page16.png)"></div>
+          </div>
+          <div style="display: inline;position: absolute;top: 31px;left: 89%;z-index: 5;"><img src="./static/img/skip.png" style="width: 146px; cursor:pointer;" onclick="closeHelperModal();"></div>
+          <ul class="nav">
+            <li class="selected" ></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="arrow prev">
+            <i class="material-icons keyboard_arrow_left"><</i>
+          </div>
+          <div class="arrow next">
+            <i class="material-icons keyboard_arrow_right">></i>
+          </div>
+        </div>
+          
+        <!-- <div class="modalHelperContent">
+          <div style="float: right; display: inline;"><img src="./static/img/skip.png" style="width: 100px;"></div>
+          <div style="display: block;margin-top: 90px;margin-bottom: 10px;">
+            <img src="./static/img/left_arrow.png" style="margin-right: auto;width: 100px;">
+            <img src="./static/img/right_arrow.png" style="width: 100px;margin-left: auto;float: right;">
+          </div>
+        </div> -->
+      </div>
   </section>
 
 
   <div id="feedback" class="feedback-chat">
-    <div><a href="" id="btnThumbsUp" class="btnThums" value="good" onclick="return false;"><i class="fa-regular fa-thumbs-up fa-lg"></i></a></div>
-    <div><a href="" id="btnThumbsDown" class="btnThums" value="bad" onclick="return false;"><i class="fa-regular fa-thumbs-down fa-lg"></i></a></div>
+    <div><a href="" id="btnThumbsUp" class="btnThums" value="good" onclick="return false;"><i
+          class="fa-regular fa-thumbs-up fa-lg"></i></a></div>
+    <div><a href="" id="btnThumbsDown" class="btnThums" value="bad" onclick="return false;"><i
+          class="fa-regular fa-thumbs-down fa-lg"></i></a></div>
   </div>
   <input type="hidden" id="recordFlag" value="0">
   <!-- MDB -->

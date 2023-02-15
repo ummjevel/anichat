@@ -354,7 +354,7 @@ img.opac:hover {
     /* Stay in place */
     z-index: 11;
     /* Sit on top */
-    left: 0;
+    left: -12px;
     top: 0;
     width: 100%;
     /* Full width */
@@ -535,13 +535,13 @@ img.opac:hover {
     margin-top: 146px;
     text-align: center;
     margin-left: 45px;
-  }
-  
-  #imgYouProfile {
+}
+
+#imgYouProfile {
     margin-left: 5px;
     width: 196px;
     text-align: center;
-  }
+}
 
 
 .btnPrevious {
@@ -636,8 +636,8 @@ img.opac:hover {
 
 .arrow_btn {
     width: 50px;
-  }
-  
+}
+
 .p-select {
     text-align: center;
     height: 50px;
@@ -673,23 +673,163 @@ img.opac:hover {
     width: 80px;
 }
 
-.feedback-chat > div:first-child {
+.feedback-chat>div:first-child {
     display: inline;
     margin-right: 10px;
 }
 
-.feedback-chat > div {
+.feedback-chat>div {
     display: inline;
 }
 
-#btnThumbsUp, #btnThumbsDown {
+#btnThumbsUp,
+#btnThumbsDown {
     color: black;
 }
 
-#btnThumbsUp > i, #btnThumbsDown > i {
+#btnThumbsUp>i,
+#btnThumbsDown>i {
     color: black;
 }
 
 .ai-msg {
     cursor: pointer;
+}
+
+.container {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+.slide-wrapper {
+    display: flex;
+    width: 102%;
+    height: 97%;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: contain;
+}
+
+.nav {
+    display: none;
+    width: 250px;
+    height: 50px;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    position: absolute;
+    bottom: 8%;
+    left: 32%;
+    z-index: 5;
+    transform: translate(-50%, 0);
+}
+
+ul,
+li {
+    list-style: none;
+    z-index: 5;
+}
+
+.nav li {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    display: relative;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    justify-self: center;
+    transform: scale(0.67);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.27);
+    transition: all 0.2s;
+}
+
+li:hover {
+    transform: scale(0.85);
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.34);
+    transition: all 0.2s;
+}
+
+.arrow {
+    display: flex;
+    height: auto;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    z-index: 5;
+}
+
+.prev {
+    top: 88%;
+    left: 24px;
+}
+
+.next {
+    top: 88%;
+    right: 0;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 53px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #FFF;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.27);
+    transition: all 0.12s;
+}
+
+.arrow:hover>.material-icons {
+    font-size: 70px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.34);
+    transition: all 0.15s;
+}
+
+li.selected {
+    transform: scale(1);
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.34);
+    transition: all 0.2s;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+#btnThumbsUp:hover > i {
+    color: blue;
+}
+
+#btnThumbsDown:hover > i {
+    color: red;
 }

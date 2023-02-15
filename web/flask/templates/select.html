@@ -25,14 +25,15 @@
 </head>
 
 <body class="chatbot-body" style="">
-    <div class="div-logo">
-        <a href="/select"><img src="./static/img/mainpage_logo.png" style="width: 229px;"></a>
-        <img src="./static/img/question_mark2.png" style="width: 29px; cursor: pointer;" id="imgHelper">
-    </div>
-    <section >
+    
+    <section>
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="" style="flex: 1 1 auto; margin-left: 0px;">
+                <div class="div-logo">
+                    <a href="/select"><img src="./static/img/mainpage_logo.png" style="width: 229px;"></a>
+                    <img src="./static/img/question_mark2.png" style="width: 29px; cursor: pointer;" id="imgHelper">
+                </div>
+                <div class="" style="flex: 1 1 auto; margin-top: 86px;">
                     <div class="card ani-card" id="chat2">
                         <!-- <div class="ani-header d-flex justify-content-center align-items-center p-3"
                             id="btnSelectCharacter">
@@ -61,6 +62,53 @@
                 </div>
             </div>
         </div>
+        <div id="modalHelper" class="modalHelper">
+            <div class="container">
+              <div class="slide-wrapper">
+                <div class="slide" style="background-image:url(./static/img/description_page1.png); display: block;"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page2.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page3.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page4.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page5.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page6.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page7.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page8.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page9.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page10.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page11.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page12.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page13.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page14.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page15.png)"></div>
+                <div class="slide" style="background-image:url(./static/img/description_page16.png)"></div>
+              </div>
+              <div style="display: inline;position: absolute;top: 31px;left: 89%;z-index: 5;"><img src="./static/img/skip.png" style="width: 146px; cursor:pointer;" onclick="closeHelperModal();"></div>
+              <ul class="nav">
+                <li class="selected" ></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="arrow prev">
+                <i class="material-icons keyboard_arrow_left"><</i>
+              </div>
+              <div class="arrow next">
+                <i class="material-icons keyboard_arrow_right">></i>
+              </div>
+            </div>
+          </div>
     </section>
     <!-- MDB -->
     <script src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>
