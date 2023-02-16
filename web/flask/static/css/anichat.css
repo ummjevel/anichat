@@ -8,8 +8,8 @@ box-shadow: inset 0px 0px 0px 1px transparent;
 }
 
 #chat2 {
-  height: 675px;
-  width: 98%;
+  height: 1059px;
+  width: 100%;
   text-align: center;
   margin: auto;
   background: none;
@@ -93,20 +93,20 @@ img.opac:hover {
   filter: alpha(opacity=100); /* IE8 및 그 이하 버전용 */
 }
 .conan_card {
-  background-image: url(../img/background_conan.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/background_conan.png)!important;
+  background-repeat: no-repeat!important;
   background-color: #ffffff;
-  background-size: 56% 67%;
-  background-position: 45% 72%;
+  background-size: 50% 67%!important;
+  background-position: 45% 83%!important;
 }
 
 .you_card {
-  background-image: url(../img/background_you.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/background_you.png)!important;
+  background-repeat: no-repeat!important;
   background-color: #ffffff;
-  background-position: center center;
-  background-size: 75% 71%;
-  background-position: 50% 68%;
+  background-position: center center!important;
+  background-size: 69% 71%!important;
+  background-position: 50% 80%!important;
 }
 
 .nam_card {
@@ -334,7 +334,7 @@ img.opac:hover {
   width: 37px;
   border-radius: 18px;
   z-index: 1;
-  background: #ffffff;
+  background: #eeeeee;
   bottom: -4px;
   right: -37px;
 }
@@ -365,7 +365,7 @@ img.opac:hover {
   width: 50px;
   border-radius: 16px;
   z-index: 1;
-  background: #ffffff;
+  background: #eeeeee;
   bottom: -4px;
   left: -50px;
 }
@@ -563,6 +563,7 @@ img.opac:hover {
   height: 100%;
   background-position: center center;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .nav {
