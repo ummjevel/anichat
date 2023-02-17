@@ -19,14 +19,17 @@ TTS_PATH = os.path.join(app.instance_path, "tts", "vits")
 CHATBOT_PATH = os.path.join(app.instance_path, "chatbot", "chatbot_only_inference")
 
 TTS_MODEL_PATH = {
-    "conan": ("./static/model/conan_base.json"
-            , "./static/model/G_410000.pth")
-    , "you": ("./static/model/you_base.json"
-            , "./static/model/G_152000.pth")
+    "conan": ("./static/model/conan_config.json"
+            , "./static/model/conan_final.pth")
+    , "you": ("./static/model/you_config.json"
+            , "./static/model/you_final.pth")
 }
 
 MEMBER_FILE_PATH = "./static/data/members.pkl"
 FEEDBACK_PATH = "./static/data/feedbacks.txt"
+CHATBOT_BASE_MODEL_PATH = "./static/model/chatbot/roberta-base"
+CHATBOT_MODEL_PATH = "./static/model/chatbot/model"
+
 
 # stt
 import whisper
@@ -95,30 +98,41 @@ class CPU_Unpickler(pickle.Unpickler):
         else: return super().find_class(module, name)
 
 
-def initChatbot():
-    base_model_name = 'klue/roberta-base'
-    question_length = 256
-    poly_m = 16
-    model_path = './static/model/poly_16_pytorch_model.bin'
-    infer_df_path = './static/model/inference_df.pickle'
-    infer_emb_data_path = './static/model/inference_cand_embs.pickle'
+def del_enter(x):
+    return x.split('\n')[0].strip()
 
-    model_config = RobertaConfig.from_pretrained(base_model_name)
-    tokenizer = RobertaTokenizerFast.from_pretrained(base_model_name)
-    base_model = RobertaModel.from_pretrained(base_model_name, config=model_config)
+
+def initChatbot():
+
+    question_length = 256
+    poly_m = 8
+    infer_df_path = 'inference_df.pickle'
+    infer_emb_data_path = 'inference_cand_embs.pickle'
+
+    tokenizer = RobertaTokenizerFast.from_pretrained(CHATBOT_BASE_MODEL_PATH)
+
+    with open((os.path.join(CHATBOT_BASE_MODEL_PATH,'special_token.txt')),'r')as f:
+        sp_lines=f.readlines()
+    
+    sp_list=list(map(del_enter,sp_lines[500:]))
+    tokenizer.add_tokens(sp_list, special_tokens=True)
+
+    model_config = RobertaConfig.from_pretrained(CHATBOT_BASE_MODEL_PATH)
+    base_model = RobertaModel.from_pretrained(CHATBOT_BASE_MODEL_PATH, config=model_config)
 
     context_transform = SelectionJoinTransform(tokenizer=tokenizer, max_len=question_length)
 
     chatbot=PolyEncoder(model_config, bert=base_model, poly_m=poly_m)
     chatbot.resize_token_embeddings(len(tokenizer))
-    chatbot.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
+    checkpoint = torch.load(os.path.join(CHATBOT_MODEL_PATH, 'pytorch_model.bin'), map_location=torch.device('cpu'))
+    chatbot.load_state_dict(checkpoint['model'])
     chatbot.to(device)
     print('load chatbot', file=sys.stderr)
 
-    with open(infer_df_path, 'rb') as fr:
+    with open(os.path.join(CHATBOT_MODEL_PATH, infer_df_path), 'rb') as fr:
         infer_df = CPU_Unpickler(fr).load()
         # infer_df=pickle.load(fr)
-    with open(infer_emb_data_path, 'rb') as fr:
+    with open(os.path.join(CHATBOT_MODEL_PATH, infer_emb_data_path), 'rb') as fr:
         cand_embs = CPU_Unpickler(fr).load()
         # cand_embs=pickle.load(fr)
 
@@ -182,7 +196,7 @@ def executeTTS(hps, net_g, text, output_path):
         audio = net_g.infer(x_tst, x_tst_lengths, noise_scale=.667, noise_scale_w=0.8, length_scale=1)[0][0,0].data.cpu().float().numpy()
 
     print('no grad', file=sys.stderr)
-    write(output_path, hps.data.sampling_rate, audio)
+    write(output_path, 22050, audio)
     print('write wav', file=sys.stderr)
     return True
 
