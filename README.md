@@ -2,6 +2,7 @@
 
 # Concept
 
+## Outline
 - B2B Target Character Voice Chatbot Service
 - The feeling of learning the character's worldview, personality, voice, and tone of speech and having a real conversation with my favorite character.
 - Market Size
@@ -9,6 +10,10 @@
   <img width="48%" alt="image" src="https://user-images.githubusercontent.com/49097057/220270954-e3beae21-a0fe-41e4-a0ee-595e175ee65b.png">
   <img width="48%" alt="image" src="https://user-images.githubusercontent.com/49097057/220271010-a8b8065f-3d63-4bda-bd38-31d3ec0a7ca0.png">
 
+## Expectation Effectiveness
+- Creation of a new content market attracts investment from companies and secures a new fan base
+- Expandable to B2B industry
+- Possibility of indirect experience that is closer to direct experience
 
 ## Member
 * [전민정](https://github.com/ummjevel) (Leader)
