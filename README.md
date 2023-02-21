@@ -45,9 +45,9 @@
 Section | Date | Details | Note
 ---|:---:|:---:|:---:
 Preliminary project | 01/03 ~ 01/15 | Planning a project, selecting a topic, and making a project proposal. | 01/09 1st reference sharing |
-Collecting Data and preprocessing | 01/03 ~ 01/27 | Collecting Data and preprocessing | 01/16 2st reference sharing |
+Collecting Data and preprocessing | 01/03 ~ 01/27 | Collecting Data and preprocessing | 01/16 2nd reference sharing |
 Modeling | 01/11 ~ 02/06 | Designing and training model |
-Build a service | 01/11 ~ 01/27 | Performance Improvements, Web Page Implementation, Model Serving and Rehearsing |
+Build a service | 02/06 ~ 02/13 | Performance Improvements, Web Page Implementation, Model Serving and Rehearsing |
 Total | 01/03 ~ 02/17 (7 weeks) ||
 
 # Data
@@ -91,7 +91,7 @@ val | 50 | 50
 
 ## STT 
 
-we didn't training STT. we just use whisper. added it to our pipeline. so no data.
+We didn't training STT. we just use whisper. added it to our pipeline. so no data.
 
 # Architecture
 
@@ -106,7 +106,7 @@ we didn't training STT. we just use whisper. added it to our pipeline. so no dat
 
 ## TTS
 [VITS](https://github.com/jaywalnut310/vits)
-- Fully End-To-End TTS Model that generates audio as soon as you enter text
+- Fully End-To-End TTS Model that generates audio when you enter text
 - Text-To-Speech Synthesis SOTA rank 2 which use LJSpeech DataSet from Papers with Code (2023.02.21)
 <img width="878" alt="image" src="https://user-images.githubusercontent.com/49097057/220277363-fe832419-f0e7-4ff2-b50e-405538a5f980.png">
 
